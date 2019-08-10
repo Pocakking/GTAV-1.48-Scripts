@@ -21,7 +21,7 @@
 	int iLocal_19 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -57,7 +57,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(int iParam0, int iParam1)
+void func_1(int iParam0, int iParam1)//Position - 0x8D
 {
 	switch (iParam0)
 	{
@@ -162,18 +162,18 @@ void func_1(int iParam0, int iParam1)
 	}
 }
 
-void func_2(char* sParam0)
+void func_2(char* sParam0)//Position - 0x312
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_3(char* sParam0)
+void func_3(char* sParam0)//Position - 0x324
 {
 	GRAPHICS::_0xE83A3E3557A56640(sParam0);
 }
 
-void func_4()
+void func_4()//Position - 0x332
 {
 	if (Global_14532 == 0)
 	{
@@ -240,7 +240,7 @@ void func_4()
 	}
 }
 
-void func_5()
+void func_5()//Position - 0x47D
 {
 	func_6(0);
 	MISC::SET_GAME_PAUSED(0);
@@ -248,7 +248,7 @@ void func_5()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_6(bool bParam0)
+void func_6(bool bParam0)//Position - 0x499
 {
 	if (bParam0)
 	{
@@ -272,7 +272,7 @@ void func_6(bool bParam0)
 	}
 }
 
-void func_7(int iParam0)
+void func_7(int iParam0)//Position - 0x4FC
 {
 	if (func_10())
 	{
@@ -305,7 +305,7 @@ void func_7(int iParam0)
 	}
 }
 
-int func_8()
+int func_8()//Position - 0x576
 {
 	if (Global_14553.f_1 == 1 || Global_14553.f_1 == 0)
 	{
@@ -314,7 +314,7 @@ int func_8()
 	return 0;
 }
 
-void func_9(bool bParam0, bool bParam1)
+void func_9(bool bParam0, bool bParam1)//Position - 0x59D
 {
 	if (bParam0)
 	{
@@ -344,12 +344,12 @@ void func_9(bool bParam0, bool bParam1)
 	}
 }
 
-bool func_10()
+bool func_10()//Position - 0x611
 {
 	return MISC::IS_BIT_SET(Global_1681628, 19);
 }
 
-int func_11(int iParam0)
+int func_11(int iParam0)//Position - 0x623
 {
 	if (iParam0 == 1)
 	{
@@ -380,7 +380,7 @@ int func_11(int iParam0)
 	return 0;
 }
 
-void func_12()
+void func_12()//Position - 0x67D
 {
 	if (Global_14553.f_1 == 9 || Global_14553.f_1 == 10)
 	{

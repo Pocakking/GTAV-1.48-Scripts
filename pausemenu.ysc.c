@@ -1,10 +1,10 @@
 #region Local Var
 	struct<2> ScriptParam_0 = { 0, 0 } ;
-	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
+	var uScriptParam_3 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	switch (ScriptParam_0)
 	{
@@ -37,7 +37,7 @@ void __EntryFunction__()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_1(int iParam0)
+void func_1(int iParam0)//Position - 0x8A
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("DISPLAY_DATA_SLOT"))
 	{
@@ -46,7 +46,7 @@ void func_1(int iParam0)
 	}
 }
 
-void func_2(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, char* sParam5)
+void func_2(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, char* sParam5)//Position - 0xA6
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_DATA_SLOT"))
 	{
@@ -69,7 +69,7 @@ void func_2(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, ch
 	}
 }
 
-void func_3(char* sParam0)
+void func_3(char* sParam0)//Position - 0xF6
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();

@@ -29,7 +29,7 @@
 	var uLocal_27 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -70,7 +70,7 @@ void __EntryFunction__()
 	func_3();
 }
 
-int func_1(int iParam0)
+int func_1(int iParam0)//Position - 0xB6
 {
 	if (iParam0 == 146 || iParam0 == -1)
 	{
@@ -79,7 +79,7 @@ int func_1(int iParam0)
 	return Global_106565.f_9079.f_99.f_58[iParam0];
 }
 
-int func_2(int iParam0)
+int func_2(int iParam0)//Position - 0xE3
 {
 	int iVar0;
 	int iVar1;
@@ -102,14 +102,14 @@ int func_2(int iParam0)
 	return 1;
 }
 
-void func_3()
+void func_3()//Position - 0x13D
 {
 	AUDIO::STOP_STREAM();
 	AUDIO::UNREGISTER_SCRIPT_WITH_AUDIO();
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-int func_4(int iParam0)
+int func_4(int iParam0)//Position - 0x151
 {
 	int iVar0;
 	int iVar1;

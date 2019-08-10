@@ -7,7 +7,7 @@
 	int iScriptParam_0 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	
@@ -18,9 +18,9 @@ void __EntryFunction__()
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_5))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (TASK::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_5) && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("finalec1")) == 0)
+			if (TASK::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0) && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("finalec1")) == 0)
 			{
 				switch (iLocal_2)
 				{
@@ -88,7 +88,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x135
 {
 	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3))
 	{
@@ -102,12 +102,12 @@ void func_1()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_2(char* sParam0)
+void func_2(char* sParam0)//Position - 0x167
 {
 	func_3(sParam0);
 }
 
-void func_3(char* sParam0)
+void func_3(char* sParam0)//Position - 0x175
 {
 	if (MISC::ARE_STRINGS_EQUAL(sParam0, sParam0))
 	{

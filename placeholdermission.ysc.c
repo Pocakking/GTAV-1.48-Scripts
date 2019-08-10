@@ -29,7 +29,7 @@
 	var uLocal_27 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -71,18 +71,18 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(float fParam0, float fParam1, char* sParam2, int iParam3)
+void func_1(float fParam0, float fParam1, char* sParam2, int iParam3)//Position - 0xD8
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
 	HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fParam0, fParam1, iParam3);
 }
 
-void func_2()
+void func_2()//Position - 0xF0
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_3()
+void func_3()//Position - 0xFC
 {
 	int iVar0;
 	
@@ -112,7 +112,7 @@ void func_3()
 	}
 }
 
-void func_4()
+void func_4()//Position - 0x16B
 {
 	Global_93717 = 1;
 	if (PLAYER::IS_PLAYER_BEING_ARRESTED(PLAYER::PLAYER_ID(), 1))
@@ -162,13 +162,13 @@ void func_4()
 	}
 }
 
-int func_5()
+int func_5()//Position - 0x252
 {
 	func_6();
 	return Global_106565.f_2357.f_539.f_4321;
 }
 
-void func_6()
+void func_6()//Position - 0x26B
 {
 	int iVar0;
 	
@@ -200,17 +200,17 @@ void func_6()
 	Global_106565.f_2357.f_539.f_4321 = 145;
 }
 
-bool func_7(int iParam0)
+bool func_7(int iParam0)//Position - 0x368
 {
 	return Global_36425 == iParam0;
 }
 
-bool func_8(int iParam0)
+bool func_8(int iParam0)//Position - 0x376
 {
 	return iParam0 < 3;
 }
 
-int func_9(int iParam0)
+int func_9(int iParam0)//Position - 0x382
 {
 	int iVar0;
 	int iVar1;
@@ -231,7 +231,7 @@ int func_9(int iParam0)
 	return 145;
 }
 
-int func_10(int iParam0)
+int func_10(int iParam0)//Position - 0x3BF
 {
 	if (func_8(iParam0))
 	{
@@ -243,7 +243,7 @@ int func_10(int iParam0)
 	return 0;
 }
 
-int func_11(int iParam0)
+int func_11(int iParam0)//Position - 0x3E9
 {
 	int iVar0;
 	int iVar1;
@@ -290,12 +290,12 @@ int func_11(int iParam0)
 	return 1;
 }
 
-void func_12(var uParam0, int iParam1)
+void func_12(var uParam0, int iParam1)//Position - 0x500
 {
 	int iVar0;
 	int iVar1;
 	vector3 vVar2;
-	float fVar3;
+	float fVar5;
 	
 	if (iParam1 == 94)
 	{
@@ -311,8 +311,8 @@ void func_12(var uParam0, int iParam1)
 		else
 		{
 			vVar2 = { 0f, 0f, 0f };
-			fVar3 = 0f;
-			if (!func_14(Global_106565.f_18527[iVar0], &vVar2, &fVar3))
+			fVar5 = 0f;
+			if (!func_14(Global_106565.f_18527[iVar0], &vVar2, &fVar5))
 			{
 				Global_106565.f_18527[iVar0] = 318;
 				func_13(&(uParam0->f_2296[iVar0]));
@@ -342,12 +342,12 @@ void func_12(var uParam0, int iParam1)
 	}
 }
 
-void func_13(var uParam0)
+void func_13(var uParam0)//Position - 0x6C9
 {
 	*uParam0 = -15;
 }
 
-int func_14(int iParam0, var uParam1, float fParam2)
+int func_14(int iParam0, var uParam1, float fParam2)//Position - 0x6D7
 {
 	switch (iParam0)
 	{
@@ -755,7 +755,7 @@ int func_14(int iParam0, var uParam1, float fParam2)
 	return 0;
 }
 
-void func_15(int iParam0, bool bParam1)
+void func_15(int iParam0, bool bParam1)//Position - 0x1046
 {
 	if (bParam1)
 	{
@@ -770,7 +770,7 @@ void func_15(int iParam0, bool bParam1)
 	}
 }
 
-int func_16()
+int func_16()//Position - 0x1084
 {
 	int iVar0;
 	
@@ -787,7 +787,7 @@ int func_16()
 	return -1;
 }
 
-int func_17()
+int func_17()//Position - 0x10B9
 {
 	if (((Global_93682 == 13 || Global_93682 == 10) || Global_93682 == 11) || Global_93682 == 12)
 	{
@@ -796,7 +796,7 @@ int func_17()
 	return 1;
 }
 
-bool func_18(bool bParam0)
+bool func_18(bool bParam0)//Position - 0x10F7
 {
 	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
 	{

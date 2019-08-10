@@ -190,7 +190,7 @@
 	int iLocal_188 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -252,7 +252,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0xF9
 {
 	switch (iLocal_21)
 	{
@@ -284,7 +284,7 @@ void func_1()
 	}
 }
 
-int func_2()
+int func_2()//Position - 0x1A9
 {
 	if (Global_15866 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
@@ -293,7 +293,7 @@ int func_2()
 	return 0;
 }
 
-bool func_3(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+bool func_3(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x1CB
 {
 	func_14(uParam0, 145, sParam1, iParam4, iParam5, iParam6);
 	if (iParam3 > 7)
@@ -313,7 +313,7 @@ bool func_3(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4,
 	return func_4(sParam2, iParam3, 0);
 }
 
-int func_4(char* sParam0, int iParam1, bool bParam2)
+int func_4(char* sParam0, int iParam1, bool bParam2)//Position - 0x219
 {
 	Global_15867 = 0;
 	if (Global_15866 == 0 || Global_15868 == 2)
@@ -501,7 +501,7 @@ int func_4(char* sParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-void func_5()
+void func_5()//Position - 0x4E5
 {
 	int iVar0;
 	
@@ -515,7 +515,7 @@ void func_5()
 	Global_15866 = 1;
 }
 
-void func_6()
+void func_6()//Position - 0x516
 {
 	Global_15919 = Global_15918;
 	Global_15913 = Global_15914;
@@ -538,7 +538,7 @@ void func_6()
 	MISC::CLEAR_BIT(&Global_2424, 16);
 }
 
-int func_7()
+int func_7()//Position - 0x5AB
 {
 	if (Global_14553.f_1 == 1 || Global_14553.f_1 == 0)
 	{
@@ -547,7 +547,7 @@ int func_7()
 	return 0;
 }
 
-int func_8()
+int func_8()//Position - 0x5D2
 {
 	int iVar0;
 	int iVar1;
@@ -586,7 +586,7 @@ int func_8()
 	return 1;
 }
 
-void func_9()
+void func_9()//Position - 0x66B
 {
 	if (func_10(14))
 	{
@@ -628,12 +628,12 @@ void func_9()
 	}
 }
 
-bool func_10(int iParam0)
+bool func_10(int iParam0)//Position - 0x70D
 {
 	return Global_36425 == iParam0;
 }
 
-void func_11()
+void func_11()//Position - 0x71B
 {
 	int iVar0;
 	
@@ -650,7 +650,7 @@ void func_11()
 	Global_15155.f_162 = { 0f, 0f, 0f };
 }
 
-bool func_12(int iParam0, int iParam1)
+bool func_12(int iParam0, int iParam1)//Position - 0x772
 {
 	switch (iParam0)
 	{
@@ -664,7 +664,7 @@ bool func_12(int iParam0, int iParam1)
 	return MISC::IS_BIT_SET(Global_1371947.f_1048, iParam0);
 }
 
-void func_13()
+void func_13()//Position - 0x7AD
 {
 	AUDIO::RESTART_SCRIPTED_CONVERSATION();
 	Global_16877 = 0;
@@ -683,7 +683,7 @@ void func_13()
 	}
 }
 
-void func_14(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, var uParam5)
+void func_14(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, var uParam5)//Position - 0x804
 {
 	Global_15320 = { *uParam0 };
 	Global_1739 = iParam1;
@@ -711,7 +711,7 @@ void func_14(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	}
 }
 
-void func_15()
+void func_15()//Position - 0x85A
 {
 	iLocal_187 = MISC::GET_GAME_TIMER();
 	func_16(&uLocal_22, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
@@ -719,7 +719,7 @@ void func_15()
 	iLocal_20 = 1;
 }
 
-void func_16(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)
+void func_16(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)//Position - 0x889
 {
 	if ((uParam0[iParam1 /*10*/])->f_7 == 1)
 	{
@@ -756,7 +756,7 @@ void func_16(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 }
 
-int func_17()
+int func_17()//Position - 0x924
 {
 	float fVar0;
 	
@@ -768,7 +768,7 @@ int func_17()
 	return 1;
 }
 
-void func_18(int iParam0, int iParam1)
+void func_18(int iParam0, int iParam1)//Position - 0x961
 {
 	if (iParam0 == 146 || iParam0 == -1)
 	{
@@ -781,7 +781,7 @@ void func_18(int iParam0, int iParam1)
 	Global_106565.f_9079.f_99.f_58[iParam0] = iParam1;
 }
 
-int func_19()
+int func_19()//Position - 0x9A6
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_188))
 	{
@@ -793,13 +793,13 @@ int func_19()
 	return 0;
 }
 
-int func_20()
+int func_20()//Position - 0x9C6
 {
 	func_21();
 	return Global_106565.f_2357.f_539.f_4321;
 }
 
-void func_21()
+void func_21()//Position - 0x9DF
 {
 	int iVar0;
 	
@@ -831,12 +831,12 @@ void func_21()
 	Global_106565.f_2357.f_539.f_4321 = 145;
 }
 
-bool func_22(int iParam0)
+bool func_22(int iParam0)//Position - 0xADC
 {
 	return iParam0 < 3;
 }
 
-int func_23(int iParam0)
+int func_23(int iParam0)//Position - 0xAE8
 {
 	int iVar0;
 	int iVar1;
@@ -857,7 +857,7 @@ int func_23(int iParam0)
 	return 145;
 }
 
-int func_24(int iParam0)
+int func_24(int iParam0)//Position - 0xB25
 {
 	if (func_22(iParam0))
 	{
@@ -869,34 +869,34 @@ int func_24(int iParam0)
 	return 0;
 }
 
-int func_25()
+int func_25()//Position - 0xB4F
 {
 	var uVar0[16];
-	int iVar1;
-	int iVar2;
+	int iVar17;
+	int iVar18;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		iVar1 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar0, -1);
-		iVar2 = 0;
-		while (iVar2 <= (iVar1 - 1))
+		iVar17 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar0, -1);
+		iVar18 = 0;
+		while (iVar18 <= (iVar17 - 1))
 		{
-			if (uVar0[iVar2] != 0 && ENTITY::DOES_ENTITY_EXIST(uVar0[iVar2]))
+			if (uVar0[iVar18] != 0 && ENTITY::DOES_ENTITY_EXIST(uVar0[iVar18]))
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == joaat("u_m_m_aldinapoli"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar18]) == joaat("u_m_m_aldinapoli"))
 				{
-					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uVar0[iVar2], true, 1);
-					iLocal_188 = uVar0[iVar2];
+					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uVar0[iVar18], true, 1);
+					iLocal_188 = uVar0[iVar18];
 					return 1;
 				}
 			}
-			iVar2++;
+			iVar18++;
 		}
 	}
 	return 0;
 }
 
-void func_26()
+void func_26()//Position - 0xBDD
 {
 	func_27(&uLocal_22, 1);
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_188))
@@ -906,7 +906,7 @@ void func_26()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_27(var uParam0, int iParam1)
+void func_27(var uParam0, int iParam1)//Position - 0xBFF
 {
 	if ((uParam0[iParam1 /*10*/])->f_7 == 1)
 	{

@@ -23,7 +23,7 @@
 	int iLocal_21 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -114,7 +114,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1()
+int func_1()//Position - 0x126
 {
 	if (((Global_14553.f_1 == 1 || Global_14553.f_1 == 3) || Global_14553.f_1 == 0) || Global_14497 == 1)
 	{
@@ -124,13 +124,13 @@ int func_1()
 	return 0;
 }
 
-void func_2()
+void func_2()//Position - 0x169
 {
 	AUDIO::RELEASE_NAMED_SCRIPT_AUDIO_BANK("DLC_MPHEIST/HEIST_HACK_SNAKE");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-int func_3()
+int func_3()//Position - 0x17C
 {
 	if (Global_3029 == 1 || Global_14553.f_1 < 7)
 	{
@@ -140,7 +140,7 @@ int func_3()
 	return 0;
 }
 
-void func_4()
+void func_4()//Position - 0x1A5
 {
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), 0))
 	{
@@ -148,7 +148,7 @@ void func_4()
 	}
 }
 
-void func_5()
+void func_5()//Position - 0x1C6
 {
 	if (Global_14541)
 	{
@@ -164,7 +164,7 @@ void func_5()
 	MISC::CLEAR_BIT(&Global_2423, 17);
 }
 
-void func_6(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)
+void func_6(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)//Position - 0x258
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));
@@ -207,13 +207,13 @@ void func_6(int iParam0, char* sParam1, float fParam2, float fParam3, float fPar
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_7(char* sParam0)
+void func_7(char* sParam0)//Position - 0x30B
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-int func_8(int iParam0, int iParam1, int iParam2)
+int func_8(int iParam0, int iParam1, int iParam2)//Position - 0x31D
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(iParam0, iParam1) || (iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(iParam0, iParam1)))
 	{
@@ -236,7 +236,7 @@ int func_8(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_9()
+void func_9()//Position - 0x38F
 {
 	if (Global_14541)
 	{
@@ -252,7 +252,7 @@ void func_9()
 	MISC::CLEAR_BIT(&Global_2423, 17);
 }
 
-void func_10()
+void func_10()//Position - 0x421
 {
 	if (iLocal_21 == 0)
 	{
@@ -299,7 +299,7 @@ void func_10()
 	}
 }
 
-void func_11(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)
+void func_11(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)//Position - 0x575
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));

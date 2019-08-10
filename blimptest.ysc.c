@@ -49,7 +49,7 @@
 	int iLocal_47 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -102,7 +102,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x116
 {
 	vector3 vVar0;
 	
@@ -138,7 +138,7 @@ void func_1()
 	}
 }
 
-void func_2(int iParam0)
+void func_2(int iParam0)//Position - 0x1B6
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -150,7 +150,7 @@ void func_2(int iParam0)
 	}
 }
 
-void func_3(int iParam0, int iParam1, int iParam2, int iParam3)
+void func_3(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1EE
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -171,7 +171,7 @@ void func_3(int iParam0, int iParam1, int iParam2, int iParam3)
 	}
 }
 
-void func_4(int iParam0)
+void func_4(int iParam0)//Position - 0x23E
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -209,7 +209,7 @@ void func_4(int iParam0)
 	}
 }
 
-int func_5(int iParam0)
+int func_5(int iParam0)//Position - 0x2DA
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -221,7 +221,7 @@ int func_5(int iParam0)
 	return 0;
 }
 
-int func_6(int iParam0)
+int func_6(int iParam0)//Position - 0x2FB
 {
 	if (func_5(iParam0))
 	{
@@ -236,7 +236,7 @@ int func_6(int iParam0)
 	return 0;
 }
 
-void func_7(int iParam0)
+void func_7(int iParam0)//Position - 0x325
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -252,7 +252,7 @@ void func_7(int iParam0)
 	}
 }
 
-void func_8(vector3 vParam0)
+void func_8(vector3 vParam0)//Position - 0x366
 {
 	int iVar0;
 	int iVar1;
@@ -280,7 +280,7 @@ void func_8(vector3 vParam0)
 	}
 }
 
-void func_9(int iParam0)
+void func_9(int iParam0)//Position - 0x45C
 {
 	if (HUD::DOES_BLIP_EXIST(*iParam0))
 	{
@@ -289,13 +289,13 @@ void func_9(int iParam0)
 	}
 }
 
-void func_10(float fParam0, float fParam1, char* sParam2, int iParam3)
+void func_10(float fParam0, float fParam1, char* sParam2, int iParam3)//Position - 0x47C
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
 	HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fParam0, fParam1, iParam3);
 }
 
-void func_11()
+void func_11()//Position - 0x494
 {
 	func_2(&iLocal_45);
 	STREAMING::REQUEST_MODEL(iLocal_46);
@@ -319,7 +319,7 @@ void func_11()
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_46);
 }
 
-void func_12(int iParam0, int iParam1)
+void func_12(int iParam0, int iParam1)//Position - 0x52F
 {
 	float fVar0;
 	
@@ -327,14 +327,14 @@ void func_12(int iParam0, int iParam1)
 	ENTITY::SET_ENTITY_HEADING(iParam0, fVar0);
 }
 
-float func_13(struct<2> Param0, float fParam1, struct<2> Param2, float fParam3, int iParam4)
+float func_13(struct<2> Param0, float fParam2, struct<2> Param3, float fParam5, int iParam6)//Position - 0x554
 {
 	float fVar0;
 	float fVar1;
 	float fVar2;
 	
-	fVar1 = (Param2 - Param0);
-	fVar2 = (Param2.f_1 - Param0.f_1);
+	fVar1 = (Param3 - Param0);
+	fVar2 = (Param3.f_1 - Param0.f_1);
 	if (fVar2 != 0f)
 	{
 		fVar0 = MISC::ATAN2(fVar1, fVar2);
@@ -347,7 +347,7 @@ float func_13(struct<2> Param0, float fParam1, struct<2> Param2, float fParam3, 
 	{
 		fVar0 = 90f;
 	}
-	if (iParam4 == 1)
+	if (iParam6 == 1)
 	{
 		fVar0 = (fVar0 * -1f);
 		if (fVar0 < 0f)
@@ -358,7 +358,7 @@ float func_13(struct<2> Param0, float fParam1, struct<2> Param2, float fParam3, 
 	return fVar0;
 }
 
-void func_14()
+void func_14()//Position - 0x5B9
 {
 	func_9(&iLocal_42);
 	if (func_6(iLocal_40))
@@ -367,7 +367,7 @@ void func_14()
 	}
 }
 
-int func_15(int iParam0, bool bParam1, int iParam2)
+int func_15(int iParam0, bool bParam1, int iParam2)//Position - 0x5DA
 {
 	int iVar0;
 	
@@ -382,7 +382,7 @@ int func_15(int iParam0, bool bParam1, int iParam2)
 	return iVar0;
 }
 
-void func_16()
+void func_16()//Position - 0x60F
 {
 	STREAMING::REQUEST_MODEL(iLocal_44);
 	while (!STREAMING::HAS_MODEL_LOADED(iLocal_44))
@@ -407,7 +407,7 @@ void func_16()
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_44);
 }
 
-void func_17()
+void func_17()//Position - 0x68C
 {
 	vector3 vVar0;
 	
@@ -429,7 +429,7 @@ void func_17()
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_41);
 }
 
-void func_18()
+void func_18()//Position - 0x722
 {
 	if (func_6(iLocal_40) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
 	{

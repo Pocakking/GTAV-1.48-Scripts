@@ -20,7 +20,7 @@
 	int iLocal_18 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -55,7 +55,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(int iParam0)
+void func_1(int iParam0)//Position - 0x93
 {
 	if (Global_14532 == 0)
 	{
@@ -122,7 +122,7 @@ void func_1(int iParam0)
 	}
 }
 
-void func_2()
+void func_2()//Position - 0x215
 {
 	func_3(0);
 	MISC::SET_GAME_PAUSED(0);
@@ -130,7 +130,7 @@ void func_2()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_3(bool bParam0)
+void func_3(bool bParam0)//Position - 0x231
 {
 	if (bParam0)
 	{
@@ -154,7 +154,7 @@ void func_3(bool bParam0)
 	}
 }
 
-void func_4(int iParam0)
+void func_4(int iParam0)//Position - 0x294
 {
 	if (func_7())
 	{
@@ -187,7 +187,7 @@ void func_4(int iParam0)
 	}
 }
 
-int func_5()
+int func_5()//Position - 0x30E
 {
 	if (Global_14553.f_1 == 1 || Global_14553.f_1 == 0)
 	{
@@ -196,7 +196,7 @@ int func_5()
 	return 0;
 }
 
-void func_6(bool bParam0, bool bParam1)
+void func_6(bool bParam0, bool bParam1)//Position - 0x335
 {
 	if (bParam0)
 	{
@@ -226,12 +226,12 @@ void func_6(bool bParam0, bool bParam1)
 	}
 }
 
-bool func_7()
+bool func_7()//Position - 0x3A9
 {
 	return MISC::IS_BIT_SET(Global_1681628, 19);
 }
 
-int func_8(int iParam0)
+int func_8(int iParam0)//Position - 0x3BB
 {
 	if (iParam0 == 1)
 	{
@@ -262,7 +262,7 @@ int func_8(int iParam0)
 	return 0;
 }
 
-void func_9()
+void func_9()//Position - 0x415
 {
 	if (Global_14553.f_1 == 9 || Global_14553.f_1 == 10)
 	{

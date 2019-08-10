@@ -97,7 +97,7 @@
 	var uLocal_95 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -136,17 +136,17 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0xA2
 {
 	func_2();
 }
 
-void func_2()
+void func_2()//Position - 0xAE
 {
 	int iVar0;
 	int iVar1;
 	struct<2> Var2;
-	var uVar3;
+	var uVar5;
 	
 	iVar0 = 0;
 	while (iVar0 < SCRIPT::GET_NUMBER_OF_EVENTS(2))
@@ -158,7 +158,7 @@ void func_2()
 			func_8(2, iVar0, iVar1, &Var2);
 			Var2.f_1 = (MISC::GET_FRAME_COUNT() - 1);
 			Var2 = iVar1;
-			if (!func_7(&Var2, &uVar3))
+			if (!func_7(&Var2, &uVar5))
 			{
 				func_6(&Var2);
 			}
@@ -168,7 +168,7 @@ void func_2()
 	}
 }
 
-void func_3(int iParam0)
+void func_3(int iParam0)//Position - 0x116
 {
 	int iVar0;
 	
@@ -179,17 +179,17 @@ void func_3(int iParam0)
 	}
 }
 
-bool func_4(int iParam0)
+bool func_4(int iParam0)//Position - 0x14F
 {
 	return (((iParam0 == 238 || iParam0 == 239) || iParam0 == 240) || iParam0 == 237);
 }
 
-bool func_5()
+bool func_5()//Position - 0x17D
 {
 	return Global_1589819[PLAYER::PLAYER_ID() /*818*/].f_196 != 0;
 }
 
-int func_6(int iParam0)
+int func_6(int iParam0)//Position - 0x194
 {
 	if (Global_26039.f_61 < 20)
 	{
@@ -200,7 +200,7 @@ int func_6(int iParam0)
 	return 0;
 }
 
-int func_7(int iParam0, var uParam1)
+int func_7(int iParam0, var uParam1)//Position - 0x1C7
 {
 	*uParam1 = 0;
 	*uParam1 = 0;
@@ -215,7 +215,7 @@ int func_7(int iParam0, var uParam1)
 	return 0;
 }
 
-void func_8(int iParam0, int iParam1, int iParam2, var uParam3)
+void func_8(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x215
 {
 	var uVar0;
 	
@@ -228,24 +228,24 @@ void func_8(int iParam0, int iParam1, int iParam2, var uParam3)
 	}
 }
 
-void func_9(var uParam0)
+void func_9(var uParam0)//Position - 0x25A
 {
 	*uParam0 = -1;
 	uParam0->f_1 = -1;
 	uParam0->f_2 = -1;
 }
 
-bool func_10(int iParam0)
+bool func_10(int iParam0)//Position - 0x270
 {
 	return func_4(iParam0);
 }
 
-int func_11()
+int func_11()//Position - 0x27E
 {
 	return 0;
 }
 
-void func_12()
+void func_12()//Position - 0x287
 {
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 }

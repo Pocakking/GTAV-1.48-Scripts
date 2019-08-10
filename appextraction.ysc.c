@@ -22,7 +22,7 @@
 	int iLocal_20 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -91,7 +91,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1()
+int func_1()//Position - 0xE5
 {
 	if (((Global_14553.f_1 == 1 || Global_14553.f_1 == 3) || Global_14553.f_1 == 0) || Global_14497 == 1)
 	{
@@ -101,12 +101,12 @@ int func_1()
 	return 0;
 }
 
-void func_2()
+void func_2()//Position - 0x128
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-int func_3()
+int func_3()//Position - 0x134
 {
 	if (Global_3029 == 1 || Global_14553.f_1 < 7)
 	{
@@ -116,7 +116,7 @@ int func_3()
 	return 0;
 }
 
-void func_4()
+void func_4()//Position - 0x15D
 {
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), 0))
 	{
@@ -124,7 +124,7 @@ void func_4()
 	}
 }
 
-int func_5(int iParam0, int iParam1, int iParam2)
+int func_5(int iParam0, int iParam1, int iParam2)//Position - 0x17D
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(iParam0, iParam1) || (iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(iParam0, iParam1)))
 	{
@@ -147,12 +147,12 @@ int func_5(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_6()
+void func_6()//Position - 0x1EF
 {
 	func_7();
 }
 
-void func_7()
+void func_7()//Position - 0x1FB
 {
 	func_9(Global_14534, "SET_DATA_SLOT_EMPTY", 24f, -1082130432, -1082130432, -1082130432, -1082130432);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(Global_14534, "SET_DATA_SLOT");
@@ -198,13 +198,13 @@ void func_7()
 	func_9(Global_14534, "DISPLAY_VIEW", 24f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 }
 
-void func_8(char* sParam0)
+void func_8(char* sParam0)//Position - 0x399
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_9(var uParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)
+void func_9(var uParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)//Position - 0x3AB
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(uParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));
@@ -227,12 +227,12 @@ void func_9(var uParam0, char* sParam1, float fParam2, float fParam3, float fPar
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_10()
+void func_10()//Position - 0x40E
 {
 	func_7();
 }
 
-void func_11()
+void func_11()//Position - 0x41A
 {
 	if (Global_14541)
 	{
@@ -248,7 +248,7 @@ void func_11()
 	MISC::CLEAR_BIT(&Global_2423, 17);
 }
 
-void func_12(var uParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)
+void func_12(var uParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)//Position - 0x4AC
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(uParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));

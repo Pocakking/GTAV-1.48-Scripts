@@ -50,16 +50,16 @@
 	char* sLocal_48 = NULL;
 	char* sLocal_49 = NULL;
 	vector3 vLocal_50 = { 0f, 0f, 0f };
-	vector3 vLocal_51 = { 0f, 0f, 0f };
-	int iLocal_52 = 0;
+	vector3 vLocal_53 = { 0f, 0f, 0f };
+	int iLocal_56 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	bool bVar0;
 	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar18;
+	int iVar19;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -89,13 +89,13 @@ void __EntryFunction__()
 	sLocal_48 = "CHECKPOINT_MISSED";
 	sLocal_49 = "CHECKPOINT_PERFECT";
 	vLocal_50 = { 1694.74f, 3276.502f, 41.2796f };
-	vLocal_51 = { 8.79494f, 0.59893f, 154.8464f };
+	vLocal_53 = { 8.79494f, 0.59893f, 154.8464f };
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	HUD::_SET_DIRECTOR_MODE(0);
 	MISC::_SHOW_PED_IN_PAUSE_MENU(0);
 	STREAMING::REMOVE_IPL("prologue_DistantLights");
 	STREAMING::REMOVE_IPL("prologue_LODLights");
-	iLocal_52 = 0;
+	iLocal_56 = 0;
 	bVar0 = func_40();
 	if (MISC::_0xA049A5BE0F04F2F8() || MISC::_0x3BBBD13E5041A79E())
 	{
@@ -132,7 +132,7 @@ void __EntryFunction__()
 	func_39(joaat("sp_pilotschool_reg"), 1424);
 	SCRIPT::SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED(joaat("sp_pilotschool_reg"));
 	func_38();
-	switch (iLocal_52)
+	switch (iLocal_56)
 	{
 		case 0:
 			func_39(joaat("standard_global_init"), 1424);
@@ -143,7 +143,7 @@ void __EntryFunction__()
 	Global_71592 = 1;
 	Global_2 = bVar0;
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-	switch (iLocal_52)
+	switch (iLocal_56)
 	{
 		case 0:
 			Global_2621550 = 0;
@@ -197,9 +197,9 @@ void __EntryFunction__()
 	}
 	MISC::STOP_SAVE_STRUCT();
 	MISC::STOP_SAVE_DATA();
-	iVar2 = 10779;
-	iVar3 = MISC::_0xA09F896CE912481F(0);
-	if (iVar2 != iVar3)
+	iVar18 = 10779;
+	iVar19 = MISC::_0xA09F896CE912481F(0);
+	if (iVar18 != iVar19)
 	{
 	}
 	if (!NETWORK::_0xEA14EEF5B7CD2C30() && !NETWORK::_0x1D4DC17C38FEAFF0())
@@ -213,7 +213,7 @@ void __EntryFunction__()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_1()
+void func_1()//Position - 0x3E7
 {
 	Global_30[0] = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(-1680.49f, -929.44f, -0.462531f, "vbca_tunnel1");
 	Global_30[1] = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(-1562.04f, -876.91f, -0.471913f, "vbca_tunnel2");
@@ -278,13 +278,13 @@ void func_1()
 	Global_30[60] = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(-179.51f, -180.189f, 43.6251f, "bt1_04_carpark");
 }
 
-void func_2()
+void func_2()//Position - 0xB04
 {
 	Global_145394 = 1;
 	Global_145395 = 1;
 }
 
-void func_3(var uParam0, int iParam1)
+void func_3(var uParam0, int iParam1)//Position - 0xB16
 {
 	func_9(uParam0, iParam1);
 	func_8(uParam0, iParam1);
@@ -294,7 +294,7 @@ void func_3(var uParam0, int iParam1)
 	func_4(uParam0, iParam1);
 }
 
-void func_4(var uParam0, int iParam1)
+void func_4(var uParam0, int iParam1)//Position - 0xB4E
 {
 	char cVar0[32];
 	
@@ -313,7 +313,7 @@ void func_4(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_5(var uParam0, int iParam1)
+void func_5(var uParam0, int iParam1)//Position - 0xC18
 {
 	char cVar0[32];
 	
@@ -328,7 +328,7 @@ void func_5(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_6(var uParam0, int iParam1)
+void func_6(var uParam0, int iParam1)//Position - 0xC91
 {
 	char cVar0[32];
 	
@@ -339,7 +339,7 @@ void func_6(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_7(var uParam0, int iParam1)
+void func_7(var uParam0, int iParam1)//Position - 0xCCC
 {
 	char cVar0[32];
 	
@@ -350,7 +350,7 @@ void func_7(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_8(var uParam0, int iParam1)
+void func_8(var uParam0, int iParam1)//Position - 0xD06
 {
 	char cVar0[32];
 	
@@ -361,7 +361,7 @@ void func_8(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_9(var uParam0, int iParam1)
+void func_9(var uParam0, int iParam1)//Position - 0xD40
 {
 	char cVar0[32];
 	
@@ -372,74 +372,74 @@ void func_9(var uParam0, int iParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_10(var uParam0, int iParam1)
+void func_10(var uParam0, int iParam1)//Position - 0xD76
 {
 	vector3 vVar0[24];
-	int iVar1;
-	struct<4> Var2;
-	char cVar3[16];
-	char cVar4[16];
-	char cVar5[16];
-	char cVar6[16];
+	int iVar6;
+	struct<4> Var7;
+	char cVar11[16];
+	char cVar15[16];
+	char cVar19[16];
+	char cVar23[16];
 	
 	StringCopy(&cVar0, "MP_ATM_SAVED", 24);
 	StringIntConCat(&cVar0, iParam1, 24);
 	MISC::_START_SAVE_STRUCT(&(uParam0->f_10601), 150, &cVar0);
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10601), "MPATM_CARET_");
-	iVar1 = 0;
-	StringCopy(&Var2, "MPATMLOGVAL", 16);
-	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_1), 17, &Var2);
-	iVar1 = 0;
-	while (iVar1 < 16)
+	iVar6 = 0;
+	StringCopy(&Var7, "MPATMLOGVAL", 16);
+	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_1), 17, &Var7);
+	iVar6 = 0;
+	while (iVar6 < 16)
 	{
-		cVar3 = { Var2 };
-		StringIntConCat(&cVar3, iVar1, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10601.f_1[iVar1]), &cVar3);
-		iVar1++;
+		cVar11 = { Var7 };
+		StringIntConCat(&cVar11, iVar6, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10601.f_1[iVar6]), &cVar11);
+		iVar6++;
 	}
 	MISC::STOP_SAVE_ARRAY();
-	StringCopy(&Var2, "MPATMLOGSCRS", 16);
-	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_18), 97, &Var2);
-	iVar1 = 0;
-	while (iVar1 < 16)
+	StringCopy(&Var7, "MPATMLOGSCRS", 16);
+	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_18), 97, &Var7);
+	iVar6 = 0;
+	while (iVar6 < 16)
 	{
-		cVar4 = { Var2 };
-		StringIntConCat(&cVar4, iVar1, 16);
-		MISC::_0x48F069265A0E4BEC(&(uParam0->f_10601.f_18[iVar1 /*6*/]), &cVar4);
-		iVar1++;
+		cVar15 = { Var7 };
+		StringIntConCat(&cVar15, iVar6, 16);
+		MISC::_0x48F069265A0E4BEC(&(uParam0->f_10601.f_18[iVar6 /*6*/]), &cVar15);
+		iVar6++;
 	}
 	MISC::STOP_SAVE_ARRAY();
-	StringCopy(&Var2, "MPATMLOGACT", 16);
-	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_115), 17, &Var2);
-	iVar1 = 0;
-	while (iVar1 < 16)
+	StringCopy(&Var7, "MPATMLOGACT", 16);
+	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_115), 17, &Var7);
+	iVar6 = 0;
+	while (iVar6 < 16)
 	{
-		cVar5 = { Var2 };
-		StringIntConCat(&cVar5, iVar1, 16);
-		MISC::REGISTER_ENUM_TO_SAVE(&(uParam0->f_10601.f_115[iVar1]), &cVar5);
-		iVar1++;
+		cVar19 = { Var7 };
+		StringIntConCat(&cVar19, iVar6, 16);
+		MISC::REGISTER_ENUM_TO_SAVE(&(uParam0->f_10601.f_115[iVar6]), &cVar19);
+		iVar6++;
 	}
 	MISC::STOP_SAVE_ARRAY();
-	StringCopy(&Var2, "MPATMLOGDAT", 16);
-	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_132), 17, &Var2);
-	iVar1 = 0;
-	while (iVar1 < 16)
+	StringCopy(&Var7, "MPATMLOGDAT", 16);
+	MISC::_START_SAVE_ARRAY(&(uParam0->f_10601.f_132), 17, &Var7);
+	iVar6 = 0;
+	while (iVar6 < 16)
 	{
-		cVar6 = { Var2 };
-		StringIntConCat(&cVar6, iVar1, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10601.f_132[iVar1]), &cVar6);
-		iVar1++;
+		cVar23 = { Var7 };
+		StringIntConCat(&cVar23, iVar6, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10601.f_132[iVar6]), &cVar23);
+		iVar6++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_10601.f_149), "mpAnyVecBought");
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_11(var uParam0, int iParam1)
+void func_11(var uParam0, int iParam1)//Position - 0xEF0
 {
 	struct<6> Var0;
-	char cVar1[32];
-	int iVar2;
+	char cVar6[32];
+	int iVar14;
 	
 	StringCopy(&Var0, "MP_BOUNTY_SAVED", 24);
 	StringIntConCat(&Var0, iParam1, 24);
@@ -461,94 +461,94 @@ void func_11(var uParam0, int iParam1)
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10360.f_14), "BOUNTY_VALUE");
 	StringConCat(&Var0, "_GH", 24);
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_10360.f_15), 209, &Var0);
-	iVar2 = 0;
-	while (iVar2 < 16)
+	iVar14 = 0;
+	while (iVar14 < 16)
 	{
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_1", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/]), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_2", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_1), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_3", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_2), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_4", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_3), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_5", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_4), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_6", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_5), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_7", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_6), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_8", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_7), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_9", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_8), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_10", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_9), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_11", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_10), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_12", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_11), &cVar1);
-		MemCopy(&cVar1, {Var0}, 8);
-		StringConCat(&cVar1, "64_", 32);
-		StringIntConCat(&cVar1, iVar2, 32);
-		StringConCat(&cVar1, "_13", 32);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar2 /*13*/].f_12), &cVar1);
-		iVar2++;
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_1", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/]), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_2", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_1), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_3", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_2), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_4", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_3), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_5", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_4), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_6", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_5), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_7", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_6), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_8", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_7), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_9", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_8), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_10", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_9), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_11", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_10), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_12", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_11), &cVar6);
+		MemCopy(&cVar6, {Var0}, 8);
+		StringConCat(&cVar6, "64_", 32);
+		StringIntConCat(&cVar6, iVar14, 32);
+		StringConCat(&cVar6, "_13", 32);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_10360.f_15[iVar14 /*13*/].f_12), &cVar6);
+		iVar14++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	StringCopy(&Var0, "MP_BOUNTY_SAVED", 24);
 	StringIntConCat(&Var0, iParam1, 24);
 	StringConCat(&Var0, "_TIM", 24);
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_10360.f_224), 17, &Var0);
-	iVar2 = 0;
-	while (iVar2 < 16)
+	iVar14 = 0;
+	while (iVar14 < 16)
 	{
-		MemCopy(&cVar1, {Var0}, 8);
-		StringIntConCat(&cVar1, iVar2, 32);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10360.f_224[iVar2]), &cVar1);
-		iVar2++;
+		MemCopy(&cVar6, {Var0}, 8);
+		StringIntConCat(&cVar6, iVar14, 32);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_10360.f_224[iVar14]), &cVar6);
+		iVar14++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_12(var uParam0, int iParam1)
+void func_12(var uParam0, int iParam1)//Position - 0x1316
 {
 	vector3 vVar0[24];
 	
@@ -557,19 +557,19 @@ void func_12(var uParam0, int iParam1)
 	func_13(&(uParam0->f_6165), &cVar0);
 }
 
-void func_13(var uParam0, char* sParam1)
+void func_13(var uParam0, char* sParam1)//Position - 0x1337
 {
 	int iVar0;
 	struct<4> Var1;
-	int iVar2;
-	char cVar3[64];
-	int iVar4;
 	int iVar5;
-	char cVar6[16];
-	char cVar7[16];
-	char cVar8[16];
-	char cVar9[16];
-	char cVar10[16];
+	char cVar6[64];
+	int iVar22;
+	int iVar23;
+	char cVar24[16];
+	char cVar28[16];
+	char cVar32[16];
+	char cVar36[16];
+	char cVar40[16];
 	
 	MISC::_START_SAVE_STRUCT(uParam0, 4195, sParam1);
 	MISC::REGISTER_INT_TO_SAVE(uParam0, "CASH_GIVEN_TOTAL");
@@ -637,23 +637,23 @@ void func_13(var uParam0, char* sParam1)
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1273), "iGeneralBS");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1274), "iCarsModifiedTimeStamp");
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1275), 10, "GOLF_fLongestDriveHole");
-	iVar2 = 0;
-	while (iVar2 < uParam0->f_1275)
+	iVar5 = 0;
+	while (iVar5 < uParam0->f_1275)
 	{
-		StringCopy(&cVar3, "fLongestDriveHole_", 64);
-		StringIntConCat(&cVar3, iVar2, 64);
-		MISC::REGISTER_FLOAT_TO_SAVE(&(uParam0->f_1275[iVar2]), &cVar3);
-		iVar2++;
+		StringCopy(&cVar6, "fLongestDriveHole_", 64);
+		StringIntConCat(&cVar6, iVar5, 64);
+		MISC::REGISTER_FLOAT_TO_SAVE(&(uParam0->f_1275[iVar5]), &cVar6);
+		iVar5++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1285), 10, "GOLF_fLongestPuttHole");
-	iVar2 = 0;
-	while (iVar2 < uParam0->f_1285)
+	iVar5 = 0;
+	while (iVar5 < uParam0->f_1285)
 	{
-		StringCopy(&cVar3, "fLongestPuttHole_", 64);
-		StringIntConCat(&cVar3, iVar2, 64);
-		MISC::REGISTER_FLOAT_TO_SAVE(&(uParam0->f_1285[iVar2]), &cVar3);
-		iVar2++;
+		StringCopy(&cVar6, "fLongestPuttHole_", 64);
+		StringIntConCat(&cVar6, iVar5, 64);
+		MISC::REGISTER_FLOAT_TO_SAVE(&(uParam0->f_1285[iVar5]), &cVar6);
+		iVar5++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1295), "GOLF_iBestRound");
@@ -667,275 +667,275 @@ void func_13(var uParam0, char* sParam1)
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1303), "MULTI1_PROP_VAL");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1325), "LAST_ACC_SMPLINT");
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1304), 21, "PROP_ARY_VAL");
-	iVar4 = 0;
-	while (iVar4 < uParam0->f_1304)
+	iVar22 = 0;
+	while (iVar22 < uParam0->f_1304)
 	{
 		StringCopy(&Var1, "PROP_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1304[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1304[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1326), "KR_PATCH_UPDATE");
-	iVar4 = 0;
+	iVar22 = 0;
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2682), 919, "DLC_MODS");
-	iVar4 = 0;
-	while (iVar4 < uParam0->f_2682)
+	iVar22 = 0;
+	while (iVar22 < uParam0->f_2682)
 	{
 		StringCopy(&Var1, "DLC_MODS_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2682[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2682[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
-	iVar4 = 0;
+	iVar22 = 0;
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_3601), 362, "DLC_SUPERMODS");
-	iVar4 = 0;
-	while (iVar4 < uParam0->f_3601)
+	iVar22 = 0;
+	while (iVar22 < uParam0->f_3601)
 	{
 		StringCopy(&Var1, "DLC_SMODS_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3601[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3601[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1327), 274, "OUTFIT_CompDraw");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CompDraw", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_START_SAVE_ARRAY(&(uParam0->f_1327[iVar4 /*13*/]), 13, &Var1);
-		iVar5 = 0;
-		while (iVar5 < 12)
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::_START_SAVE_ARRAY(&(uParam0->f_1327[iVar22 /*13*/]), 13, &Var1);
+		iVar23 = 0;
+		while (iVar23 < 12)
 		{
 			StringCopy(&Var1, "CompDraw", 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar4, 16);
+			StringIntConCat(&Var1, iVar22, 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar5, 16);
-			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1327[iVar4 /*13*/][iVar5]), &Var1);
-			iVar5++;
+			StringIntConCat(&Var1, iVar23, 16);
+			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1327[iVar22 /*13*/][iVar23]), &Var1);
+			iVar23++;
 		}
 		MISC::STOP_SAVE_ARRAY();
-		iVar4++;
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1601), 274, "OUTFIT_CompTex");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CompTex", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_START_SAVE_ARRAY(&(uParam0->f_1601[iVar4 /*13*/]), 13, &Var1);
-		iVar5 = 0;
-		while (iVar5 < 12)
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::_START_SAVE_ARRAY(&(uParam0->f_1601[iVar22 /*13*/]), 13, &Var1);
+		iVar23 = 0;
+		while (iVar23 < 12)
 		{
 			StringCopy(&Var1, "CompTex", 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar4, 16);
+			StringIntConCat(&Var1, iVar22, 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar5, 16);
-			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1601[iVar4 /*13*/][iVar5]), &Var1);
-			iVar5++;
+			StringIntConCat(&Var1, iVar23, 16);
+			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1601[iVar22 /*13*/][iVar23]), &Var1);
+			iVar23++;
 		}
 		MISC::STOP_SAVE_ARRAY();
-		iVar4++;
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_1875), 211, "OUTFIT_PropID");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "PropID", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_START_SAVE_ARRAY(&(uParam0->f_1875[iVar4 /*10*/]), 10, &Var1);
-		iVar5 = 0;
-		while (iVar5 < 9)
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::_START_SAVE_ARRAY(&(uParam0->f_1875[iVar22 /*10*/]), 10, &Var1);
+		iVar23 = 0;
+		while (iVar23 < 9)
 		{
 			StringCopy(&Var1, "PropID", 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar4, 16);
+			StringIntConCat(&Var1, iVar22, 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar5, 16);
-			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1875[iVar4 /*10*/][iVar5]), &Var1);
-			iVar5++;
+			StringIntConCat(&Var1, iVar23, 16);
+			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_1875[iVar22 /*10*/][iVar23]), &Var1);
+			iVar23++;
 		}
 		MISC::STOP_SAVE_ARRAY();
-		iVar4++;
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2086), 211, "OUTFIT_PropTex");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "PropTex", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_START_SAVE_ARRAY(&(uParam0->f_2086[iVar4 /*10*/]), 10, &Var1);
-		iVar5 = 0;
-		while (iVar5 < 9)
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::_START_SAVE_ARRAY(&(uParam0->f_2086[iVar22 /*10*/]), 10, &Var1);
+		iVar23 = 0;
+		while (iVar23 < 9)
 		{
 			StringCopy(&Var1, "PropTex", 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar4, 16);
+			StringIntConCat(&Var1, iVar22, 16);
 			StringConCat(&Var1, "_", 16);
-			StringIntConCat(&Var1, iVar5, 16);
-			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2086[iVar4 /*10*/][iVar5]), &Var1);
-			iVar5++;
+			StringIntConCat(&Var1, iVar23, 16);
+			MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2086[iVar22 /*10*/][iVar23]), &Var1);
+			iVar23++;
 		}
 		MISC::STOP_SAVE_ARRAY();
-		iVar4++;
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2297), 22, "OUTFIT_Stored");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "Stored", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2297[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2297[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2319), 22, "OUTFIT_CrewTatA");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalA", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2319[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2319[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2341), 22, "OUTFIT_CrewTatB");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalB", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2341[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2341[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2363), 22, "OUTFIT_CrewTatC");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalC", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2363[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2363[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2385), 22, "OUTFIT_CrewTatD");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalD", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2385[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2385[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2407), 22, "OUTFIT_CrewTatE");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalE", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2407[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2407[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2429), 22, "OUTFIT_CrewTatF");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "CrewDecalF", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2429[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_2429[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2620), 22, "OUTFIT_Shirt");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "ShirtDecal", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2620[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_2620[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2451), 169, "OUTFIT_Name");
-	iVar4 = 0;
-	while (iVar4 < 21)
+	iVar22 = 0;
+	while (iVar22 < 21)
 	{
 		StringCopy(&Var1, "Name", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_0x8269816F6CFD40F8(&(uParam0->f_2451[iVar4 /*8*/]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::_0x8269816F6CFD40F8(&(uParam0->f_2451[iVar22 /*8*/]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_2642), 40, "LAST_JobGamer");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "LastJobG64_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_1", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/]), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_2", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_1), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_3", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_2), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_4", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_3), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_5", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_4), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_6", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_5), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_7", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_6), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_8", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_7), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_9", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_8), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_10", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_9), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_11", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_10), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_12", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_11), &cVar6);
-		cVar6 = { Var1 };
-		StringConCat(&cVar6, "_13", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar4 /*13*/].f_12), &cVar6);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_1", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/]), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_2", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_1), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_3", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_2), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_4", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_3), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_5", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_4), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_6", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_5), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_7", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_6), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_8", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_7), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_9", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_8), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_10", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_9), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_11", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_10), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_12", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_11), &cVar24);
+		cVar24 = { Var1 };
+		StringConCat(&cVar24, "_13", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_2642[iVar22 /*13*/].f_12), &cVar24);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_3963), "DO_CompletedObjectives");
@@ -944,45 +944,45 @@ void func_13(var uParam0, char* sParam1)
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3966), "DO_LastHistoryLength");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3967), "DO_LastResetTime");
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_3968), 10, "DO_Objectives");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "Objective", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3968[iVar4 /*3*/]), &Var1);
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3968[iVar22 /*3*/]), &Var1);
 		StringCopy(&Var1, "Completed", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_3968[iVar4 /*3*/].f_1), &Var1);
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_3968[iVar22 /*3*/].f_1), &Var1);
 		StringCopy(&Var1, "Initial", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3968[iVar4 /*3*/].f_2), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3968[iVar22 /*3*/].f_2), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_3978), 25, "DO_History");
-	iVar4 = 0;
-	while (iVar4 < 24)
+	iVar22 = 0;
+	while (iVar22 < 24)
 	{
 		StringCopy(&Var1, "History", 16);
 		StringConCat(&Var1, "_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3978[iVar4]), &Var1);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_3978[iVar22]), &Var1);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_4003), 49, "LAST_JobGamer_TL");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "LastJobTL_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		cVar7 = { Var1 };
-		StringConCat(&cVar7, "_1", 16);
-		MISC::_0xFAA457EF263E8763(&(uParam0->f_4003[iVar4 /*16*/]), &cVar7);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		cVar28 = { Var1 };
+		StringConCat(&cVar28, "_1", 16);
+		MISC::_0xFAA457EF263E8763(&(uParam0->f_4003[iVar22 /*16*/]), &cVar28);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_4052), 11, "BGSAVEINT");
@@ -1006,134 +1006,134 @@ void func_13(var uParam0, char* sParam1)
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_4066), 40, "LAST_GOGamer");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "LastGOG64_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_1", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/]), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_2", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_1), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_3", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_2), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_4", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_3), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_5", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_4), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_6", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_5), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_7", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_6), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_8", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_7), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_9", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_8), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_10", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_9), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_11", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_10), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_12", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_11), &cVar8);
-		cVar8 = { Var1 };
-		StringConCat(&cVar8, "_13", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar4 /*13*/].f_12), &cVar8);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_1", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/]), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_2", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_1), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_3", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_2), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_4", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_3), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_5", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_4), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_6", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_5), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_7", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_6), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_8", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_7), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_9", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_8), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_10", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_9), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_11", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_10), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_12", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_11), &cVar32);
+		cVar32 = { Var1 };
+		StringConCat(&cVar32, "_13", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4066[iVar22 /*13*/].f_12), &cVar32);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_4106), 40, "LAST_GOJobGamer");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "LastGJG64_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_1", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/]), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_2", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_1), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_3", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_2), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_4", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_3), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_5", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_4), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_6", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_5), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_7", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_6), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_8", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_7), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_9", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_8), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_10", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_9), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_11", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_10), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_12", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_11), &cVar9);
-		cVar9 = { Var1 };
-		StringConCat(&cVar9, "_13", 16);
-		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar4 /*13*/].f_12), &cVar9);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_1", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/]), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_2", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_1), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_3", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_2), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_4", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_3), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_5", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_4), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_6", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_5), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_7", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_6), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_8", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_7), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_9", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_8), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_10", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_9), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_11", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_10), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_12", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_11), &cVar36);
+		cVar36 = { Var1 };
+		StringConCat(&cVar36, "_13", 16);
+		MISC::_0xA735353C77334EA0(&(uParam0->f_4106[iVar22 /*13*/].f_12), &cVar36);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_4146), 49, "LAST_GOJobGamer_TL");
-	iVar4 = 0;
-	while (iVar4 < 3)
+	iVar22 = 0;
+	while (iVar22 < 3)
 	{
 		StringCopy(&Var1, "LastGJTL_", 16);
-		StringIntConCat(&Var1, iVar4, 16);
-		cVar10 = { Var1 };
-		StringConCat(&cVar10, "_1", 16);
-		MISC::_0xFAA457EF263E8763(&(uParam0->f_4146[iVar4 /*16*/]), &cVar10);
-		iVar4++;
+		StringIntConCat(&Var1, iVar22, 16);
+		cVar40 = { Var1 };
+		StringConCat(&cVar40, "_1", 16);
+		MISC::_0xFAA457EF263E8763(&(uParam0->f_4146[iVar22 /*16*/]), &cVar40);
+		iVar22++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_14(var uParam0, int iParam1)
+void func_14(var uParam0, int iParam1)//Position - 0x24D6
 {
 	func_15(&(uParam0->f_6077), iParam1);
 }
 
-void func_15(var uParam0, int iParam1)
+void func_15(var uParam0, int iParam1)//Position - 0x24E9
 {
 	char cVar0[64];
-	int iVar1;
+	int iVar16;
 	
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_41), 11, "CAR_HIDDEN");
-	iVar1 = 0;
-	while (iVar1 < 10)
+	iVar16 = 0;
+	while (iVar16 < 10)
 	{
 		StringCopy(&cVar0, "CAR_HIDDEN", 64);
-		StringIntConCat(&cVar0, iVar1, 64);
-		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_41[iVar1]), &cVar0);
-		iVar1++;
+		StringIntConCat(&cVar0, iVar16, 64);
+		MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_41[iVar16]), &cVar0);
+		iVar16++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	func_16(uParam0, "CAR_APP_ORDER");
@@ -1162,23 +1162,23 @@ void func_15(var uParam0, int iParam1)
 	StringIntConCat(&cVar0, iParam1, 64);
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_62), &cVar0);
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_63), 11, "SAVED_VEH_SLOT");
-	iVar1 = 0;
-	while (iVar1 < 10)
+	iVar16 = 0;
+	while (iVar16 < 10)
 	{
 		StringCopy(&cVar0, "VEH_SLOT", 64);
-		StringIntConCat(&cVar0, iVar1, 64);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_63[iVar1]), &cVar0);
-		iVar1++;
+		StringIntConCat(&cVar0, iVar16, 64);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_63[iVar16]), &cVar0);
+		iVar16++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::_START_SAVE_ARRAY(&(uParam0->f_74), 11, "SAVED_VEH_PRIO");
-	iVar1 = 0;
-	while (iVar1 < 10)
+	iVar16 = 0;
+	while (iVar16 < 10)
 	{
 		StringCopy(&cVar0, "VEH_PRIO", 64);
-		StringIntConCat(&cVar0, iVar1, 64);
-		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_74[iVar1]), &cVar0);
-		iVar1++;
+		StringIntConCat(&cVar0, iVar16, 64);
+		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_74[iVar16]), &cVar0);
+		iVar16++;
 	}
 	MISC::STOP_SAVE_ARRAY();
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_85), "LAST_USED");
@@ -1186,7 +1186,7 @@ void func_15(var uParam0, int iParam1)
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_87), "SETUP_INIT");
 }
 
-void func_16(var uParam0, char* sParam1)
+void func_16(var uParam0, char* sParam1)//Position - 0x26A2
 {
 	MISC::_START_SAVE_STRUCT(uParam0, 41, sParam1);
 	MISC::REGISTER_ENUM_TO_SAVE(uParam0, "Model");
@@ -1227,7 +1227,7 @@ void func_16(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_17(var uParam0, int iParam1)
+void func_17(var uParam0, int iParam1)//Position - 0x285A
 {
 	vector3 vVar0[24];
 	
@@ -1236,7 +1236,7 @@ void func_17(var uParam0, int iParam1)
 	func_18(&(uParam0->f_5506), &cVar0);
 }
 
-void func_18(var uParam0, char* sParam1)
+void func_18(var uParam0, char* sParam1)//Position - 0x287B
 {
 	int iVar0;
 	char cVar1[16];
@@ -1359,7 +1359,7 @@ void func_18(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_19(var uParam0, int iParam1)
+void func_19(var uParam0, int iParam1)//Position - 0x2C0B
 {
 	vector3 vVar0[24];
 	
@@ -1368,7 +1368,7 @@ void func_19(var uParam0, int iParam1)
 	func_20(&(uParam0->f_5500), &cVar0);
 }
 
-void func_20(var uParam0, char* sParam1)
+void func_20(var uParam0, char* sParam1)//Position - 0x2C2C
 {
 	int iVar0;
 	char cVar1[16];
@@ -1388,7 +1388,7 @@ void func_20(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_21(var uParam0, int iParam1)
+void func_21(var uParam0, int iParam1)//Position - 0x2C8A
 {
 	vector3 vVar0;
 	
@@ -1397,7 +1397,7 @@ void func_21(var uParam0, int iParam1)
 	func_22(uParam0, &vVar0);
 }
 
-void func_22(var uParam0, char* sParam1)
+void func_22(var uParam0, char* sParam1)//Position - 0x2CA8
 {
 	int iVar0;
 	struct<4> Var1;
@@ -1415,7 +1415,7 @@ void func_22(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_23(var uParam0, char* sParam1)
+void func_23(var uParam0, char* sParam1)//Position - 0x2CEF
 {
 	MISC::_START_SAVE_STRUCT(uParam0, 141, sParam1);
 	func_24(uParam0, "VEHICLE_SETUP_STRUCT_MP");
@@ -1431,7 +1431,7 @@ void func_23(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_24(var uParam0, char* sParam1)
+void func_24(var uParam0, char* sParam1)//Position - 0x2D7B
 {
 	func_26(uParam0, "VEHICLE_SETUP_STRUCT");
 	MISC::_START_SAVE_STRUCT(uParam0, 102, sParam1);
@@ -1450,7 +1450,7 @@ void func_24(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_25(var uParam0, char* sParam1)
+void func_25(var uParam0, char* sParam1)//Position - 0x2E2B
 {
 	MISC::_START_SAVE_STRUCT(uParam0, 13, sParam1);
 	MISC::_0xA735353C77334EA0(uParam0, "Data64_1");
@@ -1469,7 +1469,7 @@ void func_25(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_26(var uParam0, char* sParam1)
+void func_26(var uParam0, char* sParam1)//Position - 0x2EDB
 {
 	int iVar0;
 	char cVar1[16];
@@ -1520,7 +1520,7 @@ void func_26(var uParam0, char* sParam1)
 	MISC::STOP_SAVE_STRUCT();
 }
 
-void func_27(float fParam0)
+void func_27(float fParam0)//Position - 0x3077
 {
 	func_36();
 	if (fParam0 == 1f)
@@ -1549,12 +1549,12 @@ void func_27(float fParam0)
 	}
 }
 
-void func_28()
+void func_28()//Position - 0x30D9
 {
 	Global_106565.f_26428.f_4 = 0;
 }
 
-void func_29()
+void func_29()//Position - 0x30EB
 {
 	int iVar0;
 	int iVar1;
@@ -1569,7 +1569,7 @@ void func_29()
 	}
 }
 
-void func_30()
+void func_30()//Position - 0x314A
 {
 	int iVar0;
 	int iVar1;
@@ -1593,7 +1593,7 @@ void func_30()
 	}
 }
 
-void func_31()
+void func_31()//Position - 0x31B9
 {
 	if ((((func_32(54) || func_32(55)) || func_32(56)) || func_32(57)) || func_32(58))
 	{
@@ -1601,7 +1601,7 @@ void func_31()
 	}
 }
 
-int func_32(int iParam0)
+int func_32(int iParam0)//Position - 0x3208
 {
 	if (iParam0 == 94 || iParam0 == -1)
 	{
@@ -1610,11 +1610,11 @@ int func_32(int iParam0)
 	return Global_106565.f_9079.f_330[iParam0 /*6*/];
 }
 
-void func_33()
+void func_33()//Position - 0x3234
 {
 }
 
-void func_34()
+void func_34()//Position - 0x323C
 {
 	if (Global_106565.f_9079.f_99.f_205[7] != 0)
 	{
@@ -1656,27 +1656,27 @@ void func_34()
 	func_35(195, 196);
 }
 
-void func_35(int iParam0, int iParam1)
+void func_35(int iParam0, int iParam1)//Position - 0x335C
 {
 	struct<4> Var0;
-	var uVar1;
-	var uVar2;
-	var uVar3;
 	var uVar4;
 	var uVar5;
 	var uVar6;
 	var uVar7;
 	var uVar8;
+	var uVar9;
+	var uVar10;
+	var uVar11;
 	
 	Var0 = { Global_106565.f_10188[iParam0 /*12*/] };
-	uVar1 = Global_106565.f_10188[iParam0 /*12*/].f_4;
-	uVar2 = Global_106565.f_10188[iParam0 /*12*/].f_5;
-	uVar3 = Global_106565.f_10188[iParam0 /*12*/].f_6;
-	uVar4 = Global_106565.f_10188[iParam0 /*12*/].f_7;
-	uVar5 = Global_106565.f_10188[iParam0 /*12*/].f_8;
-	uVar6 = Global_106565.f_10188[iParam0 /*12*/].f_9;
-	uVar7 = Global_106565.f_10188[iParam0 /*12*/].f_10;
-	uVar8 = Global_106565.f_10188[iParam0 /*12*/].f_11;
+	uVar4 = Global_106565.f_10188[iParam0 /*12*/].f_4;
+	uVar5 = Global_106565.f_10188[iParam0 /*12*/].f_5;
+	uVar6 = Global_106565.f_10188[iParam0 /*12*/].f_6;
+	uVar7 = Global_106565.f_10188[iParam0 /*12*/].f_7;
+	uVar8 = Global_106565.f_10188[iParam0 /*12*/].f_8;
+	uVar9 = Global_106565.f_10188[iParam0 /*12*/].f_9;
+	uVar10 = Global_106565.f_10188[iParam0 /*12*/].f_10;
+	uVar11 = Global_106565.f_10188[iParam0 /*12*/].f_11;
 	Global_106565.f_10188[iParam0 /*12*/] = { Global_106565.f_10188[iParam1 /*12*/] };
 	Global_106565.f_10188[iParam0 /*12*/].f_4 = Global_106565.f_10188[iParam1 /*12*/].f_4;
 	Global_106565.f_10188[iParam0 /*12*/].f_5 = Global_106565.f_10188[iParam1 /*12*/].f_5;
@@ -1687,17 +1687,17 @@ void func_35(int iParam0, int iParam1)
 	Global_106565.f_10188[iParam0 /*12*/].f_10 = Global_106565.f_10188[iParam1 /*12*/].f_10;
 	Global_106565.f_10188[iParam0 /*12*/].f_11 = Global_106565.f_10188[iParam1 /*12*/].f_11;
 	Global_106565.f_10188[iParam1 /*12*/] = { Var0 };
-	Global_106565.f_10188[iParam1 /*12*/].f_4 = uVar1;
-	Global_106565.f_10188[iParam1 /*12*/].f_5 = uVar2;
-	Global_106565.f_10188[iParam1 /*12*/].f_6 = uVar3;
-	Global_106565.f_10188[iParam1 /*12*/].f_7 = uVar4;
-	Global_106565.f_10188[iParam1 /*12*/].f_8 = uVar5;
-	Global_106565.f_10188[iParam1 /*12*/].f_9 = uVar6;
-	Global_106565.f_10188[iParam1 /*12*/].f_10 = uVar7;
-	Global_106565.f_10188[iParam1 /*12*/].f_11 = uVar8;
+	Global_106565.f_10188[iParam1 /*12*/].f_4 = uVar4;
+	Global_106565.f_10188[iParam1 /*12*/].f_5 = uVar5;
+	Global_106565.f_10188[iParam1 /*12*/].f_6 = uVar6;
+	Global_106565.f_10188[iParam1 /*12*/].f_7 = uVar7;
+	Global_106565.f_10188[iParam1 /*12*/].f_8 = uVar8;
+	Global_106565.f_10188[iParam1 /*12*/].f_9 = uVar9;
+	Global_106565.f_10188[iParam1 /*12*/].f_10 = uVar10;
+	Global_106565.f_10188[iParam1 /*12*/].f_11 = uVar11;
 }
 
-void func_36()
+void func_36()//Position - 0x3560
 {
 	int iVar0;
 	
@@ -1715,12 +1715,12 @@ void func_36()
 	}
 }
 
-bool func_37(int iParam0)
+bool func_37(int iParam0)//Position - 0x35AB
 {
 	return iParam0 < 3;
 }
 
-void func_38()
+void func_38()//Position - 0x35B7
 {
 	RENDERING::_0x7E2BD3EF6C205F09("No_Filter", 1);
 	RENDERING::_0x7E2BD3EF6C205F09("phone_cam1", 1);
@@ -1734,7 +1734,7 @@ void func_38()
 	RENDERING::_0x7E2BD3EF6C205F09("phone_cam12", 0);
 }
 
-void func_39(int iParam0, int iParam1)
+void func_39(int iParam0, int iParam1)//Position - 0x3619
 {
 	SCRIPT::REQUEST_SCRIPT_WITH_NAME_HASH(iParam0);
 	while (!SCRIPT::HAS_SCRIPT_WITH_NAME_HASH_LOADED(iParam0))
@@ -1745,7 +1745,7 @@ void func_39(int iParam0, int iParam1)
 	SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH(iParam0, iParam1);
 }
 
-int func_40()
+int func_40()//Position - 0x3648
 {
 	if (((LOADING::_0xEF7D17BC6C85264C() || LOADING::_0xF2CA003F167E21D2()) || NETWORK::_0x88B588B41FF7868E()) || NETWORK::_0x67FC09BC554A75E5())
 	{

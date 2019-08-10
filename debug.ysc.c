@@ -99,7 +99,7 @@
 	var uLocal_97 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_0 = 3;
 	iLocal_3 = 1;

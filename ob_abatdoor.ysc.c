@@ -4,38 +4,38 @@
 	int iLocal_2 = 0;
 	int iLocal_3 = 0;
 	vector3 vLocal_4 = { 0f, 0f, 0f };
-	vector3 vLocal_5 = { 0f, 0f, 0f };
-	int iLocal_6 = 0;
+	vector3 vLocal_7 = { 0f, 0f, 0f };
+	int iScriptParam_0 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	vector3 vVar0;
-	vector3 vVar1;
-	vector3 vVar2;
-	float fVar3;
+	vector3 vVar3;
+	vector3 vVar6;
+	float fVar9;
 	
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
 		func_4();
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_6))
+	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 	{
-		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_6, true);
-		vLocal_4 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_6, true) };
-		vLocal_5 = { ENTITY::GET_ENTITY_ROTATION(iScriptParam_6, 2) };
+		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_0, true);
+		vLocal_4 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_0, true) };
+		vLocal_7 = { ENTITY::GET_ENTITY_ROTATION(iScriptParam_0, 2) };
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_6))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (TASK::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_6))
+			if (TASK::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0))
 			{
 				switch (iLocal_2)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							STREAMING::REQUEST_MODEL(joaat("p_abat_roller_1_col"));
 							if (STREAMING::HAS_MODEL_LOADED(joaat("p_abat_roller_1_col")))
@@ -43,7 +43,7 @@ void __EntryFunction__()
 								if (!func_3(vLocal_4, 0f, 0f, 0f, 0))
 								{
 									iLocal_3 = OBJECT::CREATE_OBJECT(joaat("p_abat_roller_1_col"), vLocal_4, true, true, false);
-									ENTITY::SET_ENTITY_ROTATION(iLocal_3, vLocal_5, 2, 1);
+									ENTITY::SET_ENTITY_ROTATION(iLocal_3, vLocal_7, 2, 1);
 									iLocal_2 = 1;
 								}
 							}
@@ -51,7 +51,7 @@ void __EntryFunction__()
 						break;
 					
 					case 1:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							if (SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
 							{
@@ -65,7 +65,7 @@ void __EntryFunction__()
 						break;
 					
 					case 2:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							if (SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
 							{
@@ -73,7 +73,7 @@ void __EntryFunction__()
 								{
 									if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
 									{
-										ENTITY::PLAY_ENTITY_ANIM(iScriptParam_6, "P_Abat_roller_1_open", "map_objects", 1f, 0, 1, 0, 0f, 0);
+										ENTITY::PLAY_ENTITY_ANIM(iScriptParam_0, "P_Abat_roller_1_open", "map_objects", 1f, 0, 1, 0, 0f, 0);
 										iLocal_2 = 3;
 									}
 								}
@@ -82,15 +82,15 @@ void __EntryFunction__()
 						break;
 					
 					case 3:
-						fVar3 = 0.35f;
+						fVar9 = 0.35f;
 						vVar0 = { vLocal_4 + Vector(3.45f, 0f, 0f) };
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_3))
 						{
-							vVar1 = { ENTITY::GET_ENTITY_COORDS(iLocal_3, true) };
-							if (!func_2(vVar1, vVar0, 0.1f, 0))
+							vVar3 = { ENTITY::GET_ENTITY_COORDS(iLocal_3, true) };
+							if (!func_2(vVar3, vVar0, 0.1f, 0))
 							{
-								vVar2 = { vVar0 - vVar1 };
-								ENTITY::SET_ENTITY_COORDS(iLocal_3, vVar1 + func_1(vVar2) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar3, fVar3, fVar3), 1, false, 0, 1);
+								vVar6 = { vVar0 - vVar3 };
+								ENTITY::SET_ENTITY_COORDS(iLocal_3, vVar3 + func_1(vVar6) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar9, fVar9, fVar9), 1, false, 0, 1);
 							}
 							else
 							{
@@ -116,7 +116,7 @@ void __EntryFunction__()
 	}
 }
 
-Vector3 func_1(vector3 vParam0)
+Vector3 func_1(vector3 vParam0)//Position - 0x1C6
 {
 	float fVar0;
 	float fVar1;
@@ -136,28 +136,28 @@ Vector3 func_1(vector3 vParam0)
 	return vParam0;
 }
 
-int func_2(vector3 vParam0, vector3 vParam1, float fParam2, bool bParam3)
+int func_2(vector3 vParam0, vector3 vParam3, float fParam6, bool bParam7)//Position - 0x205
 {
-	if (fParam2 < 0f)
+	if (fParam6 < 0f)
 	{
-		fParam2 = 0f;
+		fParam6 = 0f;
 	}
-	if (!bParam3)
+	if (!bParam7)
 	{
-		if (MISC::ABSF((vParam0.x - vParam1.x)) <= fParam2)
+		if (MISC::ABSF((vParam0.x - vParam3.x)) <= fParam6)
 		{
-			if (MISC::ABSF((vParam0.y - vParam1.y)) <= fParam2)
+			if (MISC::ABSF((vParam0.y - vParam3.y)) <= fParam6)
 			{
-				if (MISC::ABSF((vParam0.z - vParam1.z)) <= fParam2)
+				if (MISC::ABSF((vParam0.z - vParam3.z)) <= fParam6)
 				{
 					return 1;
 				}
 			}
 		}
 	}
-	else if (MISC::ABSF((vParam0.x - vParam1.x)) <= fParam2)
+	else if (MISC::ABSF((vParam0.x - vParam3.x)) <= fParam6)
 	{
-		if (MISC::ABSF((vParam0.y - vParam1.y)) <= fParam2)
+		if (MISC::ABSF((vParam0.y - vParam3.y)) <= fParam6)
 		{
 			return 1;
 		}
@@ -165,16 +165,16 @@ int func_2(vector3 vParam0, vector3 vParam1, float fParam2, bool bParam3)
 	return 0;
 }
 
-bool func_3(vector3 vParam0, vector3 vParam1, bool bParam2)
+bool func_3(vector3 vParam0, vector3 vParam3, bool bParam6)//Position - 0x280
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (vParam0.x == vParam1.x && vParam0.y == vParam1.y);
+		return (vParam0.x == vParam3.x && vParam0.y == vParam3.y);
 	}
-	return ((vParam0.x == vParam1.x && vParam0.y == vParam1.y) && vParam0.z == vParam1.z);
+	return ((vParam0.x == vParam3.x && vParam0.y == vParam3.y) && vParam0.z == vParam3.z);
 }
 
-void func_4()
+void func_4()//Position - 0x2C7
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_3))
 	{
@@ -185,12 +185,12 @@ void func_4()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_5(char* sParam0)
+void func_5(char* sParam0)//Position - 0x2F2
 {
 	func_6(sParam0);
 }
 
-void func_6(char* sParam0)
+void func_6(char* sParam0)//Position - 0x300
 {
 	if (MISC::ARE_STRINGS_EQUAL(sParam0, sParam0))
 	{

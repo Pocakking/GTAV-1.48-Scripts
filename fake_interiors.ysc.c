@@ -30,11 +30,11 @@
 	int iLocal_28 = 0;
 	int iLocal_29 = 0;
 	vector3 vLocal_30 = { 0f, 0f, 0f };
-	int iLocal_31 = 0;
-	int iLocal_32 = 0;
+	int iLocal_33 = 0;
+	int iLocal_34 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -67,50 +67,50 @@ void __EntryFunction__()
 		}
 		if (func_23(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(func_22()))
 		{
-			iLocal_31 = func_22();
+			iLocal_33 = func_22();
 		}
 		else
 		{
-			iLocal_31 = PLAYER::PLAYER_PED_ID();
+			iLocal_33 = PLAYER::PLAYER_PED_ID();
 		}
-		if (ENTITY::IS_ENTITY_DEAD(iLocal_31, 0))
+		if (ENTITY::IS_ENTITY_DEAD(iLocal_33, 0))
 		{
 		}
 		func_1();
 	}
 }
 
-void func_1()
+void func_1()//Position - 0xB1
 {
 	vector3 vVar0;
-	vector3 vVar1;
-	bool bVar2;
-	int iVar3;
+	vector3 vVar3;
+	bool bVar6;
+	int iVar7;
 	
 	func_21();
 	if (iLocal_29 != -1 && func_20(iLocal_29))
 	{
-		vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
-		vVar1 = { func_19(iLocal_29) };
-		if (SYSTEM::VDIST2(vVar1, vVar0) < IntToFloat(func_18(iLocal_29)))
+		vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
+		vVar3 = { func_19(iLocal_29) };
+		if (SYSTEM::VDIST2(vVar3, vVar0) < IntToFloat(func_18(iLocal_29)))
 		{
-			bVar2 = false;
-			iVar3 = 0;
-			iVar3 = 0;
-			while (iVar3 < func_17(iLocal_29))
+			bVar6 = false;
+			iVar7 = 0;
+			iVar7 = 0;
+			while (iVar7 < func_17(iLocal_29))
 			{
-				if (!bVar2)
+				if (!bVar6)
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_31, func_16(iLocal_29, iVar3), func_15(iLocal_29, iVar3), func_14(iLocal_29, iVar3), 0, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_33, func_16(iLocal_29, iVar7), func_15(iLocal_29, iVar7), func_14(iLocal_29, iVar7), 0, true, 0))
 					{
-						bVar2 = true;
+						bVar6 = true;
 					}
 				}
-				iVar3++;
+				iVar7++;
 			}
-			if (bVar2)
+			if (bVar6)
 			{
-				HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(MISC::GET_HASH_KEY(func_13(iLocal_29)), vVar1.x, vVar1.y, func_12(iLocal_29), func_11(iLocal_29));
+				HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(MISC::GET_HASH_KEY(func_13(iLocal_29)), vVar3.x, vVar3.y, func_12(iLocal_29), func_11(iLocal_29));
 				func_10(iLocal_29);
 			}
 		}
@@ -119,34 +119,34 @@ void func_1()
 	{
 		if (func_2())
 		{
-			if (MISC::IS_BIT_SET(iLocal_32, 1))
+			if (MISC::IS_BIT_SET(iLocal_34, 1))
 			{
-				MISC::CLEAR_BIT(&iLocal_32, 1);
+				MISC::CLEAR_BIT(&iLocal_34, 1);
 			}
 			if (HUD::IS_PAUSE_MENU_ACTIVE())
 			{
-				if (!MISC::IS_BIT_SET(iLocal_32, 0))
+				if (!MISC::IS_BIT_SET(iLocal_34, 0))
 				{
 					HUD::SET_MINIMAP_COMPONENT(15, 1, -1);
-					MISC::SET_BIT(&iLocal_32, 0);
+					MISC::SET_BIT(&iLocal_34, 0);
 				}
 			}
-			else if (MISC::IS_BIT_SET(iLocal_32, 0))
+			else if (MISC::IS_BIT_SET(iLocal_34, 0))
 			{
 				HUD::SET_MINIMAP_COMPONENT(15, 0, -1);
-				MISC::CLEAR_BIT(&iLocal_32, 0);
+				MISC::CLEAR_BIT(&iLocal_34, 0);
 			}
 		}
-		else if (!MISC::IS_BIT_SET(iLocal_32, 1))
+		else if (!MISC::IS_BIT_SET(iLocal_34, 1))
 		{
 			HUD::SET_MINIMAP_COMPONENT(15, 0, -1);
-			MISC::CLEAR_BIT(&iLocal_32, 0);
-			MISC::SET_BIT(&iLocal_32, 1);
+			MISC::CLEAR_BIT(&iLocal_34, 0);
+			MISC::SET_BIT(&iLocal_34, 1);
 		}
 	}
 }
 
-int func_2()
+int func_2()//Position - 0x1F3
 {
 	int iVar0;
 	
@@ -168,17 +168,17 @@ int func_2()
 	return 0;
 }
 
-int func_3()
+int func_3()//Position - 0x233
 {
 	return -1;
 }
 
-var func_4()
+var func_4()//Position - 0x23C
 {
 	return Global_1626536[PLAYER::PLAYER_ID() /*603*/].f_11;
 }
 
-bool func_5(int iParam0, bool bParam1)
+bool func_5(int iParam0, bool bParam1)//Position - 0x251
 {
 	if (!bParam1)
 	{
@@ -190,7 +190,7 @@ bool func_5(int iParam0, bool bParam1)
 	return Global_1626536[iParam0 /*603*/].f_11 != func_3();
 }
 
-int func_6(int iParam0)
+int func_6(int iParam0)//Position - 0x27C
 {
 	if (iParam0 != func_3())
 	{
@@ -202,7 +202,7 @@ int func_6(int iParam0)
 	return 0;
 }
 
-int func_7(int iParam0)
+int func_7(int iParam0)//Position - 0x2B1
 {
 	int iVar0;
 	
@@ -217,7 +217,7 @@ int func_7(int iParam0)
 	return 0;
 }
 
-int func_8(int iParam0)
+int func_8(int iParam0)//Position - 0x2EA
 {
 	if (iParam0 != func_3())
 	{
@@ -226,7 +226,7 @@ int func_8(int iParam0)
 	return 0;
 }
 
-int func_9(int iParam0)
+int func_9(int iParam0)//Position - 0x30E
 {
 	if (iParam0 != func_3())
 	{
@@ -235,11 +235,11 @@ int func_9(int iParam0)
 	return 0;
 }
 
-void func_10(int iParam0)
+void func_10(int iParam0)//Position - 0x334
 {
 	vector3 vVar0;
 	
-	vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+	vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 	HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(vVar0.x, vVar0.y);
 	switch (iParam0)
 	{
@@ -250,7 +250,7 @@ void func_10(int iParam0)
 			break;
 		
 		case 2:
-			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(vVar0.x, vVar0.y);
 			break;
 		
@@ -264,7 +264,7 @@ void func_10(int iParam0)
 	}
 }
 
-int func_11(int iParam0)
+int func_11(int iParam0)//Position - 0x3A2
 {
 	vector3 vVar0;
 	
@@ -275,7 +275,7 @@ int func_11(int iParam0)
 			break;
 		
 		case 1:
-			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (vVar0.z < 9.7796f)
 			{
 				return 0;
@@ -291,7 +291,7 @@ int func_11(int iParam0)
 			break;
 		
 		case 2:
-			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (vVar0.z < 178.9f)
 			{
 				return 0;
@@ -317,7 +317,7 @@ int func_11(int iParam0)
 	return 0;
 }
 
-int func_12(int iParam0)
+int func_12(int iParam0)//Position - 0x477
 {
 	switch (iParam0)
 	{
@@ -344,7 +344,7 @@ int func_12(int iParam0)
 	return 0;
 }
 
-char* func_13(int iParam0)
+char* func_13(int iParam0)//Position - 0x4C8
 {
 	switch (iParam0)
 	{
@@ -371,7 +371,7 @@ char* func_13(int iParam0)
 	return "";
 }
 
-float func_14(int iParam0, int iParam1)
+float func_14(int iParam0, int iParam1)//Position - 0x524
 {
 	switch (iParam0)
 	{
@@ -475,7 +475,7 @@ float func_14(int iParam0, int iParam1)
 	return 0f;
 }
 
-Vector3 func_15(int iParam0, int iParam1)
+Vector3 func_15(int iParam0, int iParam1)//Position - 0x6B6
 {
 	switch (iParam0)
 	{
@@ -579,7 +579,7 @@ Vector3 func_15(int iParam0, int iParam1)
 	return vLocal_30;
 }
 
-Vector3 func_16(int iParam0, int iParam1)
+Vector3 func_16(int iParam0, int iParam1)//Position - 0x8FF
 {
 	switch (iParam0)
 	{
@@ -683,7 +683,7 @@ Vector3 func_16(int iParam0, int iParam1)
 	return vLocal_30;
 }
 
-int func_17(int iParam0)
+int func_17(int iParam0)//Position - 0xB48
 {
 	switch (iParam0)
 	{
@@ -710,7 +710,7 @@ int func_17(int iParam0)
 	return 0;
 }
 
-int func_18(int iParam0)
+int func_18(int iParam0)//Position - 0xB9A
 {
 	switch (iParam0)
 	{
@@ -737,7 +737,7 @@ int func_18(int iParam0)
 	return 0;
 }
 
-Vector3 func_19(int iParam0)
+Vector3 func_19(int iParam0)//Position - 0xBF8
 {
 	switch (iParam0)
 	{
@@ -764,7 +764,7 @@ Vector3 func_19(int iParam0)
 	return vLocal_30;
 }
 
-int func_20(int iParam0)
+int func_20(int iParam0)//Position - 0xC92
 {
 	switch (iParam0)
 	{
@@ -786,7 +786,7 @@ int func_20(int iParam0)
 	return 1;
 }
 
-void func_21()
+void func_21()//Position - 0xCCF
 {
 	vector3 vVar0;
 	
@@ -803,7 +803,7 @@ void func_21()
 		}
 		else
 		{
-			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			vVar0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (SYSTEM::VDIST2(func_19(iLocal_28), vVar0) < SYSTEM::VDIST2(func_19(iLocal_29), vVar0))
 			{
 				iLocal_29 = iLocal_28;
@@ -812,12 +812,12 @@ void func_21()
 	}
 }
 
-var func_22()
+var func_22()//Position - 0xD29
 {
 	return Global_2359302.f_2;
 }
 
-int func_23(int iParam0)
+int func_23(int iParam0)//Position - 0xD37
 {
 	if (func_25(iParam0, 0))
 	{
@@ -837,12 +837,12 @@ int func_23(int iParam0)
 	return 0;
 }
 
-bool func_24()
+bool func_24()//Position - 0xD79
 {
 	return MISC::IS_BIT_SET(Global_2359302, 3);
 }
 
-bool func_25(int iParam0, int iParam1)
+bool func_25(int iParam0, int iParam1)//Position - 0xD8A
 {
 	bool bVar0;
 	
@@ -864,7 +864,7 @@ bool func_25(int iParam0, int iParam1)
 	return bVar0;
 }
 
-int func_26(int iParam0, bool bParam1)
+int func_26(int iParam0, bool bParam1)//Position - 0xDD5
 {
 	int iVar0;
 	int iVar1;
@@ -891,7 +891,7 @@ int func_26(int iParam0, bool bParam1)
 	return iVar0;
 }
 
-int func_27()
+int func_27()//Position - 0xE16
 {
 	return Global_1312745;
 }

@@ -3,7 +3,7 @@
 	int iLocal_1 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	
@@ -118,7 +118,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(float fParam0, float fParam1, char* sParam2, int iParam3)
+void func_1(float fParam0, float fParam1, char* sParam2, int iParam3)//Position - 0x2F8
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
 	HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fParam0, fParam1, iParam3);

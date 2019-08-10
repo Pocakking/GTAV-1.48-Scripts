@@ -49,10 +49,10 @@
 	int iLocal_47 = 0;
 	int iLocal_48 = 0;
 	vector3 vLocal_49 = { 0f, 0f, 0f };
-	vector3 vLocal_50 = { 0f, 0f, 0f };
+	vector3 vLocal_52 = { 0f, 0f, 0f };
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -77,7 +77,7 @@ void __EntryFunction__()
 	sLocal_44 = "RCMBarryLeadInOut";
 	sLocal_45 = "idle";
 	vLocal_49 = { 189.5964f, -956.0344f, 29.5771f };
-	vLocal_50 = { 190.2424f, -956.379f, 28.63f };
+	vLocal_52 = { 190.2424f, -956.379f, 28.63f };
 	PAD::DISABLE_CONTROL_ACTION(0, 26, 1);
 	if (func_24(PLAYER::PLAYER_PED_ID()))
 	{
@@ -102,7 +102,7 @@ void __EntryFunction__()
 	iLocal_46 = MISC::GET_GAME_TIMER() + 13000;
 	iLocal_47 = MISC::GET_RANDOM_INT_IN_RANGE(0, 5);
 	func_18();
-	while (!func_13(&iLocal_43, 49, vLocal_50, func_17(1.12f), 0))
+	while (!func_13(&iLocal_43, 49, vLocal_52, func_17(1.12f), 0))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, 26, 1);
 		SYSTEM::WAIT(0);
@@ -126,7 +126,7 @@ void __EntryFunction__()
 		if (func_3())
 		{
 		}
-		if (func_2(PLAYER::PLAYER_PED_ID(), vLocal_50, 1) > 70f)
+		if (func_2(PLAYER::PLAYER_PED_ID(), vLocal_52, 1) > 70f)
 		{
 			func_1(&iLocal_40, 0);
 			func_1(&iLocal_41, 0);
@@ -137,7 +137,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(int iParam0, bool bParam1)
+void func_1(int iParam0, bool bParam1)//Position - 0x1D9
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -156,7 +156,7 @@ void func_1(int iParam0, bool bParam1)
 	}
 }
 
-float func_2(int iParam0, vector3 vParam1, bool bParam2)
+float func_2(int iParam0, vector3 vParam1, bool bParam4)//Position - 0x214
 {
 	vector3 vVar0;
 	
@@ -168,10 +168,10 @@ float func_2(int iParam0, vector3 vParam1, bool bParam2)
 	{
 		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, false) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(vVar0, vParam1, bParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(vVar0, vParam1, bParam4);
 }
 
-int func_3()
+int func_3()//Position - 0x24E
 {
 	var uVar0;
 	
@@ -186,7 +186,7 @@ int func_3()
 	return 0;
 }
 
-void func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5)
+void func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5)//Position - 0x2DE
 {
 	func_5(uParam0, 145, sParam1, iParam4, iParam5, 0);
 	if (iParam3 > 7)
@@ -201,7 +201,7 @@ void func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4,
 	StringCopy(&Global_15856, sParam2, 24);
 }
 
-void func_5(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5)
+void func_5(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5)//Position - 0x319
 {
 	Global_15320 = { *uParam0 };
 	Global_1739 = iParam1;
@@ -229,7 +229,7 @@ void func_5(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, i
 	}
 }
 
-char* func_6()
+char* func_6()//Position - 0x36F
 {
 	char* sVar0;
 	
@@ -263,7 +263,7 @@ char* func_6()
 	return sVar0;
 }
 
-void func_7(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)
+void func_7(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)//Position - 0x3D5
 {
 	if ((uParam0[iParam1 /*10*/])->f_7 == 1)
 	{
@@ -300,10 +300,10 @@ void func_7(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, i
 	}
 }
 
-float func_8(int iParam0, int iParam1, bool bParam2)
+float func_8(int iParam0, int iParam1, bool bParam2)//Position - 0x470
 {
 	vector3 vVar0;
-	vector3 vVar1;
+	vector3 vVar3;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, 0))
 	{
@@ -315,16 +315,16 @@ float func_8(int iParam0, int iParam1, bool bParam2)
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, 0))
 	{
-		vVar1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		vVar3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 	}
 	else
 	{
-		vVar1 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
+		vVar3 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(vVar0, vVar1, bParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(vVar0, vVar3, bParam2);
 }
 
-int func_9()
+int func_9()//Position - 0x4CE
 {
 	if (Global_15866 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
@@ -333,7 +333,7 @@ int func_9()
 	return 0;
 }
 
-int func_10(int iParam0)
+int func_10(int iParam0)//Position - 0x4F0
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -345,9 +345,9 @@ int func_10(int iParam0)
 	return 0;
 }
 
-void func_11()
+void func_11()//Position - 0x511
 {
-	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, vLocal_50, 5f))
+	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, vLocal_52, 5f))
 	{
 		if (func_10(iLocal_43))
 		{
@@ -365,7 +365,7 @@ void func_11()
 	}
 }
 
-void func_12()
+void func_12()//Position - 0x561
 {
 	if (func_10(iLocal_43))
 	{
@@ -381,7 +381,7 @@ void func_12()
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_43, 1862763509);
 		ENTITY::SET_ENTITY_COLLISION(iLocal_43, false, 0);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_43, true);
-		ENTITY::SET_ENTITY_COORDS(iLocal_43, vLocal_50, 1, false, 0, 1);
+		ENTITY::SET_ENTITY_COORDS(iLocal_43, vLocal_52, 1, false, 0, 1);
 		ENTITY::SET_ENTITY_HEADING(iLocal_43, func_17(1.12f));
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_43, true);
 		BRAIN::TASK_PLAY_ANIM(iLocal_43, sLocal_44, sLocal_45, 8f, -8f, -1, 9, 0, 0, 0, 0);
@@ -389,7 +389,7 @@ void func_12()
 	}
 }
 
-int func_13(int iParam0, int iParam1, vector3 vParam2, float fParam3, bool bParam4)
+int func_13(int iParam0, int iParam1, vector3 vParam2, float fParam5, bool bParam6)//Position - 0x612
 {
 	int iVar0;
 	
@@ -403,7 +403,7 @@ int func_13(int iParam0, int iParam1, vector3 vParam2, float fParam3, bool bPara
 			{
 				PED::DELETE_PED(iParam0);
 			}
-			*iParam0 = PED::CREATE_PED(26, iVar0, vParam2, fParam3, 0, false);
+			*iParam0 = PED::CREATE_PED(26, iVar0, vParam2, fParam5, 0, false);
 			PED::SET_PED_DEFAULT_COMPONENT_VARIATION(*iParam0);
 			if (iVar0 == joaat("ig_lamardavis"))
 			{
@@ -413,7 +413,7 @@ int func_13(int iParam0, int iParam1, vector3 vParam2, float fParam3, bool bPara
 				}
 			}
 			func_14(*iParam0, iParam1);
-			if (bParam4)
+			if (bParam6)
 			{
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar0);
 			}
@@ -423,7 +423,7 @@ int func_13(int iParam0, int iParam1, vector3 vParam2, float fParam3, bool bPara
 	return 0;
 }
 
-int func_14(var uParam0, int iParam1)
+int func_14(var uParam0, int iParam1)//Position - 0x6A0
 {
 	int iVar0;
 	
@@ -449,7 +449,7 @@ int func_14(var uParam0, int iParam1)
 	return 1;
 }
 
-int func_15(int iParam0)
+int func_15(int iParam0)//Position - 0x6E6
 {
 	if (!func_16(iParam0))
 	{
@@ -461,17 +461,17 @@ int func_15(int iParam0)
 	return 0;
 }
 
-bool func_16(int iParam0)
+bool func_16(int iParam0)//Position - 0x711
 {
 	return iParam0 < 3;
 }
 
-float func_17(float fParam0)
+float func_17(float fParam0)//Position - 0x71D
 {
 	return (fParam0 * 57.29578f);
 }
 
-void func_18()
+void func_18()//Position - 0x72D
 {
 	if (OBJECT::DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS(190.56f, -956.4f, 28.63f, 20f, joaat("prop_protest_table_01"), 0))
 	{
@@ -534,14 +534,14 @@ void func_18()
 	}
 }
 
-void func_19(int iParam0, int iParam1, vector3 vParam2, float fParam3)
+void func_19(int iParam0, int iParam1, vector3 vParam2, float fParam5)//Position - 0x95E
 {
 	func_20(iParam0);
 	*iParam0 = OBJECT::CREATE_OBJECT(iParam1, vParam2, true, true, false);
-	ENTITY::SET_ENTITY_HEADING(*iParam0, fParam3);
+	ENTITY::SET_ENTITY_HEADING(*iParam0, fParam5);
 }
 
-void func_20(int iParam0)
+void func_20(int iParam0)//Position - 0x985
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -553,7 +553,7 @@ void func_20(int iParam0)
 	}
 }
 
-void func_21(bool bParam0)
+void func_21(bool bParam0)//Position - 0x9B0
 {
 	if (bParam0)
 	{
@@ -588,7 +588,7 @@ void func_21(bool bParam0)
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_22(int iParam0, bool bParam1, int iParam2, int iParam3)
+void func_22(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0xA2E
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -609,7 +609,7 @@ void func_22(int iParam0, bool bParam1, int iParam2, int iParam3)
 	}
 }
 
-void func_23(int iParam0)
+void func_23(int iParam0)//Position - 0xA7E
 {
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -625,7 +625,7 @@ void func_23(int iParam0)
 	}
 }
 
-bool func_24(int iParam0)
+bool func_24(int iParam0)//Position - 0xABF
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{

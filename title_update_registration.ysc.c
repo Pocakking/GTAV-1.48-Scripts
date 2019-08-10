@@ -1,4 +1,4 @@
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	Global_2359298 = 1;
 	Global_2359300 = 1;

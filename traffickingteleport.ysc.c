@@ -46,7 +46,7 @@
 	var uLocal_44 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	
@@ -83,7 +83,7 @@ void __EntryFunction__()
 	func_1(19, 0);
 }
 
-void func_1(int iParam0, int iParam1)
+void func_1(int iParam0, int iParam1)//Position - 0xB1
 {
 	if (iParam0 == 235 || iParam0 == 0)
 	{

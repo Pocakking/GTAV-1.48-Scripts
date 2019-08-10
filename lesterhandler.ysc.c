@@ -222,11 +222,11 @@
 	var uScriptParam_0 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	vector3 vVar0;
-	vector3 vVar1;
-	float fVar2;
+	vector3 vVar3;
+	float fVar6;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -260,7 +260,7 @@ void __EntryFunction__()
 	{
 		func_24();
 	}
-	iLocal_46 = uScriptParam_220;
+	iLocal_46 = uScriptParam_0;
 	STREAMING::REQUEST_ANIM_DICT("MISSHEIST_JEWEL@HACKING");
 	STREAMING::REQUEST_MODEL(joaat("prop_cs_walking_stick"));
 	STREAMING::REQUEST_MODEL(joaat("prop_laptop_lester2"));
@@ -308,10 +308,10 @@ void __EntryFunction__()
 					PED::SET_PED_CONFIG_FLAG(iLocal_46, 169, true);
 					ENTITY::SET_ENTITY_PROOFS(iLocal_46, true, true, true, true, true, false, 0, false);
 					vVar0 = { 707.32f, -966.83f, 30.413f };
-					vVar1 = { 0f, 0f, -171.5f };
+					vVar3 = { 0f, 0f, -171.5f };
 					BRAIN::OPEN_SEQUENCE_TASK(&iLocal_49);
-					BRAIN::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_INTRO", vVar0, vVar1, 8f, -8f, -1, 262152, 0, 2, 0);
-					BRAIN::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_LOOP", vVar0, vVar1, 8f, -8f, -1, 262153, 0, 2, 0);
+					BRAIN::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_INTRO", vVar0, vVar3, 8f, -8f, -1, 262152, 0, 2, 0);
+					BRAIN::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_LOOP", vVar0, vVar3, 8f, -8f, -1, 262153, 0, 2, 0);
 					BRAIN::CLOSE_SEQUENCE_TASK(iLocal_49);
 					BRAIN::TASK_PERFORM_SEQUENCE(iLocal_46, iLocal_49);
 					PED::_0x2208438012482A1A(iLocal_46, 0, 0);
@@ -339,10 +339,10 @@ void __EntryFunction__()
 		{
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_46, 0))
 			{
-				fVar2 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_46, true));
+				fVar6 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_46, true));
 				if (func_17() == 0)
 				{
-					if (fVar2 < 4f)
+					if (fVar6 < 4f)
 					{
 						if (MISC::GET_GAME_TIMER() > iLocal_217)
 						{
@@ -367,7 +367,7 @@ void __EntryFunction__()
 					}
 				}
 				func_1();
-				if (fVar2 > 2500f)
+				if (fVar6 > 2500f)
 				{
 					MISC::SET_BIT(&iLocal_216, 1);
 				}
@@ -378,7 +378,7 @@ void __EntryFunction__()
 	func_24();
 }
 
-void func_1()
+void func_1()//Position - 0x452
 {
 	if (func_2())
 	{
@@ -391,7 +391,7 @@ void func_1()
 	}
 }
 
-int func_2()
+int func_2()//Position - 0x499
 {
 	iLocal_219 = unk_0x67D02A194A2FC2BD("JHPB_02_Laptop");
 	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_219))
@@ -401,7 +401,7 @@ int func_2()
 	return 0;
 }
 
-void func_3(int iParam0, bool bParam1)
+void func_3(int iParam0, bool bParam1)//Position - 0x4B8
 {
 	int iVar0;
 	
@@ -431,7 +431,7 @@ void func_3(int iParam0, bool bParam1)
 	}
 }
 
-bool func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+bool func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x51D
 {
 	func_15(uParam0, 145, sParam1, iParam4, iParam5, iParam6);
 	if (iParam3 > 7)
@@ -451,7 +451,7 @@ bool func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4,
 	return func_5(sParam2, iParam3, 0);
 }
 
-int func_5(char* sParam0, int iParam1, bool bParam2)
+int func_5(char* sParam0, int iParam1, bool bParam2)//Position - 0x56B
 {
 	Global_15867 = 0;
 	if (Global_15866 == 0 || Global_15868 == 2)
@@ -639,7 +639,7 @@ int func_5(char* sParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-void func_6()
+void func_6()//Position - 0x837
 {
 	int iVar0;
 	
@@ -653,7 +653,7 @@ void func_6()
 	Global_15866 = 1;
 }
 
-void func_7()
+void func_7()//Position - 0x868
 {
 	Global_15919 = Global_15918;
 	Global_15913 = Global_15914;
@@ -676,7 +676,7 @@ void func_7()
 	MISC::CLEAR_BIT(&Global_2424, 16);
 }
 
-int func_8()
+int func_8()//Position - 0x8FD
 {
 	if (Global_14553.f_1 == 1 || Global_14553.f_1 == 0)
 	{
@@ -685,7 +685,7 @@ int func_8()
 	return 0;
 }
 
-int func_9()
+int func_9()//Position - 0x924
 {
 	int iVar0;
 	int iVar1;
@@ -724,7 +724,7 @@ int func_9()
 	return 1;
 }
 
-void func_10()
+void func_10()//Position - 0x9BD
 {
 	if (func_11(14))
 	{
@@ -766,12 +766,12 @@ void func_10()
 	}
 }
 
-bool func_11(int iParam0)
+bool func_11(int iParam0)//Position - 0xA5F
 {
 	return Global_36425 == iParam0;
 }
 
-void func_12()
+void func_12()//Position - 0xA6D
 {
 	int iVar0;
 	
@@ -788,7 +788,7 @@ void func_12()
 	Global_15155.f_162 = { 0f, 0f, 0f };
 }
 
-bool func_13(int iParam0, int iParam1)
+bool func_13(int iParam0, int iParam1)//Position - 0xAC4
 {
 	switch (iParam0)
 	{
@@ -802,7 +802,7 @@ bool func_13(int iParam0, int iParam1)
 	return MISC::IS_BIT_SET(Global_1371947.f_1048, iParam0);
 }
 
-void func_14()
+void func_14()//Position - 0xAFF
 {
 	AUDIO::RESTART_SCRIPTED_CONVERSATION();
 	Global_16877 = 0;
@@ -821,7 +821,7 @@ void func_14()
 	}
 }
 
-void func_15(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, var uParam5)
+void func_15(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, var uParam5)//Position - 0xB56
 {
 	Global_15320 = { *uParam0 };
 	Global_1739 = iParam1;
@@ -849,7 +849,7 @@ void func_15(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	}
 }
 
-int func_16()
+int func_16()//Position - 0xBAC
 {
 	if (Global_15866 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
@@ -858,13 +858,13 @@ int func_16()
 	return 0;
 }
 
-int func_17()
+int func_17()//Position - 0xBCE
 {
 	func_18();
 	return Global_106565.f_2357.f_539.f_4321;
 }
 
-void func_18()
+void func_18()//Position - 0xBE7
 {
 	int iVar0;
 	
@@ -896,12 +896,12 @@ void func_18()
 	Global_106565.f_2357.f_539.f_4321 = 145;
 }
 
-bool func_19(int iParam0)
+bool func_19(int iParam0)//Position - 0xCE4
 {
 	return iParam0 < 3;
 }
 
-int func_20(int iParam0)
+int func_20(int iParam0)//Position - 0xCF0
 {
 	int iVar0;
 	int iVar1;
@@ -922,7 +922,7 @@ int func_20(int iParam0)
 	return 145;
 }
 
-int func_21(int iParam0)
+int func_21(int iParam0)//Position - 0xD2D
 {
 	if (func_19(iParam0))
 	{
@@ -934,7 +934,7 @@ int func_21(int iParam0)
 	return 0;
 }
 
-void func_22(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)
+void func_22(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)//Position - 0xD57
 {
 	if ((uParam0[iParam1 /*10*/])->f_7 == 1)
 	{
@@ -971,7 +971,7 @@ void func_22(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 }
 
-bool func_23(bool bParam0)
+bool func_23(bool bParam0)//Position - 0xDF2
 {
 	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
 	{
@@ -980,7 +980,7 @@ bool func_23(bool bParam0)
 	return MISC::IS_BIT_SET(Global_71838, 0);
 }
 
-void func_24()
+void func_24()//Position - 0xE1D
 {
 	ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_46);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("prop_cs_walking_stick"));
@@ -996,13 +996,13 @@ void func_24()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_25()
+void func_25()//Position - 0xE87
 {
 	func_26();
 	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_219);
 }
 
-void func_26()
+void func_26()//Position - 0xE99
 {
 	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("tvscreen"))
 	{

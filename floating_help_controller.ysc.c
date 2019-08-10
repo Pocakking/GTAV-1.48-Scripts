@@ -1,4 +1,4 @@
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	while (true)
@@ -8,7 +8,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x1C
 {
 	int iVar0;
 	int iVar1;
@@ -76,7 +76,7 @@ void func_1()
 	}
 }
 
-void func_2(int iParam0)
+void func_2(int iParam0)//Position - 0x20A
 {
 	Global_105217[iParam0 /*28*/].f_21 = 0;
 	StringCopy(&(Global_105217[iParam0 /*28*/]), "", 16);
@@ -88,7 +88,7 @@ void func_2(int iParam0)
 	Global_105217[iParam0 /*28*/].f_22 = 0;
 }
 
-int func_3(int iParam0)
+int func_3(int iParam0)//Position - 0x272
 {
 	int iVar0;
 	
@@ -118,27 +118,27 @@ int func_3(int iParam0)
 	return 0;
 }
 
-int func_4(int iParam0, char* sParam1)
+int func_4(int iParam0, char* sParam1)//Position - 0x34E
 {
 	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam1);
 	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED((1 + iParam0));
 }
 
-int func_5(int iParam0, char* sParam1, int iParam2)
+int func_5(int iParam0, char* sParam1, int iParam2)//Position - 0x364
 {
 	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam1);
 	HUD::ADD_TEXT_COMPONENT_INTEGER(iParam2);
 	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED((1 + iParam0));
 }
 
-int func_6(int iParam0, char* sParam1, int iParam2)
+int func_6(int iParam0, char* sParam1, int iParam2)//Position - 0x380
 {
 	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam1);
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(iParam2);
 	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED((1 + iParam0));
 }
 
-int func_7(int iParam0, char* sParam1, int iParam2, int iParam3)
+int func_7(int iParam0, char* sParam1, int iParam2, int iParam3)//Position - 0x39C
 {
 	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam1);
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(iParam2);

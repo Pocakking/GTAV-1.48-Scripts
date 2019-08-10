@@ -34,7 +34,7 @@
 	int iLocal_32 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -128,7 +128,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(var uParam0, int iParam1)
+int func_1(var uParam0, int iParam1)//Position - 0x18E
 {
 	int iVar0;
 	
@@ -140,12 +140,12 @@ int func_1(var uParam0, int iParam1)
 	return 0;
 }
 
-void func_2()
+void func_2()//Position - 0x1AC
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-int func_3(int iParam0)
+int func_3(int iParam0)//Position - 0x1B8
 {
 	int iVar0;
 	int iVar1;
@@ -168,7 +168,7 @@ int func_3(int iParam0)
 	return 0;
 }
 
-int func_4(int iParam0)
+int func_4(int iParam0)//Position - 0x212
 {
 	int iVar0;
 	int iVar1;

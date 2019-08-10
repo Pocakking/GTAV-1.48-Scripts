@@ -50,7 +50,7 @@
 	int iLocal_48 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -90,7 +90,7 @@ void __EntryFunction__()
 	func_10();
 }
 
-void func_1()
+void func_1()//Position - 0xA4
 {
 	switch (iLocal_48)
 	{
@@ -143,12 +143,12 @@ void func_1()
 	}
 }
 
-void func_2(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8)
+void func_2(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8)//Position - 0x19C
 {
 	func_3(sParam0, "", iParam1, iParam2, iParam3, iParam4, iParam5, iParam6, iParam7, iParam8);
 }
 
-void func_3(char* sParam0, char* sParam1, var uParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, var uParam9)
+void func_3(char* sParam0, char* sParam1, var uParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, var uParam9)//Position - 0x1BD
 {
 	int iVar0;
 	
@@ -213,7 +213,7 @@ void func_3(char* sParam0, char* sParam1, var uParam2, int iParam3, int iParam4,
 	}
 }
 
-void func_4()
+void func_4()//Position - 0x390
 {
 	int iVar0;
 	
@@ -251,7 +251,7 @@ void func_4()
 	}
 }
 
-int func_5(char* sParam0)
+int func_5(char* sParam0)//Position - 0x4B0
 {
 	if (MISC::ARE_STRINGS_EQUAL(sParam0, &Global_105208))
 	{
@@ -264,7 +264,7 @@ int func_5(char* sParam0)
 	return 2;
 }
 
-int func_6(char* sParam0)
+int func_6(char* sParam0)//Position - 0x4D7
 {
 	int iVar0;
 	
@@ -280,7 +280,7 @@ int func_6(char* sParam0)
 	return 0;
 }
 
-int func_7()
+int func_7()//Position - 0x512
 {
 	if (Global_71850)
 	{
@@ -293,12 +293,12 @@ int func_7()
 	return 0;
 }
 
-bool func_8()
+bool func_8()//Position - 0x53C
 {
 	return Global_93721.f_1;
 }
 
-int func_9(int iParam0)
+int func_9(int iParam0)//Position - 0x54A
 {
 	if (iParam0 == 94 || iParam0 == -1)
 	{
@@ -307,7 +307,7 @@ int func_9(int iParam0)
 	return Global_106565.f_9079.f_330[iParam0 /*6*/];
 }
 
-void func_10()
+void func_10()//Position - 0x576
 {
 	if (func_6("AM_H_TAXI1"))
 	{
@@ -320,7 +320,7 @@ void func_10()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_11(char* sParam0, int iParam1)
+void func_11(char* sParam0, int iParam1)//Position - 0x5A6
 {
 	int iVar0;
 	int iVar1;
@@ -352,7 +352,7 @@ void func_11(char* sParam0, int iParam1)
 	}
 }
 
-void func_12(int iParam0)
+void func_12(int iParam0)//Position - 0x653
 {
 	StringCopy(&(Global_106565.f_20404[iParam0 /*16*/]), "", 16);
 	StringCopy(&(Global_106565.f_20404[iParam0 /*16*/].f_4), "", 16);
@@ -366,7 +366,7 @@ void func_12(int iParam0)
 	Global_106565.f_20404[iParam0 /*16*/].f_15 = 0;
 }
 
-void func_13(int iParam0, int iParam1)
+void func_13(int iParam0, int iParam1)//Position - 0x6ED
 {
 	Global_106565.f_20404[iParam0 /*16*/] = { Global_106565.f_20404[iParam1 /*16*/] };
 	Global_106565.f_20404[iParam0 /*16*/].f_4 = { Global_106565.f_20404[iParam1 /*16*/].f_4 };
@@ -380,7 +380,7 @@ void func_13(int iParam0, int iParam1)
 	Global_106565.f_20404[iParam0 /*16*/].f_15 = Global_106565.f_20404[iParam1 /*16*/].f_15;
 }
 
-int func_14(char* sParam0)
+int func_14(char* sParam0)//Position - 0x7FD
 {
 	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam0);
 	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0);

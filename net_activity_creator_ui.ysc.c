@@ -98,7 +98,7 @@
 	var uScriptParam_0 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -124,6 +124,6 @@ void __EntryFunction__()
 	iLocal_40 = 65;
 	iLocal_41 = 49;
 	iLocal_42 = 64;
-	uScriptParam_96 = uScriptParam_96;
+	uScriptParam_0 = uScriptParam_0;
 }
 

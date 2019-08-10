@@ -1,4 +1,4 @@
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	if (CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -14,7 +14,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x2F
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

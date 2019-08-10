@@ -29,7 +29,7 @@
 	int iLocal_27 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -67,7 +67,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x7E
 {
 	func_2(iLocal_27, 27, 89936853, &(Global_289559[1]), 1);
 	func_2(iLocal_27, 27, -1970708947, &(Global_289559[2]), 1);
@@ -8071,7 +8071,7 @@ void func_1()
 	func_2(iLocal_27, 27, -111778767, &(Global_289559[8000]), 1);
 }
 
-void func_2(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
+void func_2(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)//Position - 0x2CE32
 {
 	func_3(0, iParam2, uParam3, bParam4);
 	if (iParam0 == 0)
@@ -8294,7 +8294,7 @@ void func_2(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
 	}
 }
 
-void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)
+void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x2D251
 {
 	int iVar0;
 	var uVar1;
@@ -8318,7 +8318,7 @@ void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)
 	}
 }
 
-int func_4(int iParam0)
+int func_4(int iParam0)//Position - 0x2D294
 {
 	char cVar0[64];
 	
@@ -8448,7 +8448,7 @@ int func_4(int iParam0)
 	return 0;
 }
 
-void func_5()
+void func_5()//Position - 0x2D4A3
 {
 	Global_289559[1] = 0;
 	Global_289559[2] = 800;

@@ -17,10 +17,10 @@
 	int iLocal_15 = 0;
 	float fLocal_16 = 0f;
 	float fLocal_17[8] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_18 = 0f;
+	float fLocal_26 = 0f;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -33,7 +33,7 @@ void __EntryFunction__()
 	iLocal_10 = 12;
 	iLocal_11 = 12;
 	fLocal_16 = -99f;
-	fLocal_18 = -1f;
+	fLocal_26 = -1f;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(32))
 	{
@@ -70,7 +70,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1()
+int func_1()//Position - 0xA6
 {
 	if (Global_37550)
 	{
@@ -91,7 +91,7 @@ int func_1()
 	return 0;
 }
 
-void func_2()
+void func_2()//Position - 0xE3
 {
 	int iVar0;
 	int iVar1;
@@ -152,13 +152,13 @@ void func_2()
 			}
 			else
 			{
-				if (fLocal_18 == -1f)
+				if (fLocal_26 == -1f)
 				{
-					fLocal_18 = fVar3;
+					fLocal_26 = fVar3;
 				}
 				CAM::SET_GAMEPLAY_CAM_SHAKE_AMPLITUDE(((Global_37555 * fVar3) * fVar5));
 				CAM::CUSTOM_MENU_COORDINATES(((Global_37554 * fVar3) * fVar5));
-				fLocal_18 = fVar3;
+				fLocal_26 = fVar3;
 			}
 		}
 		if (((Global_37554 * fVar3) * fVar5) < 1f)
@@ -255,13 +255,13 @@ void func_2()
 		fLocal_17[iVar0] = 0f;
 		iVar0++;
 	}
-	fLocal_18 = -1f;
+	fLocal_26 = -1f;
 	fLocal_16 = -99f;
 	func_3(1);
 	iLocal_12 = 1;
 }
 
-void func_3(bool bParam0)
+void func_3(bool bParam0)//Position - 0x3EB
 {
 	CAM::CUSTOM_MENU_COORDINATES(0f);
 	CAM::_0x0225778816FDC28C(0f);
@@ -311,7 +311,7 @@ void func_3(bool bParam0)
 	func_4();
 }
 
-void func_4()
+void func_4()//Position - 0x4C5
 {
 	Global_37550 = 0;
 	Global_37551 = 0;
@@ -324,12 +324,12 @@ void func_4()
 	StringCopy(&Global_37558, "", 16);
 }
 
-bool func_5()
+bool func_5()//Position - 0x4F7
 {
 	return Global_2507139;
 }
 
-int func_6(int iParam0)
+int func_6(int iParam0)//Position - 0x503
 {
 	if (iParam0 == 0)
 	{
@@ -342,7 +342,7 @@ int func_6(int iParam0)
 	return 1;
 }
 
-int func_7(int iParam0)
+int func_7(int iParam0)//Position - 0x524
 {
 	int iVar0;
 	
@@ -366,7 +366,7 @@ int func_7(int iParam0)
 	return -1;
 }
 
-float func_8()
+float func_8()//Position - 0x56D
 {
 	float fVar0;
 	int iVar1;
@@ -405,7 +405,7 @@ float func_8()
 	return fVar0;
 }
 
-int func_9(int iParam0)
+int func_9(int iParam0)//Position - 0x5EC
 {
 	int iVar0;
 	int iVar1;
@@ -427,7 +427,7 @@ int func_9(int iParam0)
 	return Global_37371[iVar1 /*5*/].f_4;
 }
 
-int func_10(int iParam0)
+int func_10(int iParam0)//Position - 0x62F
 {
 	int iVar0;
 	
@@ -444,7 +444,7 @@ int func_10(int iParam0)
 	return -1;
 }
 
-int func_11(int iParam0)
+int func_11(int iParam0)//Position - 0x65F
 {
 	int iVar0;
 	
@@ -465,7 +465,7 @@ int func_11(int iParam0)
 	return -1;
 }
 
-int func_12(int iParam0)
+int func_12(int iParam0)//Position - 0x6A0
 {
 	int iVar0;
 	int iVar1;
@@ -487,7 +487,7 @@ int func_12(int iParam0)
 	return Global_37371[iVar1 /*5*/].f_3;
 }
 
-float func_13()
+float func_13()//Position - 0x6E3
 {
 	int iVar0;
 	float fVar1;
@@ -506,7 +506,7 @@ float func_13()
 	return fVar1;
 }
 
-void func_14()
+void func_14()//Position - 0x71D
 {
 	if (Global_37345[iLocal_15 /*5*/] == 0)
 	{
@@ -514,7 +514,7 @@ void func_14()
 	}
 }
 
-void func_15(int iParam0)
+void func_15(int iParam0)//Position - 0x736
 {
 	int iVar0;
 	struct<5> Var1;
@@ -553,7 +553,7 @@ void func_15(int iParam0)
 	func_18(iParam0);
 }
 
-var func_16()
+var func_16()//Position - 0x7FE
 {
 	var uVar0;
 	
@@ -562,7 +562,7 @@ var func_16()
 	return uVar0;
 }
 
-int func_17()
+int func_17()//Position - 0x815
 {
 	int iVar0;
 	
@@ -579,7 +579,7 @@ int func_17()
 	return -1;
 }
 
-void func_18(int iParam0)
+void func_18(int iParam0)//Position - 0x844
 {
 	if (iParam0 < 0 || iParam0 >= 5)
 	{
@@ -604,7 +604,7 @@ void func_18(int iParam0)
 	}
 }
 
-void func_19()
+void func_19()//Position - 0x8C7
 {
 	if (!Global_37452[iLocal_13 /*6*/].f_2 == 6)
 	{
@@ -616,7 +616,7 @@ void func_19()
 	}
 }
 
-void func_20(int iParam0)
+void func_20(int iParam0)//Position - 0x8F7
 {
 	if (iParam0 < 0 || iParam0 >= 16)
 	{
@@ -629,7 +629,7 @@ void func_20(int iParam0)
 	Global_37452[iParam0 /*6*/].f_4 = 0;
 }
 
-void func_21(int iParam0)
+void func_21(int iParam0)//Position - 0x944
 {
 	int iVar0;
 	
@@ -650,7 +650,7 @@ void func_21(int iParam0)
 	}
 }
 
-void func_22()
+void func_22()//Position - 0x98E
 {
 	int iVar0;
 	
@@ -669,7 +669,7 @@ void func_22()
 	}
 }
 
-void func_23(int iParam0)
+void func_23(int iParam0)//Position - 0x9CE
 {
 	int iVar0;
 	
@@ -682,7 +682,7 @@ void func_23(int iParam0)
 	func_24(iVar0);
 }
 
-void func_24(int iParam0)
+void func_24(int iParam0)//Position - 0x9F3
 {
 	if (iParam0 < 0 || iParam0 >= 16)
 	{
@@ -695,7 +695,7 @@ void func_24(int iParam0)
 	Global_37371[iParam0 /*5*/].f_4 = 0;
 }
 
-int func_25(int iParam0)
+int func_25(int iParam0)//Position - 0xA40
 {
 	int iVar0;
 	
@@ -712,13 +712,13 @@ int func_25(int iParam0)
 	return -1;
 }
 
-void func_26(int iParam0)
+void func_26(int iParam0)//Position - 0xA70
 {
 	func_30(iParam0);
 	func_27(iParam0);
 }
 
-void func_27(int iParam0)
+void func_27(int iParam0)//Position - 0xA84
 {
 	int iVar0;
 	
@@ -734,7 +734,7 @@ void func_27(int iParam0)
 	}
 }
 
-int func_28(int iParam0, int iParam1)
+int func_28(int iParam0, int iParam1)//Position - 0xAB6
 {
 	int iVar0;
 	
@@ -754,7 +754,7 @@ int func_28(int iParam0, int iParam1)
 	return -1;
 }
 
-void func_29()
+void func_29()//Position - 0xAF4
 {
 	if (Global_37452[iLocal_13 /*6*/] == 1)
 	{
@@ -762,7 +762,7 @@ void func_29()
 	}
 }
 
-void func_30(int iParam0)
+void func_30(int iParam0)//Position - 0xB0F
 {
 	int iVar0;
 	
@@ -778,7 +778,7 @@ void func_30(int iParam0)
 	}
 }
 
-void func_31()
+void func_31()//Position - 0xB3F
 {
 	func_32();
 	if (!iLocal_12)
@@ -788,7 +788,7 @@ void func_31()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_32()
+void func_32()//Position - 0xB5A
 {
 	func_35();
 	func_34();
@@ -800,7 +800,7 @@ void func_32()
 	MISC::TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME("drunk");
 }
 
-void func_33()
+void func_33()//Position - 0xB85
 {
 	int iVar0;
 	
@@ -813,7 +813,7 @@ void func_33()
 	}
 }
 
-void func_34()
+void func_34()//Position - 0xBA9
 {
 	int iVar0;
 	
@@ -826,7 +826,7 @@ void func_34()
 	}
 }
 
-void func_35()
+void func_35()//Position - 0xBCD
 {
 	int iVar0;
 	

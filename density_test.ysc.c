@@ -10,7 +10,7 @@
 	float fLocal_8 = 0f;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	bLocal_0 = true;
 	bLocal_1 = true;
@@ -47,7 +47,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x7C
 {
 	VEHICLE::SET_RANDOM_TRAINS(1);
 	SCRIPT::TERMINATE_THIS_THREAD();

@@ -129,7 +129,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	var uVar0;
 	int iVar1;
@@ -172,7 +172,7 @@ void __EntryFunction__()
 	{
 		iLocal_123 = 40;
 	}
-	switch (iScriptParam_124)
+	switch (iScriptParam_0)
 	{
 		case 3:
 			while (iLocal_115 == 0)
@@ -225,7 +225,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(var uParam0)
+int func_1(var uParam0)//Position - 0x174
 {
 	int iVar0;
 	int iVar1;
@@ -335,12 +335,12 @@ int func_1(var uParam0)
 	return 1;
 }
 
-void func_2(int iParam0)
+void func_2(int iParam0)//Position - 0x5E0
 {
 	func_3(iParam0, 1);
 }
 
-void func_3(int iParam0, bool bParam1)
+void func_3(int iParam0, bool bParam1)//Position - 0x5EF
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SHOW_COLUMN"))
 	{
@@ -361,7 +361,7 @@ void func_3(int iParam0, bool bParam1)
 	}
 }
 
-void func_4(int iParam0)
+void func_4(int iParam0)//Position - 0x634
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("DISPLAY_DATA_SLOT"))
 	{
@@ -370,16 +370,16 @@ void func_4(int iParam0)
 	}
 }
 
-void func_5(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4)
+void func_5(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//Position - 0x651
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_COLUMN_SCROLL");
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(iParam0);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(iParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(iParam2);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(-1);
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
+	if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam3))
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(iParam3);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam2);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -392,13 +392,13 @@ void func_5(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4)
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_6(char* sParam0)
+void func_6(char* sParam0)//Position - 0x6AE
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_7(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+void func_7(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)//Position - 0x6C0
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("INIT_COLUMN_SCROLL");
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(iParam0);
@@ -412,7 +412,7 @@ void func_7(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, boo
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-int func_8(int iParam0, int iParam1)
+int func_8(int iParam0, int iParam1)//Position - 0x703
 {
 	if (iParam0 == 3)
 	{
@@ -580,7 +580,7 @@ int func_8(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_9(int iParam0, bool bParam1)
+int func_9(int iParam0, bool bParam1)//Position - 0x941
 {
 	if (bParam1)
 	{
@@ -588,7 +588,7 @@ int func_9(int iParam0, bool bParam1)
 	return func_10(iParam0, 0);
 }
 
-int func_10(int iParam0, int iParam1)
+int func_10(int iParam0, int iParam1)//Position - 0x955
 {
 	int iVar0;
 	int iVar1;
@@ -645,7 +645,7 @@ int func_10(int iParam0, int iParam1)
 	return 8000;
 }
 
-int func_11(int iParam0, bool bParam1)
+int func_11(int iParam0, bool bParam1)//Position - 0xA14
 {
 	if (bParam1)
 	{
@@ -653,7 +653,7 @@ int func_11(int iParam0, bool bParam1)
 	return func_12(iParam0);
 }
 
-int func_12(int iParam0)
+int func_12(int iParam0)//Position - 0xA27
 {
 	if (Global_1312467.f_9 == 0)
 	{
@@ -676,7 +676,7 @@ int func_12(int iParam0)
 	return 0;
 }
 
-int func_13(int iParam0)
+int func_13(int iParam0)//Position - 0xA84
 {
 	if (iParam0 == -1)
 	{
@@ -689,7 +689,7 @@ int func_13(int iParam0)
 	return 1;
 }
 
-int func_14(int iParam0)
+int func_14(int iParam0)//Position - 0xAA9
 {
 	int iVar0;
 	int iVar1;
@@ -712,18 +712,18 @@ int func_14(int iParam0)
 	return iVar0;
 }
 
-int func_15()
+int func_15()//Position - 0xADD
 {
 	return Global_1312745;
 }
 
-void func_16(int iParam0, char* sParam1, bool bParam2)
+void func_16(int iParam0, char* sParam1, bool bParam2)//Position - 0xAE9
 {
 	func_17(1, *iParam0, iLocal_114, *iParam0, sParam1, bParam2, 1);
 	*iParam0++;
 }
 
-void func_17(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, int iParam5, int iParam6)
+void func_17(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, int iParam5, int iParam6)//Position - 0xB0B
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_DATA_SLOT"))
 	{
@@ -758,7 +758,7 @@ void func_17(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 }
 
-bool func_18(int iParam0, bool bParam1, bool bParam2)
+bool func_18(int iParam0, bool bParam1, bool bParam2)//Position - 0xB8A
 {
 	int iVar0;
 	int iVar1;
@@ -824,7 +824,7 @@ bool func_18(int iParam0, bool bParam1, bool bParam2)
 	return MISC::IS_BIT_SET(Global_1574624[iVar1], iVar0);
 }
 
-int func_19()
+int func_19()//Position - 0xCF8
 {
 	int iVar0;
 	
@@ -853,17 +853,17 @@ int func_19()
 	return 0;
 }
 
-bool func_20()
+bool func_20()//Position - 0xD5E
 {
 	return Global_1312855;
 }
 
-bool func_21()
+bool func_21()//Position - 0xD6A
 {
 	return Global_1312857;
 }
 
-bool func_22(int iParam0, int iParam1)
+bool func_22(int iParam0, int iParam1)//Position - 0xD76
 {
 	var uVar0;
 	int iVar1;
@@ -885,7 +885,7 @@ bool func_22(int iParam0, int iParam1)
 	return MISC::IS_BIT_SET(Global_1589819[iParam0 /*818*/].f_672, iVar1);
 }
 
-int func_23(int iParam0)
+int func_23(int iParam0)//Position - 0xDBE
 {
 	switch (iParam0)
 	{
@@ -993,12 +993,12 @@ int func_23(int iParam0)
 	return 1;
 }
 
-bool func_24()
+bool func_24()//Position - 0xF31
 {
 	return MISC::IS_BIT_SET(Global_1589819[PLAYER::PLAYER_ID() /*818*/].f_146, 3);
 }
 
-int func_25()
+int func_25()//Position - 0xF4B
 {
 	if (Global_1312447)
 	{
@@ -1015,7 +1015,7 @@ int func_25()
 	return func_26(120, -1);
 }
 
-int func_26(int iParam0, int iParam1)
+int func_26(int iParam0, int iParam1)//Position - 0xF7B
 {
 	var uVar0;
 	var uVar1;
@@ -1028,7 +1028,7 @@ int func_26(int iParam0, int iParam1)
 	return 0;
 }
 
-void func_27(int iParam0, int iParam1)
+void func_27(int iParam0, int iParam1)//Position - 0xFA7
 {
 	struct<2> Var0;
 	
@@ -1038,7 +1038,7 @@ void func_27(int iParam0, int iParam1)
 	*iParam0++;
 }
 
-int func_28(int iParam0)
+int func_28(int iParam0)//Position - 0xFD8
 {
 	switch (iParam0)
 	{
@@ -1200,7 +1200,7 @@ int func_28(int iParam0)
 	return 0;
 }
 
-int func_29()
+int func_29()//Position - 0x135D
 {
 	int iVar0;
 	
@@ -1212,7 +1212,7 @@ int func_29()
 	return iVar0;
 }
 
-int func_30()
+int func_30()//Position - 0x1378
 {
 	int iVar0;
 	
@@ -1224,7 +1224,7 @@ int func_30()
 	return iVar0;
 }
 
-int func_31(int iParam0)
+int func_31(int iParam0)//Position - 0x1395
 {
 	int iVar0;
 	var uVar1;
@@ -1237,7 +1237,7 @@ int func_31(int iParam0)
 	return 0;
 }
 
-int func_32(int iParam0, int iParam1)
+int func_32(int iParam0, int iParam1)//Position - 0x13B3
 {
 	int iVar0;
 	var uVar1;
@@ -1250,7 +1250,7 @@ int func_32(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_33(int iParam0, int iParam1, int iParam2)
+int func_33(int iParam0, int iParam1, int iParam2)//Position - 0x13DF
 {
 	int iVar0;
 	var uVar1;
@@ -1266,7 +1266,7 @@ int func_33(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-int func_34(int iParam0, int iParam1, int iParam2)
+int func_34(int iParam0, int iParam1, int iParam2)//Position - 0x1411
 {
 	int iVar0;
 	int iVar1;
@@ -1286,7 +1286,7 @@ int func_34(int iParam0, int iParam1, int iParam2)
 	return iVar0;
 }
 
-int func_35(int iParam0)
+int func_35(int iParam0)//Position - 0x144E
 {
 	int iVar0;
 	
@@ -1370,7 +1370,7 @@ int func_35(int iParam0)
 	return iVar0;
 }
 
-int func_36(int iParam0, int iParam1)
+int func_36(int iParam0, int iParam1)//Position - 0x1792
 {
 	int iVar0;
 	
@@ -1458,7 +1458,7 @@ int func_36(int iParam0, int iParam1)
 	return iVar0;
 }
 
-void func_37(int iParam0, int iParam1, int iParam2)
+void func_37(int iParam0, int iParam1, int iParam2)//Position - 0x1AB5
 {
 	struct<2> Var0;
 	
@@ -1468,7 +1468,7 @@ void func_37(int iParam0, int iParam1, int iParam2)
 	*iParam0++;
 }
 
-void func_38(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, char* sParam5, int iParam6, int iParam7)
+void func_38(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, char* sParam5, int iParam6, int iParam7)//Position - 0x1AEB
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_DATA_SLOT"))
 	{
@@ -1488,7 +1488,7 @@ void func_38(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 }
 
-int func_39(int iParam0)
+int func_39(int iParam0)//Position - 0x1B45
 {
 	int iVar0;
 	
@@ -1563,17 +1563,17 @@ int func_39(int iParam0)
 	return -1;
 }
 
-int func_40()
+int func_40()//Position - 0x1CC1
 {
 	return 1;
 }
 
-int func_41()
+int func_41()//Position - 0x1CCA
 {
 	return 1;
 }
 
-int func_42(int iParam0)
+int func_42(int iParam0)//Position - 0x1CD3
 {
 	int iVar0;
 	
@@ -1662,7 +1662,7 @@ int func_42(int iParam0)
 	return -1;
 }
 
-void func_43(int iParam0)
+void func_43(int iParam0)//Position - 0x1E85
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_DATA_SLOT_EMPTY"))
 	{
@@ -1671,7 +1671,7 @@ void func_43(int iParam0)
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_44(int iParam0, int iParam1, bool bParam2, bool bParam3)
+void func_44(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0x1EA2
 {
 	if (iParam1 == -1)
 	{
@@ -1687,7 +1687,7 @@ void func_44(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	}
 }
 
-void func_45()
+void func_45()//Position - 0x1EDA
 {
 	var uVar0;
 	var uVar1;
@@ -1712,12 +1712,12 @@ void func_45()
 	iLocal_122 = 1;
 }
 
-void func_46(int iParam0)
+void func_46(int iParam0)//Position - 0x1F66
 {
 	func_3(iParam0, 0);
 }
 
-void func_47(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, char* sParam5, bool bParam6, int iParam7, bool bParam8)
+void func_47(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, char* sParam5, bool bParam6, int iParam7, bool bParam8)//Position - 0x1F75
 {
 	if (GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_N("SET_DATA_SLOT"))
 	{
@@ -1754,7 +1754,7 @@ void func_47(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, c
 	}
 }
 
-int func_48()
+int func_48()//Position - 0x1FEF
 {
 	int iVar0;
 	
@@ -1779,7 +1779,7 @@ int func_48()
 	return 1;
 }
 
-int func_49(int iParam0)
+int func_49(int iParam0)//Position - 0x2099
 {
 	int iVar0;
 	int iVar1;
@@ -1803,7 +1803,7 @@ int func_49(int iParam0)
 	return 0;
 }
 
-int func_50(int iParam0, var uParam1, int iParam2)
+int func_50(int iParam0, var uParam1, int iParam2)//Position - 0x2133
 {
 	int iVar0;
 	int iVar1;
@@ -1883,17 +1883,17 @@ int func_50(int iParam0, var uParam1, int iParam2)
 	return 0;
 }
 
-int func_51(int iParam0)
+int func_51(int iParam0)//Position - 0x2296
 {
 	return (iParam0 % 32);
 }
 
-int func_52(int iParam0)
+int func_52(int iParam0)//Position - 0x22A3
 {
 	return (iParam0 / 32);
 }
 
-void func_53()
+void func_53()//Position - 0x22B0
 {
 	int iVar0;
 	
@@ -1943,12 +1943,12 @@ void func_53()
 	}
 }
 
-void func_54(var uParam0)
+void func_54(var uParam0)//Position - 0x236D
 {
 	uParam0->f_1 = 0;
 }
 
-int func_55(var uParam0, int iParam1, bool bParam2)
+int func_55(var uParam0, int iParam1, bool bParam2)//Position - 0x237A
 {
 	if (iParam1 == -1)
 	{
@@ -1969,7 +1969,7 @@ int func_55(var uParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-void func_56(var uParam0, bool bParam1, bool bParam2)
+void func_56(var uParam0, bool bParam1, bool bParam2)//Position - 0x23D8
 {
 	if (uParam0->f_1 == 0)
 	{

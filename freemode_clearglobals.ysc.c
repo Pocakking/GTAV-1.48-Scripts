@@ -331,7 +331,7 @@
 	var uLocal_329 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -370,14 +370,14 @@ void __EntryFunction__()
 	Global_1574202 = 1;
 }
 
-void func_1()
+void func_1()//Position - 0xB5
 {
 	Global_1656502 = 0;
 	func_41(0);
 	func_2();
 }
 
-void func_2()
+void func_2()//Position - 0xCB
 {
 	func_33();
 	func_32();
@@ -413,26 +413,26 @@ void func_2()
 	func_3(&Global_1681474);
 }
 
-void func_3(var uParam0)
+void func_3(var uParam0)//Position - 0x158
 {
 	uParam0->f_1 = 0;
 }
 
-void func_4()
+void func_4()//Position - 0x165
 {
 	Global_1681583 = 0;
 	Global_1681583.f_1 = 0;
 	Global_1681583.f_3 = 0;
 }
 
-void func_5()
+void func_5()//Position - 0x180
 {
 	Global_1681553 = 0;
 	Global_1681553.f_1 = 0;
 	Global_1681553.f_3 = 0;
 }
 
-void func_6()
+void func_6()//Position - 0x19B
 {
 	struct<4478> Var0;
 	
@@ -494,7 +494,7 @@ void func_6()
 	}
 }
 
-void func_7()
+void func_7()//Position - 0x351
 {
 	struct<886> Var0;
 	
@@ -543,7 +543,7 @@ void func_7()
 	}
 }
 
-void func_8()
+void func_8()//Position - 0x44D
 {
 	struct<105> Var0;
 	
@@ -559,7 +559,7 @@ void func_8()
 	}
 }
 
-void func_9()
+void func_9()//Position - 0x486
 {
 	struct<91> Var0;
 	
@@ -589,10 +589,10 @@ void func_9()
 	}
 }
 
-void func_10()
+void func_10()//Position - 0x51D
 {
 	struct<3785> Var0;
-	var uVar1;
+	var uVar3785;
 	
 	Var0.f_8 = 128;
 	Var0.f_144 = -1;
@@ -711,7 +711,7 @@ void func_10()
 	Var0.f_3777.f_4 = -1;
 	Var0.f_3782 = -1;
 	Var0.f_3782.f_1 = -1;
-	uVar1 = Global_1671295.f_2488;
+	uVar3785 = Global_1671295.f_2488;
 	if (Global_2437363)
 	{
 		MISC::_0x213AEB2B90CBA7AC(&Global_1671295, &Var0, 3785);
@@ -720,10 +720,10 @@ void func_10()
 	{
 		Global_1671295 = { Var0 };
 	}
-	Global_1671295.f_2488 = uVar1;
+	Global_1671295.f_2488 = uVar3785;
 }
 
-void func_11()
+void func_11()//Position - 0x8D0
 {
 	vector3 vVar0;
 	
@@ -737,7 +737,7 @@ void func_11()
 	}
 }
 
-void func_12()
+void func_12()//Position - 0x8F7
 {
 	struct<327> Var0;
 	
@@ -763,7 +763,7 @@ void func_12()
 	}
 }
 
-void func_13()
+void func_13()//Position - 0x97A
 {
 	struct<157> Var0;
 	
@@ -782,7 +782,7 @@ void func_13()
 	}
 }
 
-void func_14()
+void func_14()//Position - 0x9C9
 {
 	struct<1668> Var0;
 	
@@ -830,7 +830,7 @@ void func_14()
 	}
 }
 
-void func_15()
+void func_15()//Position - 0xAAA
 {
 	struct<581> Var0;
 	
@@ -942,7 +942,7 @@ void func_15()
 	}
 }
 
-void func_16()
+void func_16()//Position - 0xDAF
 {
 	struct<751> Var0;
 	
@@ -1125,7 +1125,7 @@ void func_16()
 	}
 }
 
-void func_17()
+void func_17()//Position - 0x11E8
 {
 	struct<225> Var0;
 	
@@ -1140,7 +1140,7 @@ void func_17()
 	}
 }
 
-void func_18()
+void func_18()//Position - 0x121A
 {
 	struct<210> Var0;
 	
@@ -1171,7 +1171,7 @@ void func_18()
 	}
 }
 
-void func_19()
+void func_19()//Position - 0x12D0
 {
 	struct<657> Var0;
 	
@@ -1346,7 +1346,7 @@ void func_19()
 	}
 }
 
-void func_20()
+void func_20()//Position - 0x1749
 {
 	struct<171> Var0;
 	
@@ -1367,7 +1367,7 @@ void func_20()
 	}
 }
 
-void func_21()
+void func_21()//Position - 0x17A7
 {
 	struct<834> Var0;
 	
@@ -1464,7 +1464,7 @@ void func_21()
 	}
 }
 
-void func_22()
+void func_22()//Position - 0x19E3
 {
 	if (Global_2437363)
 	{
@@ -1476,7 +1476,7 @@ void func_22()
 	}
 }
 
-void func_23()
+void func_23()//Position - 0x1A14
 {
 	struct<2922> Var0;
 	
@@ -1786,7 +1786,7 @@ void func_23()
 	}
 }
 
-void func_24()
+void func_24()//Position - 0x26D7
 {
 	struct<1694> Var0;
 	
@@ -1845,7 +1845,7 @@ void func_24()
 	}
 }
 
-void func_25()
+void func_25()//Position - 0x2861
 {
 	struct<422> Var0;
 	
@@ -1924,7 +1924,7 @@ void func_25()
 	Global_2573749 = { Var0 };
 }
 
-void func_26()
+void func_26()//Position - 0x2A66
 {
 	struct<86> Var0;
 	
@@ -1943,7 +1943,7 @@ void func_26()
 	}
 }
 
-void func_27()
+void func_27()//Position - 0x2AB8
 {
 	struct<1075> Var0;
 	
@@ -1972,7 +1972,7 @@ void func_27()
 	}
 }
 
-void func_28()
+void func_28()//Position - 0x2B5E
 {
 	struct<306> Var0;
 	
@@ -1997,7 +1997,7 @@ void func_28()
 	}
 }
 
-void func_29()
+void func_29()//Position - 0x2BDA
 {
 	struct<1506> Var0;
 	
@@ -2083,7 +2083,7 @@ void func_29()
 	}
 }
 
-void func_30()
+void func_30()//Position - 0x2DF4
 {
 	struct<24> Var0;
 	
@@ -2103,7 +2103,7 @@ void func_30()
 	}
 }
 
-void func_31()
+void func_31()//Position - 0x2E4B
 {
 	struct<41> Var0;
 	
@@ -2123,7 +2123,7 @@ void func_31()
 	}
 }
 
-void func_32()
+void func_32()//Position - 0x2EA2
 {
 	struct<188> Var0;
 	
@@ -2139,7 +2139,7 @@ void func_32()
 	}
 }
 
-void func_33()
+void func_33()//Position - 0x2EDC
 {
 	int iVar0;
 	int iVar1;
@@ -2465,54 +2465,54 @@ void func_33()
 	}
 }
 
-void func_34()
+void func_34()//Position - 0x386A
 {
 	struct<9> Var0;
-	struct<83> Var1;
-	struct<8> Var2;
-	struct<32> Var3;
-	struct<18> Var4;
-	struct<10> Var5;
-	var uVar6;
-	var uVar7;
+	struct<83> Var9;
+	struct<8> Var92;
+	struct<32> Var100;
+	struct<18> Var132;
+	struct<10> Var150;
+	var uVar160;
+	var uVar161;
 	
 	Global_2528542.f_850 = { Var0 };
-	Var1 = -1;
-	Var1.f_1 = -1;
-	Var1.f_2.f_1 = -1;
-	Var1.f_2.f_2 = -1;
-	Var1.f_2.f_9 = -1;
-	Var1.f_2.f_16 = -1;
-	Var1.f_2.f_19 = -1;
-	Var1.f_2.f_20 = -1;
-	Var1.f_23 = -1;
-	Var1.f_47 = 32;
-	Global_2528542.f_28 = { Var1 };
-	Var2.f_2 = -1;
-	Var2.f_3 = -1;
-	Global_2528542.f_198 = { Var2 };
-	Var3.f_4.f_1 = -1;
-	Var3.f_4.f_2 = -1;
-	Var3.f_4.f_9 = -1;
-	Var3.f_4.f_16 = -1;
-	Var3.f_4.f_19 = -1;
-	Var3.f_4.f_20 = -1;
-	Var3.f_25 = 2;
-	Global_2528542.f_206 = { Var3 };
-	Var4.f_7 = 10;
-	Global_2528542.f_242 = { Var4 };
-	Var5.f_6 = -1;
-	Global_2528542.f_384 = { Var5 };
-	Global_2528542.f_395 = uVar6;
-	Global_2528542.f_399 = uVar7;
+	Var9 = -1;
+	Var9.f_1 = -1;
+	Var9.f_2.f_1 = -1;
+	Var9.f_2.f_2 = -1;
+	Var9.f_2.f_9 = -1;
+	Var9.f_2.f_16 = -1;
+	Var9.f_2.f_19 = -1;
+	Var9.f_2.f_20 = -1;
+	Var9.f_23 = -1;
+	Var9.f_47 = 32;
+	Global_2528542.f_28 = { Var9 };
+	Var92.f_2 = -1;
+	Var92.f_3 = -1;
+	Global_2528542.f_198 = { Var92 };
+	Var100.f_4.f_1 = -1;
+	Var100.f_4.f_2 = -1;
+	Var100.f_4.f_9 = -1;
+	Var100.f_4.f_16 = -1;
+	Var100.f_4.f_19 = -1;
+	Var100.f_4.f_20 = -1;
+	Var100.f_25 = 2;
+	Global_2528542.f_206 = { Var100 };
+	Var132.f_7 = 10;
+	Global_2528542.f_242 = { Var132 };
+	Var150.f_6 = -1;
+	Global_2528542.f_384 = { Var150 };
+	Global_2528542.f_395 = uVar160;
+	Global_2528542.f_399 = uVar161;
 }
 
-void func_35()
+void func_35()//Position - 0x3973
 {
 	int iVar0;
 	struct<754> Var1;
-	var uVar2[8];
-	var uVar3;
+	var uVar755[8];
+	var uVar764;
 	
 	Var1 = 21;
 	Var1.f_2 = -1;
@@ -2571,24 +2571,24 @@ void func_35()
 	Var1.f_746 = 1;
 	Var1.f_750 = 1;
 	Var1.f_751 = 1;
-	uVar3 = Global_2528542.f_4889.f_357;
+	uVar764 = Global_2528542.f_4889.f_357;
 	iVar0 = 0;
 	while (iVar0 < 8)
 	{
-		uVar2[iVar0] = Global_2528542.f_4889.f_339[iVar0];
+		uVar755[iVar0] = Global_2528542.f_4889.f_339[iVar0];
 		iVar0++;
 	}
 	Global_2528542.f_4889 = { Var1 };
-	Global_2528542.f_4889.f_357 = uVar3;
+	Global_2528542.f_4889.f_357 = uVar764;
 	iVar0 = 0;
 	while (iVar0 < 8)
 	{
-		Global_2528542.f_4889.f_339[iVar0] = uVar2[iVar0];
+		Global_2528542.f_4889.f_339[iVar0] = uVar755[iVar0];
 		iVar0++;
 	}
 }
 
-void func_36()
+void func_36()//Position - 0x3B8E
 {
 	int iVar0;
 	struct<26> Var1;
@@ -2601,14 +2601,14 @@ void func_36()
 	}
 }
 
-void func_37()
+void func_37()//Position - 0x3BBC
 {
 	int iVar0;
 	struct<17> Var1;
-	struct<12> Var2;
-	struct<51> Var3;
-	struct<51> Var4;
-	struct<21> Var5;
+	struct<12> Var18;
+	struct<51> Var30;
+	struct<51> Var81;
+	struct<21> Var132;
 	
 	iVar0 = 0;
 	while (iVar0 <= 4)
@@ -2619,42 +2619,42 @@ void func_37()
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
-		Global_2528542.f_4495[iVar0 /*12*/] = { Var2 };
+		Global_2528542.f_4495[iVar0 /*12*/] = { Var18 };
 		iVar0++;
 	}
-	Var3.f_2 = -1;
-	Var3.f_3 = -1;
-	Var3.f_4 = -1;
-	Var3.f_50 = -1;
-	Var4.f_2 = -1;
-	Var4.f_3 = -1;
-	Var4.f_4 = -1;
-	Var4.f_50 = -1;
+	Var30.f_2 = -1;
+	Var30.f_3 = -1;
+	Var30.f_4 = -1;
+	Var30.f_50 = -1;
+	Var81.f_2 = -1;
+	Var81.f_3 = -1;
+	Var81.f_4 = -1;
+	Var81.f_50 = -1;
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
-		Global_2528542.f_1065[iVar0 /*51*/] = { Var3 };
-		Global_2528542.f_1321[iVar0 /*51*/] = { Var4 };
+		Global_2528542.f_1065[iVar0 /*51*/] = { Var30 };
+		Global_2528542.f_1321[iVar0 /*51*/] = { Var81 };
 		iVar0++;
 	}
-	Var5.f_1 = -1;
-	Var5.f_2 = -1;
-	Var5.f_9 = -1;
-	Var5.f_16 = -1;
-	Var5.f_19 = -1;
-	Var5.f_20 = -1;
+	Var132.f_1 = -1;
+	Var132.f_2 = -1;
+	Var132.f_9 = -1;
+	Var132.f_16 = -1;
+	Var132.f_19 = -1;
+	Var132.f_20 = -1;
 	iVar0 = 0;
 	while (iVar0 <= 15)
 	{
-		Global_2528542.f_400[iVar0 /*21*/] = { Var5 };
+		Global_2528542.f_400[iVar0 /*21*/] = { Var132 };
 		iVar0++;
 	}
 }
 
-void func_38()
+void func_38()//Position - 0x3CCA
 {
 	struct<1719> Var0;
-	var uVar1;
+	var uVar1719;
 	
 	Var0 = 39;
 	Var0.f_1.f_39 = -1;
@@ -2736,62 +2736,62 @@ void func_38()
 	Var0.f_1.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_39 = -1;
 	Var0.f_1.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_40 = -1;
 	Global_2528542.f_2235 = { Var0 };
-	Global_2528542.f_3954 = uVar1;
+	Global_2528542.f_3954 = uVar1719;
 }
 
-void func_39()
+void func_39()//Position - 0x3F1B
 {
 	struct<12> Var0;
-	struct<61> Var1;
-	vector3 vVar2;
-	struct<358> Var3;
-	struct<9> Var4;
-	struct<19> Var5;
-	struct<19> Var6;
-	struct<2> Var7;
-	struct<51> Var8;
-	var uVar9;
-	struct<165> Var10;
-	struct<12> Var11;
+	struct<61> Var12;
+	vector3 vVar73;
+	struct<358> Var76;
+	struct<9> Var434;
+	struct<19> Var443;
+	struct<19> Var462;
+	struct<2> Var481;
+	struct<51> Var483;
+	var uVar534;
+	struct<165> Var535;
+	struct<12> Var700;
 	
 	Global_2528542.f_4458 = { Var0 };
-	Var1.f_19 = 32;
-	Global_2528542.f_1782 = { Var1 };
-	Global_2528542.f_1845 = { vVar2 };
-	Var3 = 8;
-	Global_2528542.f_1849 = { Var3 };
-	Global_2528542.f_2207 = { Var4 };
-	Global_2528542.f_2216 = { Var5 };
-	Var6 = 1;
-	Var6.f_3 = 1;
-	Var6.f_6 = 1;
-	Var6.f_8 = 1;
-	Var6.f_10 = 1;
-	Var6.f_12 = 1;
-	Var6.f_14 = 1;
-	Var6.f_16 = 1;
-	Global_2528542.f_4470 = { Var6 };
-	Global_2528542.f_4489 = { Var7 };
-	Var8.f_2 = -1;
-	Var8.f_3 = -1;
-	Var8.f_4 = -1;
-	Var8.f_50 = -1;
-	Global_2528542.f_1577 = { Var8 };
-	Global_2528542.f_789 = uVar9;
-	Var10 = 16;
-	Global_2528542.f_900 = { Var10 };
-	Var11 = 5;
-	Var11.f_6 = 5;
-	Global_2528542.f_1634 = { Var11 };
+	Var12.f_19 = 32;
+	Global_2528542.f_1782 = { Var12 };
+	Global_2528542.f_1845 = { vVar73 };
+	Var76 = 8;
+	Global_2528542.f_1849 = { Var76 };
+	Global_2528542.f_2207 = { Var434 };
+	Global_2528542.f_2216 = { Var443 };
+	Var462 = 1;
+	Var462.f_3 = 1;
+	Var462.f_6 = 1;
+	Var462.f_8 = 1;
+	Var462.f_10 = 1;
+	Var462.f_12 = 1;
+	Var462.f_14 = 1;
+	Var462.f_16 = 1;
+	Global_2528542.f_4470 = { Var462 };
+	Global_2528542.f_4489 = { Var481 };
+	Var483.f_2 = -1;
+	Var483.f_3 = -1;
+	Var483.f_4 = -1;
+	Var483.f_50 = -1;
+	Global_2528542.f_1577 = { Var483 };
+	Global_2528542.f_789 = uVar534;
+	Var535 = 16;
+	Global_2528542.f_900 = { Var535 };
+	Var700 = 5;
+	Var700.f_6 = 5;
+	Global_2528542.f_1634 = { Var700 };
 }
 
-void func_40(var uParam0)
+void func_40(var uParam0)//Position - 0x404F
 {
 	*uParam0 = 0;
 	uParam0->f_1 = 0;
 }
 
-void func_41(bool bParam0)
+void func_41(bool bParam0)//Position - 0x4060
 {
 	int iVar0;
 	
@@ -2811,7 +2811,7 @@ void func_41(bool bParam0)
 	func_42();
 }
 
-void func_42()
+void func_42()//Position - 0x409E
 {
 	func_59();
 	func_58();
@@ -2832,7 +2832,7 @@ void func_42()
 	func_43();
 }
 
-void func_43()
+void func_43()//Position - 0x40EA
 {
 	struct<464> Var0;
 	
@@ -2848,7 +2848,7 @@ void func_43()
 	}
 }
 
-void func_44()
+void func_44()//Position - 0x4127
 {
 	struct<35> Var0;
 	
@@ -2868,7 +2868,7 @@ void func_44()
 	}
 }
 
-void func_45()
+void func_45()//Position - 0x417F
 {
 	struct<132> Var0;
 	
@@ -2886,7 +2886,7 @@ void func_45()
 	}
 }
 
-void func_46()
+void func_46()//Position - 0x41C6
 {
 	struct<2757> Var0;
 	
@@ -3335,7 +3335,7 @@ void func_46()
 	}
 }
 
-void func_47()
+void func_47()//Position - 0x4DC5
 {
 	struct<171> Var0;
 	
@@ -3356,7 +3356,7 @@ void func_47()
 	}
 }
 
-void func_48()
+void func_48()//Position - 0x4E23
 {
 	struct<581> Var0;
 	
@@ -3468,7 +3468,7 @@ void func_48()
 	}
 }
 
-void func_49()
+void func_49()//Position - 0x5128
 {
 	struct<751> Var0;
 	
@@ -3651,7 +3651,7 @@ void func_49()
 	}
 }
 
-void func_50()
+void func_50()//Position - 0x5561
 {
 	struct<225> Var0;
 	
@@ -3666,7 +3666,7 @@ void func_50()
 	}
 }
 
-void func_51()
+void func_51()//Position - 0x5593
 {
 	struct<210> Var0;
 	
@@ -3697,7 +3697,7 @@ void func_51()
 	}
 }
 
-void func_52()
+void func_52()//Position - 0x5649
 {
 	struct<657> Var0;
 	
@@ -3872,7 +3872,7 @@ void func_52()
 	}
 }
 
-void func_53()
+void func_53()//Position - 0x5AC2
 {
 	struct<978> Var0;
 	
@@ -4181,7 +4181,7 @@ void func_53()
 	}
 }
 
-void func_54()
+void func_54()//Position - 0x62E0
 {
 	struct<967> Var0;
 	
@@ -4226,7 +4226,7 @@ void func_54()
 	}
 }
 
-void func_55()
+void func_55()//Position - 0x63BA
 {
 	struct<33> Var0;
 	
@@ -4241,7 +4241,7 @@ void func_55()
 	}
 }
 
-void func_56()
+void func_56()//Position - 0x63EC
 {
 	struct<35> Var0;
 	
@@ -4255,7 +4255,7 @@ void func_56()
 	}
 }
 
-void func_57()
+void func_57()//Position - 0x6416
 {
 	struct<26> Var0;
 	
@@ -4274,7 +4274,7 @@ void func_57()
 	}
 }
 
-void func_58()
+void func_58()//Position - 0x6461
 {
 	int iVar0;
 	struct<540> Var1;
@@ -4308,7 +4308,7 @@ void func_58()
 	}
 }
 
-void func_59()
+void func_59()//Position - 0x650B
 {
 	struct<2717> Var0;
 	
@@ -4853,7 +4853,7 @@ void func_59()
 	}
 }
 
-void func_60(int iParam0)
+void func_60(int iParam0)//Position - 0x723C
 {
 	func_70(iParam0);
 	func_69(iParam0);
@@ -4867,7 +4867,7 @@ void func_60(int iParam0)
 	func_61(iParam0);
 }
 
-void func_61(int iParam0)
+void func_61(int iParam0)//Position - 0x7280
 {
 	struct<7> Var0;
 	
@@ -4881,7 +4881,7 @@ void func_61(int iParam0)
 	}
 }
 
-void func_62(int iParam0)
+void func_62(int iParam0)//Position - 0x72AF
 {
 	struct<44> Var0;
 	
@@ -4896,7 +4896,7 @@ void func_62(int iParam0)
 	}
 }
 
-void func_63(int iParam0)
+void func_63(int iParam0)//Position - 0x72E9
 {
 	struct<77> Var0;
 	
@@ -4915,7 +4915,7 @@ void func_63(int iParam0)
 	}
 }
 
-void func_64(int iParam0)
+void func_64(int iParam0)//Position - 0x733A
 {
 	struct<199> Var0;
 	
@@ -4943,7 +4943,7 @@ void func_64(int iParam0)
 	}
 }
 
-void func_65(int iParam0)
+void func_65(int iParam0)//Position - 0x73CC
 {
 	struct<100> Var0;
 	
@@ -4960,7 +4960,7 @@ void func_65(int iParam0)
 	}
 }
 
-void func_66(int iParam0)
+void func_66(int iParam0)//Position - 0x7414
 {
 	struct<38> Var0;
 	
@@ -4982,7 +4982,7 @@ void func_66(int iParam0)
 	}
 }
 
-void func_67(int iParam0)
+void func_67(int iParam0)//Position - 0x747B
 {
 	struct<26> Var0;
 	
@@ -4996,7 +4996,7 @@ void func_67(int iParam0)
 	}
 }
 
-void func_68(int iParam0)
+void func_68(int iParam0)//Position - 0x74AD
 {
 	var uVar0;
 	
@@ -5010,10 +5010,10 @@ void func_68(int iParam0)
 	}
 }
 
-void func_69(int iParam0)
+void func_69(int iParam0)//Position - 0x74D8
 {
 	struct<818> Var0;
-	struct<16> Var1;
+	struct<16> Var818;
 	
 	Var0 = -1;
 	Var0.f_1 = -1;
@@ -5087,15 +5087,15 @@ void func_69(int iParam0)
 	}
 	if (Global_2437363)
 	{
-		MISC::_0x213AEB2B90CBA7AC(&(Global_1615996[iParam0 /*16*/]), &Var1, 16);
+		MISC::_0x213AEB2B90CBA7AC(&(Global_1615996[iParam0 /*16*/]), &Var818, 16);
 	}
 	else
 	{
-		Global_1615996[iParam0 /*16*/] = { Var1 };
+		Global_1615996[iParam0 /*16*/] = { Var818 };
 	}
 }
 
-void func_70(int iParam0)
+void func_70(int iParam0)//Position - 0x770B
 {
 	struct<416> Var0;
 	

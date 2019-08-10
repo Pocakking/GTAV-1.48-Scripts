@@ -22,7 +22,7 @@
 	int iLocal_20 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -43,10 +43,10 @@ void __EntryFunction__()
 	func_1();
 }
 
-void func_1()
+void func_1()//Position - 0x4F
 {
 	vector3 vVar0;
-	var uVar1;
+	var uVar3;
 	
 	while (!func_8(&iLocal_20))
 	{
@@ -63,7 +63,7 @@ void func_1()
 			}
 			vVar0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 0) };
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_20, 1);
-			BRAIN::OPEN_SEQUENCE_TASK(&uVar1);
+			BRAIN::OPEN_SEQUENCE_TASK(&uVar3);
 			if (!PED::IS_PED_IN_ANY_VEHICLE(iLocal_20, 0))
 			{
 				if (!PED::IS_PED_IN_COMBAT(iLocal_20, 0) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_20, 0))
@@ -72,8 +72,8 @@ void func_1()
 				}
 			}
 			BRAIN::TASK_LOOK_AT_COORD(0, vVar0, 6000, 0, 2);
-			BRAIN::CLOSE_SEQUENCE_TASK(uVar1);
-			BRAIN::TASK_PERFORM_SEQUENCE(iLocal_20, uVar1);
+			BRAIN::CLOSE_SEQUENCE_TASK(uVar3);
+			BRAIN::TASK_PERFORM_SEQUENCE(iLocal_20, uVar3);
 		}
 		func_2(iLocal_20);
 	}
@@ -93,7 +93,7 @@ void func_1()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_2(int iParam0)
+void func_2(int iParam0)//Position - 0x13C
 {
 	int iVar0;
 	
@@ -146,12 +146,12 @@ void func_2(int iParam0)
 	}
 }
 
-void func_3(int iParam0, char* sParam1, char* sParam2, int iParam3)
+void func_3(int iParam0, char* sParam1, char* sParam2, int iParam3)//Position - 0x234
 {
 	AUDIO::_PLAY_AMBIENT_SPEECH_WITH_VOICE(iParam0, sParam1, sParam2, func_4(iParam3), 0);
 }
 
-int func_4(int iParam0)
+int func_4(int iParam0)//Position - 0x24D
 {
 	int iVar0;
 	
@@ -274,7 +274,7 @@ int func_4(int iParam0)
 	return iVar0;
 }
 
-int func_5(int iParam0)
+int func_5(int iParam0)//Position - 0x43C
 {
 	int iVar0;
 	int iVar1;
@@ -295,7 +295,7 @@ int func_5(int iParam0)
 	return 145;
 }
 
-int func_6(int iParam0)
+int func_6(int iParam0)//Position - 0x479
 {
 	if (func_7(iParam0))
 	{
@@ -307,12 +307,12 @@ int func_6(int iParam0)
 	return 0;
 }
 
-bool func_7(int iParam0)
+bool func_7(int iParam0)//Position - 0x4A3
 {
 	return iParam0 < 3;
 }
 
-int func_8(var uParam0)
+int func_8(var uParam0)//Position - 0x4AF
 {
 	int iVar0;
 	
@@ -362,13 +362,13 @@ int func_8(var uParam0)
 	return 0;
 }
 
-int func_9()
+int func_9()//Position - 0x5F4
 {
 	func_10();
 	return Global_106565.f_2357.f_539.f_4321;
 }
 
-void func_10()
+void func_10()//Position - 0x60D
 {
 	int iVar0;
 	
@@ -400,7 +400,7 @@ void func_10()
 	Global_106565.f_2357.f_539.f_4321 = 145;
 }
 
-bool func_11(int iParam0)
+bool func_11(int iParam0)//Position - 0x70A
 {
 	return Global_36425 == iParam0;
 }

@@ -4,7 +4,7 @@
 	int iLocal_2 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
@@ -65,12 +65,12 @@ void __EntryFunction__()
 	func_10();
 }
 
-void func_1()
+void func_1()//Position - 0x13E
 {
 	Global_93721 = 1;
 }
 
-int func_2()
+int func_2()//Position - 0x14B
 {
 	if (func_3(0))
 	{
@@ -91,7 +91,7 @@ int func_2()
 	return 1;
 }
 
-bool func_3(bool bParam0)
+bool func_3(bool bParam0)//Position - 0x196
 {
 	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
 	{
@@ -100,26 +100,26 @@ bool func_3(bool bParam0)
 	return MISC::IS_BIT_SET(Global_71838, 0);
 }
 
-void func_4(int iParam0, int iParam1)
+void func_4(int iParam0, int iParam1)//Position - 0x1C1
 {
 	Global_93721.f_7 = iParam0;
 	Global_93721.f_8 = iParam1;
 }
 
-void func_5(char* sParam0)
+void func_5(int iParam0)//Position - 0x1D9
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iLocal_0, "HIDE_LOGO");
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRING");
-	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(sParam0);
+	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(iParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_6(char* sParam0, float fParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, float fParam7)
+void func_6(int iParam0, float fParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, float fParam7)//Position - 0x200
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iLocal_0, "SHOW_LOGO");
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRING");
-	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(sParam0);
+	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(iParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT(fParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT(fParam2);
@@ -131,7 +131,7 @@ void func_6(char* sParam0, float fParam1, float fParam2, float fParam3, float fP
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_7()
+void func_7()//Position - 0x251
 {
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	PAD::DISABLE_CONTROL_ACTION(2, 199, 1);
@@ -139,18 +139,18 @@ void func_7()
 	func_8();
 }
 
-void func_8()
+void func_8()//Position - 0x26E
 {
 	RECORDING::_0xEB2D525B57F42B40();
 	func_9();
 }
 
-void func_9()
+void func_9()//Position - 0x27E
 {
 	Global_17272.f_134 = 1;
 }
 
-void func_10()
+void func_10()//Position - 0x28C
 {
 	MISC::SET_BIT(&(Global_106565.f_10010.f_25), 1);
 	if (iLocal_0 != 0)

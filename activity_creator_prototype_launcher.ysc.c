@@ -97,7 +97,7 @@
 	var uLocal_95 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -131,17 +131,17 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0x85
 {
 }
 
-void func_2()
+void func_2()//Position - 0x8D
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, 0, -1);
 	func_3(0, -1, 0);
 }
 
-int func_3(int iParam0, int iParam1, bool bParam2)
+int func_3(int iParam0, int iParam1, bool bParam2)//Position - 0xA5
 {
 	int iVar0;
 	
@@ -244,7 +244,7 @@ int func_3(int iParam0, int iParam1, bool bParam2)
 	return 1;
 }
 
-int func_4(int iParam0)
+int func_4(int iParam0)//Position - 0x1BA
 {
 	if (SCRIPT::GET_EVENT_EXISTS(1, iParam0))
 	{
@@ -253,17 +253,17 @@ int func_4(int iParam0)
 	return 0;
 }
 
-bool func_5()
+bool func_5()//Position - 0x1D1
 {
 	return Global_2448756.f_581;
 }
 
-bool func_6()
+bool func_6()//Position - 0x1E0
 {
 	return Global_1312844;
 }
 
-void func_7()
+void func_7()//Position - 0x1EC
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

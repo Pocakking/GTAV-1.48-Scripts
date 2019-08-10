@@ -25,7 +25,7 @@
 	var uScriptParam_22 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	if (SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("wp_partyboombox")) > 1)
 	{
@@ -76,7 +76,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1()
+void func_1()//Position - 0xB1
 {
 	if (STREAMING::IS_IPL_ACTIVE("ID2_21_G_Night"))
 	{

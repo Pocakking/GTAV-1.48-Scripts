@@ -22,7 +22,7 @@
 	int iLocal_20 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -88,7 +88,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1()
+int func_1()//Position - 0xC9
 {
 	if (((Global_14553.f_1 == 1 || Global_14553.f_1 == 3) || Global_14553.f_1 == 0) || Global_14497 == 1)
 	{
@@ -98,12 +98,12 @@ int func_1()
 	return 0;
 }
 
-void func_2()
+void func_2()//Position - 0x10C
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-int func_3()
+int func_3()//Position - 0x118
 {
 	if (Global_3029 == 1 || Global_14553.f_1 < 7)
 	{
@@ -113,7 +113,7 @@ int func_3()
 	return 0;
 }
 
-void func_4()
+void func_4()//Position - 0x141
 {
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), 0))
 	{
@@ -121,7 +121,7 @@ void func_4()
 	}
 }
 
-int func_5(int iParam0, int iParam1, int iParam2)
+int func_5(int iParam0, int iParam1, int iParam2)//Position - 0x161
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(iParam0, iParam1) || (iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(iParam0, iParam1)))
 	{
@@ -144,13 +144,13 @@ int func_5(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_6()
+void func_6()//Position - 0x1D3
 {
 	func_7();
 	PAD::DISABLE_CONTROL_ACTION(0, 80, 1);
 }
 
-void func_7()
+void func_7()//Position - 0x1E7
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(Global_14534, "SET_DATA_SLOT");
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(27);
@@ -169,7 +169,7 @@ void func_7()
 	}
 }
 
-void func_8(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)
+void func_8(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)//Position - 0x265
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));
@@ -212,13 +212,13 @@ void func_8(int iParam0, char* sParam1, float fParam2, float fParam3, float fPar
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_9(char* sParam0)
+void func_9(char* sParam0)//Position - 0x318
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_10()
+void func_10()//Position - 0x32A
 {
 	func_7();
 	func_8(Global_14534, "SET_SOFT_KEYS", 2f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);

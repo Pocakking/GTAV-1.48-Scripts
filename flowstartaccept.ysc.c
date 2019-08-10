@@ -24,7 +24,7 @@
 	int iLocal_22 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -97,7 +97,7 @@ void __EntryFunction__()
 	func_6();
 }
 
-int func_1()
+int func_1()//Position - 0x17D
 {
 	if (func_2(0))
 	{
@@ -118,7 +118,7 @@ int func_1()
 	return 1;
 }
 
-bool func_2(bool bParam0)
+bool func_2(bool bParam0)//Position - 0x1C8
 {
 	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
 	{
@@ -127,24 +127,24 @@ bool func_2(bool bParam0)
 	return MISC::IS_BIT_SET(Global_71838, 0);
 }
 
-void func_3(int iParam0, int iParam1)
+void func_3(int iParam0, int iParam1)//Position - 0x1F3
 {
 	Global_93721.f_7 = iParam0;
 	Global_93721.f_8 = iParam1;
 }
 
-void func_4(char* sParam0)
+void func_4(char* sParam0)//Position - 0x20B
 {
 	GRAPHICS::_0xE83A3E3557A56640(sParam0);
 }
 
-void func_5(char* sParam0)
+void func_5(char* sParam0)//Position - 0x219
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_6()
+void func_6()//Position - 0x22B
 {
 	if (iLocal_20 != 0)
 	{

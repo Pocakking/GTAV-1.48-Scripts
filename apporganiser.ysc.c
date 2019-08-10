@@ -25,7 +25,7 @@
 	int iLocal_23 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -80,7 +80,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1()
+int func_1()//Position - 0xDC
 {
 	if (((Global_14553.f_1 == 1 || Global_14553.f_1 == 3) || Global_14553.f_1 == 0) || Global_14497 == 1)
 	{
@@ -90,7 +90,7 @@ int func_1()
 	return 0;
 }
 
-int func_2()
+int func_2()//Position - 0x11F
 {
 	if (Global_3029 == 1 || Global_14553.f_1 < 7)
 	{
@@ -100,7 +100,7 @@ int func_2()
 	return 0;
 }
 
-void func_3()
+void func_3()//Position - 0x148
 {
 	if (!iLocal_20)
 	{
@@ -152,7 +152,7 @@ void func_3()
 	}
 }
 
-void func_4(int iParam0, bool bParam1)
+void func_4(int iParam0, bool bParam1)//Position - 0x25C
 {
 	int iVar0;
 	int iVar1;
@@ -255,7 +255,7 @@ void func_4(int iParam0, bool bParam1)
 	Global_90800 = Global_90799;
 }
 
-char* func_5(int iParam0)
+char* func_5(int iParam0)//Position - 0x3D0
 {
 	switch (iParam0)
 	{
@@ -270,13 +270,13 @@ char* func_5(int iParam0)
 	return "ORG_EV_0";
 }
 
-void func_6(char* sParam0)
+void func_6(char* sParam0)//Position - 0x400
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-void func_7(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)
+void func_7(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6)//Position - 0x412
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(iParam0, sParam1);
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT(SYSTEM::ROUND(fParam2));
@@ -299,7 +299,7 @@ void func_7(int iParam0, char* sParam1, float fParam2, float fParam3, float fPar
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_8()
+void func_8()//Position - 0x475
 {
 	int iVar0;
 	int iVar1;
@@ -454,7 +454,7 @@ void func_8()
 	}
 }
 
-int func_9(int iParam0, int iParam1, int iParam2, int iParam3)
+int func_9(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x712
 {
 	int iVar0;
 	int iVar1;
@@ -508,12 +508,12 @@ int func_9(int iParam0, int iParam1, int iParam2, int iParam3)
 	return 0;
 }
 
-int func_10(int iParam0)
+int func_10(int iParam0)//Position - 0x7C5
 {
 	return func_11(iParam0);
 }
 
-int func_11(int iParam0)
+int func_11(int iParam0)//Position - 0x7D3
 {
 	switch (iParam0)
 	{
@@ -538,7 +538,7 @@ int func_11(int iParam0)
 	return 0;
 }
 
-void func_12()
+void func_12()//Position - 0x81F
 {
 	int iVar0;
 	int iVar1;
@@ -561,7 +561,7 @@ void func_12()
 	func_13();
 }
 
-void func_13()
+void func_13()//Position - 0x86D
 {
 	Global_90802 = 0;
 	Global_90803 = 0;
@@ -570,7 +570,7 @@ void func_13()
 	Global_90982 = CLOCK::GET_CLOCK_MONTH();
 }
 
-void func_14()
+void func_14()//Position - 0x897
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

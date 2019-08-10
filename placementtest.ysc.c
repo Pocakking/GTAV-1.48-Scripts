@@ -48,7 +48,7 @@
 	int iLocal_46 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	
@@ -110,7 +110,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(int iParam0, bool bParam1)
+int func_1(int iParam0, bool bParam1)//Position - 0xEF
 {
 	if (!func_8(&(iParam0->f_2)))
 	{
@@ -138,14 +138,14 @@ int func_1(int iParam0, bool bParam1)
 	return 1;
 }
 
-void func_2(var uParam0)
+void func_2(var uParam0)//Position - 0x175
 {
 	uParam0->f_1 = 0f;
 	uParam0->f_2 = 0f;
 	*uParam0 = 0;
 }
 
-float func_3(var uParam0)
+float func_3(var uParam0)//Position - 0x18B
 {
 	if (func_8(uParam0))
 	{
@@ -161,7 +161,7 @@ float func_3(var uParam0)
 	return uParam0->f_1;
 }
 
-float func_4(bool bParam0)
+float func_4(bool bParam0)//Position - 0x1CA
 {
 	float fVar0;
 	float fVar1;
@@ -185,17 +185,17 @@ float func_4(bool bParam0)
 	return (SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
 }
 
-bool func_5(var uParam0)
+bool func_5(var uParam0)//Position - 0x222
 {
 	return MISC::IS_BIT_SET(*uParam0, 2);
 }
 
-void func_6(int iParam0)
+void func_6(int iParam0)//Position - 0x232
 {
 	func_7(iParam0, 0f);
 }
 
-void func_7(int iParam0, float fParam1)
+void func_7(int iParam0, float fParam1)//Position - 0x241
 {
 	iParam0->f_1 = (func_4(MISC::IS_BIT_SET(*iParam0, 4)) - fParam1);
 	MISC::SET_BIT(iParam0, 1);
@@ -203,12 +203,12 @@ void func_7(int iParam0, float fParam1)
 	iParam0->f_2 = 0f;
 }
 
-bool func_8(var uParam0)
+bool func_8(var uParam0)//Position - 0x26F
 {
 	return MISC::IS_BIT_SET(*uParam0, 1);
 }
 
-void func_9(int iParam0)
+void func_9(int iParam0)//Position - 0x27F
 {
 	iParam0->f_1 = 300;
 	func_6(&(iParam0->f_2));
@@ -217,13 +217,13 @@ void func_9(int iParam0)
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_10(int iParam0)
+void func_10(int iParam0)//Position - 0x2AC
 {
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(*iParam0, "SPLASH_TEXT_TRANSITION_IN");
 	GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION_VOID();
 }
 
-void func_11(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6)
+void func_11(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x2C3
 {
 	iParam0->f_1 = -1;
 	GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(*iParam0, "SPLASH_TEXT_LABEL");
@@ -240,13 +240,13 @@ void func_11(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	}
 }
 
-void func_12(char* sParam0)
+void func_12(char* sParam0)//Position - 0x311
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
-int func_13()
+int func_13()//Position - 0x323
 {
 	return unk_0x67D02A194A2FC2BD("SPLASH_TEXT");
 }

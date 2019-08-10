@@ -23,7 +23,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -43,14 +43,14 @@ void __EntryFunction__()
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (func_1(vScriptParam_21.x, vScriptParam_21.y, vScriptParam_21.z))
+		if (func_1(vScriptParam_0.x, vScriptParam_0.y, vScriptParam_0.z))
 		{
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
 	}
 }
 
-int func_1(int iParam0, int iParam1, bool bParam2)
+int func_1(int iParam0, int iParam1, bool bParam2)//Position - 0x63
 {
 	if (iParam0 == 6)
 	{
@@ -436,7 +436,7 @@ int func_1(int iParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-int func_2()
+int func_2()//Position - 0xA68
 {
 	int iVar0;
 	
@@ -453,12 +453,12 @@ int func_2()
 	return 0;
 }
 
-void func_3()
+void func_3()//Position - 0xAAE
 {
 	Global_2449538.f_6092 = 1;
 }
 
-void func_4(int iParam0, int iParam1)
+void func_4(int iParam0, int iParam1)//Position - 0xABE
 {
 	func_8(iParam0, iParam1, -768372091, &(Global_262145.f_26254), 1);
 	func_8(iParam0, iParam1, -1911899210, &(Global_262145.f_26255), 1);
@@ -1552,7 +1552,7 @@ void func_4(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -665714937, &(Global_262145.f_27343), 1);
 }
 
-void func_5(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
+void func_5(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)//Position - 0x642B
 {
 	func_6(0, iParam2, uParam3, bParam4);
 	if (iParam0 == 0)
@@ -1775,7 +1775,7 @@ void func_5(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
 	}
 }
 
-void func_6(int iParam0, var uParam1, var uParam2, bool bParam3)
+void func_6(int iParam0, var uParam1, var uParam2, bool bParam3)//Position - 0x684A
 {
 	var uVar0;
 	
@@ -1797,7 +1797,7 @@ void func_6(int iParam0, var uParam1, var uParam2, bool bParam3)
 	}
 }
 
-int func_7(int iParam0)
+int func_7(int iParam0)//Position - 0x688C
 {
 	char cVar0[64];
 	
@@ -1927,7 +1927,7 @@ int func_7(int iParam0)
 	return 0;
 }
 
-void func_8(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
+void func_8(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)//Position - 0x6A9B
 {
 	func_9(0, iParam2, uParam3, bParam4);
 	if (iParam0 == 0)
@@ -2150,7 +2150,7 @@ void func_8(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
 	}
 }
 
-void func_9(int iParam0, int iParam1, var uParam2, bool bParam3)
+void func_9(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x6EBA
 {
 	int iVar0;
 	var uVar1;
@@ -2174,7 +2174,7 @@ void func_9(int iParam0, int iParam1, var uParam2, bool bParam3)
 	}
 }
 
-void func_10(int iParam0, int iParam1)
+void func_10(int iParam0, int iParam1)//Position - 0x6EFD
 {
 	func_5(iParam0, iParam1, -1782918513, &(Global_262145.f_24813), 1);
 	func_5(iParam0, iParam1, -1742071024, &(Global_262145.f_24814), 1);
@@ -3611,7 +3611,7 @@ void func_10(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -431002390, &(Global_262145.f_26252), 1);
 }
 
-void func_11(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
+void func_11(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)//Position - 0xE365
 {
 	func_12(0, iParam2, uParam3, bParam4);
 	if (iParam0 == 0)
@@ -3834,7 +3834,7 @@ void func_11(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)
 	}
 }
 
-void func_12(int iParam0, var uParam1, var uParam2, bool bParam3)
+void func_12(int iParam0, var uParam1, var uParam2, bool bParam3)//Position - 0xE784
 {
 	int iVar0;
 	var uVar1;
@@ -3858,7 +3858,7 @@ void func_12(int iParam0, var uParam1, var uParam2, bool bParam3)
 	}
 }
 
-void func_13(int iParam0, int iParam1)
+void func_13(int iParam0, int iParam1)//Position - 0xE7C7
 {
 	func_8(iParam0, iParam1, 1755971722, &(Global_262145.f_23649), 1);
 	func_8(iParam0, iParam1, 134208154, &(Global_262145.f_23650), 1);
@@ -4834,7 +4834,7 @@ void func_13(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -1337548785, &(Global_262145.f_24811), 1);
 }
 
-void func_14(int iParam0, int iParam1)
+void func_14(int iParam0, int iParam1)//Position - 0x13789
 {
 	func_8(iParam0, iParam1, -438049908, &(Global_262145.f_22444), 1);
 	func_8(iParam0, iParam1, -1892202067, &(Global_262145.f_22445), 1);
@@ -5860,7 +5860,7 @@ void func_14(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 119118703, &(Global_262145.f_23646), 1);
 }
 
-void func_15(int iParam0, int iParam1)
+void func_15(int iParam0, int iParam1)//Position - 0x18B66
 {
 	int iVar0;
 	vector3 vVar1[24];
@@ -6930,7 +6930,7 @@ void func_15(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 2134753204, &(Global_262145.f_23436), 1);
 }
 
-void func_16(int iParam0, int iParam1)
+void func_16(int iParam0, int iParam1)//Position - 0x1E230
 {
 	func_8(iParam0, iParam1, 1045219855, &(Global_262145.f_20592), 1);
 	func_8(iParam0, iParam1, -1113441963, &(Global_262145.f_20593), 1);
@@ -7634,7 +7634,7 @@ void func_16(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -1283619478, &(Global_262145.f_21348), 1);
 }
 
-void func_17(int iParam0, int iParam1)
+void func_17(int iParam0, int iParam1)//Position - 0x21BA2
 {
 	func_8(iParam0, iParam1, -1792813359, &(Global_262145.f_19602), 1);
 	func_8(iParam0, iParam1, -473743920, &(Global_262145.f_19603), 1);
@@ -8530,7 +8530,7 @@ void func_17(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 784992141, &(Global_262145.f_20591), 1);
 }
 
-void func_18(int iParam0, int iParam1)
+void func_18(int iParam0, int iParam1)//Position - 0x264D5
 {
 	iParam0 = iParam0;
 	iParam1 = iParam1;
@@ -9436,7 +9436,7 @@ void func_18(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -196464326, &(Global_262145.f_19601), 1);
 }
 
-void func_19(int iParam0, int iParam1)
+void func_19(int iParam0, int iParam1)//Position - 0x2AEB4
 {
 	iParam0 = iParam0;
 	iParam1 = iParam1;
@@ -10512,7 +10512,7 @@ void func_19(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1357942322, &(Global_262145.f_18690), 1);
 }
 
-void func_20(int iParam0, int iParam1)
+void func_20(int iParam0, int iParam1)//Position - 0x30689
 {
 	iParam0 = iParam0;
 	iParam1 = iParam1;
@@ -11062,7 +11062,7 @@ void func_20(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 989083205, &(Global_262145.f_17518), 1);
 }
 
-void func_21(int iParam0, int iParam1)
+void func_21(int iParam0, int iParam1)//Position - 0x33337
 {
 	iParam0 = iParam0;
 	iParam1 = iParam1;
@@ -11944,7 +11944,7 @@ void func_21(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -959161654, &(Global_262145.f_17523), 1);
 }
 
-void func_22(int iParam0, int iParam1)
+void func_22(int iParam0, int iParam1)//Position - 0x37C38
 {
 	int iVar0;
 	char cVar1[32];
@@ -12531,7 +12531,7 @@ void func_22(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1160987190, &(Global_262145.f_26245), 1);
 }
 
-void func_23(int iParam0, int iParam1)
+void func_23(int iParam0, int iParam1)//Position - 0x3AB4B
 {
 	func_8(iParam0, iParam1, 347918288, &(Global_262145.f_14726[49]), 1);
 	func_11(iParam0, iParam1, 1479676231, &(Global_262145.f_14827), 1);
@@ -12989,7 +12989,7 @@ void func_23(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -903481274, &(Global_262145.f_16056), 1);
 }
 
-void func_24(int iParam0, int iParam1)
+void func_24(int iParam0, int iParam1)//Position - 0x3D095
 {
 	func_5(iParam0, iParam1, -1787967139, &(Global_262145.f_14584), 1);
 	func_5(iParam0, iParam1, 1860189652, &(Global_262145.f_14585), 1);
@@ -13397,7 +13397,7 @@ void func_24(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -2019815286, &(Global_262145.f_15397), 1);
 }
 
-void func_25(int iParam0, int iParam1)
+void func_25(int iParam0, int iParam1)//Position - 0x3F409
 {
 	func_8(iParam0, iParam1, -2104488739, &(Global_262145.f_14119), 1);
 	func_8(iParam0, iParam1, -1638842604, &(Global_262145.f_14120), 1);
@@ -13821,7 +13821,7 @@ void func_25(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -326853339, &(Global_262145.f_14583), 1);
 }
 
-void func_26(int iParam0, int iParam1)
+void func_26(int iParam0, int iParam1)//Position - 0x41687
 {
 	func_11(iParam0, iParam1, 1856358159, &(Global_262145.f_16059), 1);
 	func_11(iParam0, iParam1, -1875285350, &(Global_262145.f_16060), 1);
@@ -14632,7 +14632,7 @@ void func_26(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -2040331389, &(Global_262145.f_16182), 1);
 }
 
-void func_27(int iParam0, int iParam1)
+void func_27(int iParam0, int iParam1)//Position - 0x464F2
 {
 	func_8(iParam0, iParam1, 114956437, &(Global_262145.f_12048), 1);
 	func_8(iParam0, iParam1, -659896376, &(Global_262145.f_12049), 1);
@@ -15324,7 +15324,7 @@ void func_27(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1317163154, &(Global_262145.f_13864[199]), 1);
 }
 
-void func_28(int iParam0, int iParam1)
+void func_28(int iParam0, int iParam1)//Position - 0x4A084
 {
 	func_5(iParam0, iParam1, 538616568, &(Global_262145.f_12065), 1);
 	func_5(iParam0, iParam1, -1860373235, &(Global_262145.f_12066), 1);
@@ -15578,7 +15578,7 @@ void func_28(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 472317652, &(Global_262145.f_12749), 1);
 }
 
-void func_29(int iParam0, int iParam1)
+void func_29(int iParam0, int iParam1)//Position - 0x4B50D
 {
 	func_8(iParam0, iParam1, 1063130533, &(Global_262145.f_11493), 1);
 	func_8(iParam0, iParam1, -1644486149, &(Global_262145.f_11494), 1);
@@ -16110,7 +16110,7 @@ void func_29(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 2013866241, &(Global_262145.f_15606), 1);
 }
 
-void func_30(int iParam0, int iParam1)
+void func_30(int iParam0, int iParam1)//Position - 0x4E065
 {
 	func_5(iParam0, iParam1, -606687769, &(Global_262145.f_3673), 1);
 	func_5(iParam0, iParam1, -121693918, &(Global_262145.f_3674), 1);
@@ -16707,7 +16707,7 @@ void func_30(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -267786538, &(Global_262145.f_10085), 1);
 }
 
-void func_31(int iParam0, int iParam1)
+void func_31(int iParam0, int iParam1)//Position - 0x51113
 {
 	func_11(iParam0, iParam1, joaat("XP_TUNABLE_DAILY_DEATHMATCH"), &(Global_262145.f_4203), 1);
 	func_11(iParam0, iParam1, joaat("XP_TUNABLE_DAILY_MISSION"), &(Global_262145.f_4204), 1);
@@ -17047,7 +17047,7 @@ void func_31(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1346501551, &(Global_262145.f_11466), 1);
 }
 
-void func_32(int iParam0, int iParam1)
+void func_32(int iParam0, int iParam1)//Position - 0x52CA9
 {
 	func_8(iParam0, iParam1, joaat("ADDER_EXPENDITURE_MODIFIER"), &(Global_262145.f_4009), 1);
 	func_8(iParam0, iParam1, joaat("AIRBUS_EXPENDITURE_MODIFIER"), &(Global_262145.f_4010), 1);
@@ -17252,7 +17252,7 @@ void func_32(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 2049023148, &(Global_262145.f_15500), 1);
 }
 
-void func_33(int iParam0, int iParam1)
+void func_33(int iParam0, int iParam1)//Position - 0x53D2E
 {
 	func_8(iParam0, iParam1, joaat("PROPERTY_HIGH_APT_1_EXPENDITURE_MODIFIER"), &(Global_262145.f_3949), 1);
 	func_8(iParam0, iParam1, joaat("PROPERTY_HIGH_APT_2_EXPENDITURE_MODIFIER"), &(Global_262145.f_3950), 1);
@@ -17615,7 +17615,7 @@ void func_33(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -728078591, &(Global_262145.f_13048), 1);
 }
 
-void func_34(int iParam0, int iParam1)
+void func_34(int iParam0, int iParam1)//Position - 0x55AAA
 {
 	func_11(iParam0, iParam1, joaat("CARMOD_UNLOCK_NOARMOUR_EXPENDITURE_TUNABLE_SPECIAL"), &(Global_262145.f_3401), 1);
 	func_11(iParam0, iParam1, joaat("CARMOD_UNLOCK_STOCKFRONTBUMPER_EXPENDITURE_TUNABLE_SPECIAL"), &(Global_262145.f_3402), 1);
@@ -17892,7 +17892,7 @@ void func_34(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1546187237, &(Global_262145.f_10092), 1);
 }
 
-void func_35(int iParam0, int iParam1)
+void func_35(int iParam0, int iParam1)//Position - 0x57117
 {
 	func_11(iParam0, iParam1, 436502536, &(Global_262145.f_2930), 1);
 	func_11(iParam0, iParam1, 1370106640, &(Global_262145.f_2931), 1);
@@ -18361,11 +18361,11 @@ void func_35(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, joaat("CARMOD_UNLOCK_LIMO_WINDOWS_EXPENDITURE_TUNABLE_SPORT"), &(Global_262145.f_3398), 1);
 }
 
-void func_36(int iParam0, int iParam1)
+void func_36(int iParam0, int iParam1)//Position - 0x59745
 {
 	int iVar0;
 	char cVar1[32];
-	char cVar2[32];
+	char cVar9[32];
 	
 	func_11(iParam0, iParam1, -1806375809, &(Global_262145.f_2839), 1);
 	func_11(iParam0, iParam1, 1232863007, &(Global_262145.f_2840), 1);
@@ -18470,15 +18470,15 @@ void func_36(int iParam0, int iParam1)
 	{
 		StringCopy(&cVar1, "RewardPlaylist_", 32);
 		StringIntConCat(&cVar1, iVar0, 32);
-		StringCopy(&cVar2, "RewardPlaylistItem_", 32);
-		StringIntConCat(&cVar2, iVar0, 32);
+		StringCopy(&cVar9, "RewardPlaylistItem_", 32);
+		StringIntConCat(&cVar9, iVar0, 32);
 		func_8(iParam0, iParam1, MISC::GET_HASH_KEY(&cVar1), &(Global_262145.f_7844[iVar0]), 1);
-		func_8(iParam0, iParam1, MISC::GET_HASH_KEY(&cVar2), &(Global_262145.f_7895[iVar0]), 1);
+		func_8(iParam0, iParam1, MISC::GET_HASH_KEY(&cVar9), &(Global_262145.f_7895[iVar0]), 1);
 		iVar0++;
 	}
 }
 
-void func_37(int iParam0, int iParam1)
+void func_37(int iParam0, int iParam1)//Position - 0x59FB8
 {
 	func_11(iParam0, iParam1, joaat("PLAYERKIT_TAN_CMBTPISTOL_EXPENDITURE_TUNABLE"), &(Global_262145.f_2719), 1);
 	func_11(iParam0, iParam1, joaat("PLAYERKIT_TAN_APPISTOL_EXPENDITURE_TUNABLE"), &(Global_262145.f_2720), 1);
@@ -18843,7 +18843,7 @@ void func_37(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 647929809, &(Global_262145.f_11276), 1);
 }
 
-void func_38(int iParam0, int iParam1)
+void func_38(int iParam0, int iParam1)//Position - 0x5BD5C
 {
 	func_11(iParam0, iParam1, joaat("CONTACT_MISSION_RP_TIME_PERIOD_1_PERCENTAGE"), &(Global_262145.f_7828), 1);
 	func_11(iParam0, iParam1, joaat("CONTACT_MISSION_RP_TIME_PERIOD_2_PERCENTAGE"), &(Global_262145.f_7829), 1);
@@ -19004,7 +19004,7 @@ void func_38(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1646626335, &(Global_262145.f_8621), 1);
 }
 
-void func_39(int iParam0, int iParam1)
+void func_39(int iParam0, int iParam1)//Position - 0x5CA48
 {
 	func_11(iParam0, iParam1, joaat("MALE_HAIR_CLOSE_SHAVE_EXPENDITURE_TUNABLE"), &(Global_262145.f_2532[0]), 1);
 	func_11(iParam0, iParam1, joaat("MALE_HAIR_BUZZCUT_DARK_BROWN_EXPENDITURE_TUNABLE"), &(Global_262145.f_2532[1]), 1);
@@ -19157,7 +19157,7 @@ void func_39(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1110628553, &(Global_262145.f_12797), 1);
 }
 
-void func_40(int iParam0, int iParam1)
+void func_40(int iParam0, int iParam1)//Position - 0x5D7B1
 {
 	func_8(iParam0, iParam1, joaat("Contact_Mission_Time_Period_1"), &(Global_262145.f_7778), 1);
 	func_8(iParam0, iParam1, joaat("Contact_Mission_Time_Period_2"), &(Global_262145.f_7779), 1);
@@ -19352,7 +19352,7 @@ void func_40(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1509095735, &(Global_262145.f_16016), 1);
 }
 
-void func_41(int iParam0, int iParam1)
+void func_41(int iParam0, int iParam1)//Position - 0x5E773
 {
 	func_8(iParam0, iParam1, joaat("STRIPBAR_SHOTS_AT_BAR_PRICE_MODIFIER"), &(Global_262145.f_6478), 1);
 	func_8(iParam0, iParam1, joaat("STRIPBAR_DANCE_PRICE_MODIFIER"), &(Global_262145.f_6479), 1);
@@ -19580,7 +19580,7 @@ void func_41(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -349791168, &(Global_262145.f_16187), 1);
 }
 
-void func_42(int iParam0, int iParam1)
+void func_42(int iParam0, int iParam1)//Position - 0x5F9C2
 {
 	func_11(iParam0, iParam1, 165545684, &Global_289489, 1);
 	func_11(iParam0, iParam1, 1381355713, &(Global_289489.f_1), 1);
@@ -19721,7 +19721,7 @@ void func_42(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -1339438789, &(Global_262145.f_16084), 1);
 }
 
-void func_43(int iParam0, int iParam1)
+void func_43(int iParam0, int iParam1)//Position - 0x60601
 {
 	func_11(iParam0, iParam1, -866121634, &(Global_289489.f_9), 1);
 	func_11(iParam0, iParam1, -578223494, &(Global_289489.f_10), 1);
@@ -19913,7 +19913,7 @@ void func_43(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, joaat("DLC_HIPSTER_CLOTHING_FEMALE_TEAL_TASSEL_SCARF"), &(Global_262145.f_7132[327]), 1);
 }
 
-void func_44(int iParam0, int iParam1)
+void func_44(int iParam0, int iParam1)//Position - 0x61824
 {
 	func_11(iParam0, iParam1, joaat("FEMALE_HAIR_LOOSE_TIED_AUBURN_EXPENDITURE_TUNABLE"), &(Global_262145.f_2455[53]), 1);
 	func_11(iParam0, iParam1, joaat("FEMALE_HAIR_LOOSE_TIED_BLACK_EXPENDITURE_TUNABLE"), &(Global_262145.f_2455[54]), 1);
@@ -20108,7 +20108,7 @@ void func_44(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -1433617628, &(Global_262145.f_11290), 1);
 }
 
-void func_45(int iParam0, int iParam1)
+void func_45(int iParam0, int iParam1)//Position - 0x62AC7
 {
 	func_11(iParam0, iParam1, joaat("DLC_THE_SMOOTH_POLAR_SUIT_OPEN"), &(Global_262145.f_6610[233]), 1);
 	func_11(iParam0, iParam1, joaat("DLC_THE_SHARP_BLACK_SUIT_OPEN"), &(Global_262145.f_6610[234]), 1);
@@ -20218,7 +20218,7 @@ void func_45(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 313981683, &(Global_262145.f_15481), 1);
 }
 
-void func_46(int iParam0, int iParam1)
+void func_46(int iParam0, int iParam1)//Position - 0x634C8
 {
 	func_11(iParam0, iParam1, joaat("DLC_FLORAL_BANGLES"), &(Global_262145.f_6610[0]), 1);
 	func_11(iParam0, iParam1, joaat("DLC_PSYCHEDELIC_BANGLES"), &(Global_262145.f_6610[1]), 1);
@@ -20456,7 +20456,7 @@ void func_46(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, 557147298, &(Global_262145.f_12782), 1);
 }
 
-void func_47(int iParam0, int iParam1)
+void func_47(int iParam0, int iParam1)//Position - 0x64B9C
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Glasses_Two_Tone_Square_Frames"), &(Global_262145.f_1100[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Glasses_Green_Square_Frames"), &(Global_262145.f_1100[1]), 1);
@@ -20637,7 +20637,7 @@ void func_47(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 2032121217, &(Global_262145.f_15504), 1);
 }
 
-void func_48(int iParam0, int iParam1)
+void func_48(int iParam0, int iParam1)//Position - 0x65C2F
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Helmets_Western_MC_Yellow_Helmet"), &(Global_262145.f_1075[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Helmets_Steel_Horse_Blue_Helmet"), &(Global_262145.f_1075[1]), 1);
@@ -20724,7 +20724,7 @@ void func_48(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -1622295234, &(Global_262145.f_12807), 1);
 }
 
-void func_49(int iParam0, int iParam1)
+void func_49(int iParam0, int iParam1)//Position - 0x6635E
 {
 	func_8(iParam0, iParam1, joaat("DLC_CAR_MODS_CLASSICAL_HORN_1"), &(Global_262145.f_7049), 1);
 	func_8(iParam0, iParam1, joaat("DLC_CAR_MODS_CLASSICAL_HORN_2"), &(Global_262145.f_7050), 1);
@@ -20791,7 +20791,7 @@ void func_49(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, 1379901719, &(Global_262145.f_11405), 1);
 }
 
-void func_50(int iParam0, int iParam1)
+void func_50(int iParam0, int iParam1)//Position - 0x66890
 {
 	func_8(iParam0, iParam1, 1053497207, &(Global_262145.f_8343[53]), 1);
 	func_8(iParam0, iParam1, 1292153834, &(Global_262145.f_8343[54]), 1);
@@ -20940,7 +20940,7 @@ void func_50(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, 8533357, &(Global_262145.f_14498), 1);
 }
 
-void func_51(int iParam0, int iParam1)
+void func_51(int iParam0, int iParam1)//Position - 0x67538
 {
 	func_8(iParam0, iParam1, joaat("DLC_FEMALE_HAIR_MESSY_BUN_CHESTNUT"), &(Global_262145.f_6914), 1);
 	func_8(iParam0, iParam1, joaat("DLC_FEMALE_HAIR_MESSY_BUN_BLONDE"), &(Global_262145.f_6915), 1);
@@ -21123,7 +21123,7 @@ void func_51(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -1943990523, &(Global_262145.f_11445), 1);
 }
 
-void func_52(int iParam0, int iParam1)
+void func_52(int iParam0, int iParam1)//Position - 0x684BC
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Hats_Red_Ear_Defenders"), &(Global_262145.f_954[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Hats_Blue_Ear_Defenders"), &(Global_262145.f_954[1]), 1);
@@ -21320,7 +21320,7 @@ void func_52(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1177042008, &(Global_262145.f_16008), 1);
 }
 
-void func_53(int iParam0, int iParam1)
+void func_53(int iParam0, int iParam1)//Position - 0x69671
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Feet_Woodland_Camo_Athletic_Shoes"), &(Global_262145.f_670[137]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Feet_Burgundy_Athletic_Shoes"), &(Global_262145.f_670[138]), 1);
@@ -21481,7 +21481,7 @@ void func_53(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 394666218, &(Global_262145.f_16188), 1);
 }
 
-void func_54(int iParam0, int iParam1)
+void func_54(int iParam0, int iParam1)//Position - 0x6A592
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Feet_Black_Sneakers"), &(Global_262145.f_670[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Feet_White_Sneakers"), &(Global_262145.f_670[1]), 1);
@@ -21622,7 +21622,7 @@ void func_54(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, joaat("Discount_Male_Feet_Zebra_Athletic_Shoes"), &(Global_262145.f_670[136]), 1);
 }
 
-void func_55(int iParam0, int iParam1)
+void func_55(int iParam0, int iParam1)//Position - 0x6B2F2
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Uppers_Crew_T_Shirt"), &(Global_262145.f_432[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Uppers_Yeti_T_Shirt"), &(Global_262145.f_432[1]), 1);
@@ -21862,7 +21862,7 @@ void func_55(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, joaat("Discount_Male_Uppers_Tan_Check_Shirt"), &(Global_262145.f_432[235]), 1);
 }
 
-void func_56(int iParam0, int iParam1)
+void func_56(int iParam0, int iParam1)//Position - 0x6C9FF
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Lowers_Mint_Chinos"), &(Global_262145.f_175[138]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Lowers_Brown_Chinos"), &(Global_262145.f_175[139]), 1);
@@ -22072,7 +22072,7 @@ void func_56(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -462230490, &(Global_262145.f_10905), 1);
 }
 
-void func_57(int iParam0, int iParam1)
+void func_57(int iParam0, int iParam1)//Position - 0x6DC4F
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Lowers_Navy_Regular_Fit"), &(Global_262145.f_175[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Lowers_Worn_Black_Regular_Fit"), &(Global_262145.f_175[1]), 1);
@@ -22281,7 +22281,7 @@ void func_57(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -2145199041, &(Global_262145.f_16103), 1);
 }
 
-void func_58(int iParam0, int iParam1)
+void func_58(int iParam0, int iParam1)//Position - 0x6EEBE
 {
 	func_11(iParam0, iParam1, joaat("CARMOD_SHOP_MULTIPLIER"), &(Global_262145.f_72), 1);
 	func_11(iParam0, iParam1, joaat("CLOTHES_SHOP_MULTIPLIER"), &(Global_262145.f_73), 1);
@@ -22620,7 +22620,7 @@ void func_58(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 515491649, &(Global_262145.f_12783), 1);
 }
 
-void func_59(int iParam0, int iParam1)
+void func_59(int iParam0, int iParam1)//Position - 0x70A26
 {
 	func_8(iParam0, iParam1, 181164406, &(Global_262145.f_10021), 1);
 	func_5(iParam0, iParam1, 1378229969, &(Global_262145.f_10022), 1);
@@ -22736,7 +22736,7 @@ void func_59(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -1619960105, &(Global_262145.f_14480), 1);
 }
 
-void func_60(int iParam0, int iParam1)
+void func_60(int iParam0, int iParam1)//Position - 0x7135D
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Watches_Gold_Fashion"), &(Global_262145.f_2318[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Watches_Silver_Fashion"), &(Global_262145.f_2318[1]), 1);
@@ -22902,7 +22902,7 @@ void func_60(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 108848234, &(Global_262145.f_11422), 1);
 }
 
-void func_61(int iParam0, int iParam1)
+void func_61(int iParam0, int iParam1)//Position - 0x720CF
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Glasses_Purple_Squared"), &(Global_262145.f_2189[67]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Glasses_Teal_Squared"), &(Global_262145.f_2189[68]), 1);
@@ -23080,7 +23080,7 @@ void func_61(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -2078999090, &(Global_262145.f_16058), 1);
 }
 
-void func_62(int iParam0, int iParam1)
+void func_62(int iParam0, int iParam1)//Position - 0x73011
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Glasses_Hornet_Sports_Shades"), &(Global_262145.f_2189[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Glasses_Two_Tone_Sports_Shades"), &(Global_262145.f_2189[1]), 1);
@@ -23507,7 +23507,7 @@ void func_62(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, joaat("NPCFLOWINVITETIMEUNTILINVITEINSECONDSFORCEO"), &(Global_262145.f_16148), 1);
 }
 
-void func_63(int iParam0, int iParam1)
+void func_63(int iParam0, int iParam1)//Position - 0x753D0
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Helmets_Western_MC_Yellow_Helmet"), &(Global_262145.f_2164[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Helmets_Steel_Horse_Blue_Helmet"), &(Global_262145.f_2164[1]), 1);
@@ -23663,7 +23663,7 @@ void func_63(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 876375233, &(Global_262145.f_12851), 1);
 }
 
-void func_64(int iParam0, int iParam1)
+void func_64(int iParam0, int iParam1)//Position - 0x760A4
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Hats_Desert_Camo_Military_Cap"), &(Global_262145.f_2043[46]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Hats_Woodland_Camo_Military_Cap"), &(Global_262145.f_2043[47]), 1);
@@ -23747,7 +23747,7 @@ void func_64(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -2012975557, &(Global_262145.f_10028), 1);
 }
 
-void func_65(int iParam0, int iParam1)
+void func_65(int iParam0, int iParam1)//Position - 0x76863
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Hats_Red_Ear_Defenders"), &(Global_262145.f_2043[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Hats_Magenta_Ear_Defenders"), &(Global_262145.f_2043[1]), 1);
@@ -23829,7 +23829,7 @@ void func_65(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, -2016985686, &(Global_262145.f_11430), 1);
 }
 
-void func_66(int iParam0, int iParam1)
+void func_66(int iParam0, int iParam1)//Position - 0x76F80
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Masks_Pink_Pig"), &(Global_262145.f_2016[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Masks_Brown_Pig"), &(Global_262145.f_2016[1]), 1);
@@ -24473,7 +24473,7 @@ void func_66(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -752444756, &(Global_262145.f_15455), 1);
 }
 
-void func_67(int iParam0, int iParam1)
+void func_67(int iParam0, int iParam1)//Position - 0x7AA0A
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Feet_Copper_Knee_High"), &(Global_262145.f_1759[146]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Feet_Gray_Knee_High"), &(Global_262145.f_1759[147]), 1);
@@ -24764,7 +24764,7 @@ void func_67(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1142778799, &(Global_262145.f_16147), 1);
 }
 
-void func_68(int iParam0, int iParam1)
+void func_68(int iParam0, int iParam1)//Position - 0x7C353
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Feet_Charcoal_Platforms"), &(Global_262145.f_1759[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Feet_Gray_Platforms"), &(Global_262145.f_1759[1]), 1);
@@ -24935,7 +24935,7 @@ void func_68(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1506349541, &(Global_262145.f_15505), 1);
 }
 
-void func_69(int iParam0, int iParam1)
+void func_69(int iParam0, int iParam1)//Position - 0x7D34E
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Uppers_Red_Cropped_Biker"), &(Global_262145.f_1502[136]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Uppers_Green_Cropped_Biker"), &(Global_262145.f_1502[137]), 1);
@@ -25078,7 +25078,7 @@ void func_69(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -1431494328, &(Global_262145.f_14482), 1);
 }
 
-void func_70(int iParam0, int iParam1)
+void func_70(int iParam0, int iParam1)//Position - 0x7E09D
 {
 	func_8(iParam0, iParam1, -1433173314, &(Global_262145.f_10670), 1);
 	func_8(iParam0, iParam1, -2372008, &(Global_262145.f_10671), 1);
@@ -25356,7 +25356,7 @@ void func_70(int iParam0, int iParam1)
 	func_11(iParam0, iParam1, -1421835103, &(Global_262145.f_14484), 1);
 }
 
-void func_71(int iParam0, int iParam1)
+void func_71(int iParam0, int iParam1)//Position - 0x7F935
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Lowers_Navy_Two_Tone_Mini"), &(Global_262145.f_1245[143]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Lowers_Teal_Two_Tone_Sequin"), &(Global_262145.f_1245[144]), 1);
@@ -25623,7 +25623,7 @@ void func_71(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1603326338, &(Global_262145.f_133), 1);
 }
 
-void func_72(int iParam0, int iParam1)
+void func_72(int iParam0, int iParam1)//Position - 0x8103F
 {
 	func_11(iParam0, iParam1, joaat("Discount_Female_Lowers_Blue_Beaded_Denim_Shorts"), &(Global_262145.f_1245[91]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Female_Lowers_Lavender_Denim_Shorts"), &(Global_262145.f_1245[92]), 1);
@@ -25720,7 +25720,7 @@ void func_72(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, -1056933225, &(Global_262145.f_16006), 1);
 }
 
-void func_73(int iParam0, int iParam1)
+void func_73(int iParam0, int iParam1)//Position - 0x818B8
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Watches_Blue_Faced_Watch_"), &(Global_262145.f_1229[0]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Watches_Gold_Watch"), &(Global_262145.f_1229[1]), 1);
@@ -25838,7 +25838,7 @@ void func_73(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1113465862, &(Global_262145.f_10815), 1);
 }
 
-void func_74(int iParam0, int iParam1)
+void func_74(int iParam0, int iParam1)//Position - 0x82260
 {
 	func_11(iParam0, iParam1, joaat("Discount_Male_Glasses_Gray_Bull_Emic"), &(Global_262145.f_1100[81]), 1);
 	func_11(iParam0, iParam1, joaat("Discount_Male_Glasses_Silver_Bull_Emic"), &(Global_262145.f_1100[82]), 1);
@@ -25891,7 +25891,7 @@ void func_74(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1541717015, &(Global_262145.f_15502), 1);
 }
 
-void func_75(int iParam0, int iParam1)
+void func_75(int iParam0, int iParam1)//Position - 0x82729
 {
 	func_11(iParam0, iParam1, joaat("VERSUS_MISSION_TIME_1"), &(Global_262145.f_6556), 1);
 	func_11(iParam0, iParam1, joaat("VERSUS_MISSION_TIME_2"), &(Global_262145.f_6557), 1);
@@ -25974,7 +25974,7 @@ void func_75(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 195226755, &(Global_262145.f_14468), 1);
 }
 
-void func_76(int iParam0, int iParam1)
+void func_76(int iParam0, int iParam1)//Position - 0x82DC4
 {
 	func_8(iParam0, iParam1, 542824547, &(Global_262145.f_9526), 1);
 	func_8(iParam0, iParam1, joaat("JOB_RP_CAP"), &(Global_262145.f_6526), 1);
@@ -26033,13 +26033,13 @@ void func_76(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 23592592, &(Global_262145.f_6548), 1);
 }
 
-void func_77(int iParam0, int iParam1)
+void func_77(int iParam0, int iParam1)//Position - 0x8328B
 {
 	func_8(iParam0, iParam1, 1127593623, &(Global_262145.f_4968[0]), 1);
 	func_8(iParam0, iParam1, 829887258, &(Global_262145.f_4968[1]), 1);
 }
 
-void func_78(int iParam0, int iParam1)
+void func_78(int iParam0, int iParam1)//Position - 0x832C3
 {
 	func_5(iParam0, iParam1, -65632, &(Global_262145.f_22802), 1);
 	func_5(iParam0, iParam1, -65632, &(Global_262145.f_22802), 1);
@@ -26103,7 +26103,7 @@ void func_78(int iParam0, int iParam1)
 	func_5(iParam0, iParam1, 326818989, &(Global_262145.f_26227), 1);
 }
 
-void func_79(int iParam0, int iParam1)
+void func_79(int iParam0, int iParam1)//Position - 0x83883
 {
 	func_8(iParam0, iParam1, -1332615363, &(Global_262145.f_2335), 1);
 	func_8(iParam0, iParam1, -1929060286, &(Global_262145.f_2336), 1);
@@ -26304,7 +26304,7 @@ void func_79(int iParam0, int iParam1)
 	func_8(iParam0, iParam1, 1018321408, &(Global_262145.f_23491), 1);
 }
 
-void func_80(int iParam0, int iParam1, bool bParam2)
+void func_80(int iParam0, int iParam1, bool bParam2)//Position - 0x8494C
 {
 	int iVar0;
 	char cVar1[32];
@@ -28096,7 +28096,7 @@ void func_80(int iParam0, int iParam1, bool bParam2)
 	func_5(iParam0, iParam1, 1392402393, &(Global_262145.f_24783), 1);
 }
 
-void func_81(int iParam0, var uParam1)
+void func_81(int iParam0, var uParam1)//Position - 0x8EE92
 {
 	int iVar0;
 	
@@ -39794,7 +39794,7 @@ void func_81(int iParam0, var uParam1)
 	Global_262145.f_27343 = 120000;
 }
 
-void func_82(int iParam0, bool bParam1)
+void func_82(int iParam0, bool bParam1)//Position - 0xAB437
 {
 	int iVar0;
 	
@@ -50945,7 +50945,7 @@ void func_82(int iParam0, bool bParam1)
 	Global_262145.f_7126 = 0;
 }
 
-bool func_83()
+bool func_83()//Position - 0xC5856
 {
 	return Global_2448756.f_579;
 }

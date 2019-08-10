@@ -1,11 +1,11 @@
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	func_1();
 	Global_2458532 = 1;
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_1()
+void func_1()//Position - 0x15
 {
 	Global_2539502[0 /*3*/][0] = joaat("mp0_pstat_bool0");
 	Global_2539502[0 /*3*/][1] = joaat("mp1_pstat_bool0");

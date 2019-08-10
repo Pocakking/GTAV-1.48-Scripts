@@ -48,7 +48,7 @@
 	float fLocal_46 = 0f;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -110,7 +110,7 @@ void __EntryFunction__()
 	}
 }
 
-void func_1(int iParam0)
+void func_1(int iParam0)//Position - 0x13F
 {
 	if (Global_14532 == 0)
 	{
@@ -313,7 +313,7 @@ void func_1(int iParam0)
 	}
 }
 
-void func_2()
+void func_2()//Position - 0x43D
 {
 	if (CAM::DOES_CAM_EXIST(iLocal_19))
 	{
@@ -327,7 +327,7 @@ void func_2()
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_3(bool bParam0)
+void func_3(bool bParam0)//Position - 0x47A
 {
 	if (bParam0)
 	{
@@ -351,7 +351,7 @@ void func_3(bool bParam0)
 	}
 }
 
-void func_4(int iParam0)
+void func_4(int iParam0)//Position - 0x4DD
 {
 	if (func_7())
 	{
@@ -384,7 +384,7 @@ void func_4(int iParam0)
 	}
 }
 
-int func_5()
+int func_5()//Position - 0x557
 {
 	if (Global_14553.f_1 == 1 || Global_14553.f_1 == 0)
 	{
@@ -393,7 +393,7 @@ int func_5()
 	return 0;
 }
 
-void func_6(bool bParam0, bool bParam1)
+void func_6(bool bParam0, bool bParam1)//Position - 0x57E
 {
 	if (bParam0)
 	{
@@ -423,12 +423,12 @@ void func_6(bool bParam0, bool bParam1)
 	}
 }
 
-bool func_7()
+bool func_7()//Position - 0x5F2
 {
 	return MISC::IS_BIT_SET(Global_1681628, 19);
 }
 
-int func_8(int iParam0)
+int func_8(int iParam0)//Position - 0x604
 {
 	if (iParam0 == 1)
 	{
@@ -459,7 +459,7 @@ int func_8(int iParam0)
 	return 0;
 }
 
-void func_9()
+void func_9()//Position - 0x65E
 {
 	if (Global_14553.f_1 == 9 || Global_14553.f_1 == 10)
 	{

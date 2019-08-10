@@ -5,7 +5,7 @@
 	struct<2> ScriptParam_0 = { 0, 0 } ;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	float fVar0;
 	
@@ -13,8 +13,8 @@ void __EntryFunction__()
 	{
 		func_1();
 	}
-	iLocal_0 = ScriptParam_3;
-	iLocal_1 = ScriptParam_3.f_1;
+	iLocal_0 = ScriptParam_0;
+	iLocal_1 = ScriptParam_0.f_1;
 	while (!MISC::IS_BIT_SET(iLocal_2, 1))
 	{
 		if (!MISC::IS_BIT_SET(iLocal_2, 0))
@@ -60,7 +60,7 @@ void __EntryFunction__()
 	func_1();
 }
 
-void func_1()
+void func_1()//Position - 0x10B
 {
 	ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_0);
 	ENTITY::SET_ENTITY_AS_NO_LONGER_NEEDED(&iLocal_1);

@@ -19,7 +19,7 @@
 	int iLocal_17 = 0;
 #endregion
 
-void __EntryFunction__()
+void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	bool bVar1;
@@ -85,7 +85,7 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(int iParam0)
+int func_1(int iParam0)//Position - 0xD2
 {
 	int iVar0;
 	int iVar1;
@@ -106,7 +106,7 @@ int func_1(int iParam0)
 	return 145;
 }
 
-int func_2(int iParam0)
+int func_2(int iParam0)//Position - 0x10F
 {
 	if (func_3(iParam0))
 	{
@@ -118,12 +118,12 @@ int func_2(int iParam0)
 	return 0;
 }
 
-bool func_3(int iParam0)
+bool func_3(int iParam0)//Position - 0x139
 {
 	return iParam0 < 3;
 }
 
-void func_4()
+void func_4()//Position - 0x145
 {
 	AUDIO::STOP_STREAM();
 	SCRIPT::TERMINATE_THIS_THREAD();
